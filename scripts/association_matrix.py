@@ -1,6 +1,7 @@
-import itertools
-import tqdm
+from tqdm import tqdm
 import pandas as pd
+import itertools
+import time
 
 def create_association_matrix(tf):
     '''
@@ -57,3 +58,15 @@ def get_top_k_associated_words(relevant_courses, tf, matrix, k):
         new_words = sorted(associated_words, key=associated_words.get, reverse=True )[:k]
         total_new_words += new_words
     return total_new_words
+
+
+tf_path = '../data/course_info_with_survey_scores/course_info__with_survey_tf.csv'
+association_matrix_path = '../data/course_info_with_survey_scores/association_matrix.csv'
+norm_association_matrix_path = '../data/course_info_with_survey_scores/norm_association_matrix.csv'
+tf = pd.read_csv(tf_path, header=0, index_col=0)
+start_time = time.time()
+association_matrix, unique_words = create_association_matrix(tf)
+norm_association_matrix = create_norm_association_matrix(association_matrix, unique_words)
+association_matrix.to_csv(association_matrix_path)
+norm_association_matrix.to_csv(norm_association_matrix_path)
+print(f'time elapsed: {(time.time()-start_time)//60}min {(time.time()-start_time)%60}s') 
