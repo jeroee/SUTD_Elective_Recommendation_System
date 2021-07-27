@@ -17,7 +17,7 @@ lemmatizer = WordNetLemmatizer()
 # declare input file to load and output file to save
 course_info_path = '../data/web_scrap/course_info.json'
 survey_info_path = '../data/survey/merged_survey.json'
-tf_path = '../data/course_info_with_survey_scores/course_info__with_survey_tf.csv'
+tf_path = '../data/course_info_with_survey_scores/course_info_with_survey_tf.csv'
 tf_norm_path = '../data/course_info_with_survey_scores/course_info_with_survey_tf_norm.csv'
 df_path = '../data/course_info_with_survey_scores/course_info_with_survey_df.csv'
 idf_path = '../data/course_info_with_survey_scores/course_info_with_survey_idf.csv'
@@ -111,8 +111,8 @@ tf_vect_norm.to_csv(tf_norm_path)
 # https://stackoverflow.com/questions/26053849/counting-non-zero-values-in-each-column-of-a-dataframe-in-python
 df_arr = np.count_nonzero(tf_vect, axis=1) # compute df: count the nunber of non zero columns in each role 
 df_vect = pd.DataFrame(data={'df':df_arr}, index = tf_tokens)
-df_vect['df'] = df_vect['df'].apply(lambda freq: math.log10((corpus_size) / (freq))) # calc idf
 df_vect.to_csv(df_path)
+df_vect['df'] = df_vect['df'].apply(lambda freq: math.log10((corpus_size) / (freq))) # calc idf
 idf_vect = df_vect.rename({'df': 'idf'}, axis=1, inplace=False)
 
 idf_vect = idf_vect.replace(np.nan, 0)
