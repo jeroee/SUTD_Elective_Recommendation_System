@@ -25,7 +25,9 @@ def get_result(query,tf,tf_norm,idf,vocab,avg_doc_len):
 
     sorted_result = dict(
         sorted(result.items(), key=operator.itemgetter(1), reverse=True))
+    #print(result)
     ls=[]
     for k, v in sorted_result.items():
-        print(f"{k}: {v}")
-    return result, ls
+        #print(f"{k}: {v}")
+        ls.append(k)
+    return sorted_result, ls
