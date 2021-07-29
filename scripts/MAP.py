@@ -8,16 +8,21 @@ from nltk.corpus import wordnet
 import operator
 import time
 
+# import logging
+# logging.basicConfig(level=logging.INFO, format='%(message)s')
+# logger = logging.getLogger()
+# logger.addHandler(logging.FileHandler("logs/MAP.log", 'a'))
+# print = logger.info
+
+
 from utils.association_matrix import  get_top_k_associated_words, get_associated_words
 from utils.query_processing import get_wordnet_pos, process_query, expand_query
 from basic_bm25 import bm25_basic, get_result
-
+from bm25_with_pseudo_relevance import bm25_pseudo_relevance_back
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 lemmatizer = WordNetLemmatizer()
-
-
 
 
 
@@ -116,8 +121,44 @@ def get_map(query_val, tf=tf, tf_norm=tf_norm, idf=idf):
     return map
 
 
+
+def get_map_pseudo_relevance(query_val, tf=tf, tf_norm=tf_norm, idf=idf):
+    top_retrieved = 10
+    rs = []
+    for index, row in query_val.iterrows():
+
+        vocab = tf.index.tolist()  # unique words
+        total_length = tf.to_numpy().sum()
+        avg_doc_len = total_length / len(tf.columns) # average document length across all courses
+        query_original = row['querySample']  # take in query from training sample
+        #query = process_query(query=query_original)
+
+        result, ls = bm25_pseudo_relevance_back(query=query_original, tf=tf, tf_norm=tf_norm, idf=idf, vocab=vocab, avg_doc_len=avg_doc_len, k=10)
+        predicted = ls[:top_retrieved] # retrieve top 10 courses from predictions
+        relevant_results = eval(row['expectedElectivesInOrder'])
+        relevant_results = clean_elective_names(relevant_results)  
+        
+        #print('rpedicted: ', predicted)
+        #print('relevant: ', relevant_results)
+        r = []
+        for query_result in predicted:
+            if query_result in relevant_results:
+                r.append(1)
+            else:
+                r.append(0)
+
+        ap = round(average_precision(r), 5)
+        print(f"query: {query_original}".ljust(100, " "), f"Average Precision {ap}")
+        rs.append(r)
+
+    map = mean_average_precision(rs)
+    #print("Mean Average Precision on validation query: ", map)
+    return map
+
+
 if __name__ == '__main__':
-    
+    print("#"*200)
+    print('Calculating Mean Average Precision for bm25 without survey data added')
     query_val = pd.read_csv('../data/survey/vaildation_sample_query.csv', header = 0 , index_col = 0)
 
     # scores without survey
@@ -127,10 +168,15 @@ if __name__ == '__main__':
     map = get_map(query_val, tf=tf, tf_norm=tf_norm, idf=idf)
     print("Mean Average Precision on validation query (bm25 with no survey): ", map)
 
-    print("#"*100)
-
+    print("#"*200)
+    print('Calculating Mean Average Precision after bm25 trained with relevance feedback')
     tf_relevance_feedback = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_tf.csv', header=0, index_col=0)
     tf_norm_relevance_feedback = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_tf_norm.csv', header=0, index_col=0)
     idf_relevance_feedback = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_idf.csv', header=0, index_col=0)
     map_relevance_feedback = get_map(query_val, tf=tf_relevance_feedback, tf_norm=tf_norm_relevance_feedback, idf=idf_relevance_feedback)
     print("Mean Average Precision on validation query (bm25 after relevance feedback training): ", map_relevance_feedback)
+
+    print("#"*200)
+    print('Calculating Mean Average Precision for bm25 with pseudo relevance feedback')
+    map_pseudo_relevance_feedback = get_map_pseudo_relevance(query_val, tf=tf_relevance_feedback, tf_norm=tf_norm_relevance_feedback, idf=idf_relevance_feedback)
+    print("Mean Average Precision on validation query (bm25 with pseudo relevance feedback): ", map_pseudo_relevance_feedback)

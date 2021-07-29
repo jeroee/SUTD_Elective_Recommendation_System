@@ -1,0 +1,99 @@
+########################################################################################################################################################################################################
+Calculating Mean Average Precision for bm25 without survey data added
+query: network, term, model, technology, probability                                                 Average Precision 0.50741
+query: term, different, skill, mongodb, long                                                         Average Precision 0.22963
+query: logistics, analysis, operation, basic, r                                                      Average Precision 0.57683
+query: esd, network, evaluate, program, r                                                            Average Precision 0.63333
+query: operation, basic, evaluation, price, evaluate                                                 Average Precision 0.27778
+query: infrastructure, metric, pytorch, model, client                                                Average Precision 1.0
+query: approach, logistics, shag, infrastructure, equity                                             Average Precision 1.0
+query: data, sql, different, analytics, model                                                        Average Precision 0.76786
+query: computational, best, server, certain, ec                                                      Average Precision 0.375
+query: sklearn, metric, demand, schedule, fundamental                                                Average Precision 0.86667
+query: digitalisation, skill, long, technology, aviation                                             Average Precision 0.35556
+query: r, hidden, artificial, schedule, simulate                                                     Average Precision 0.80556
+query: optimisation, decision, risk, aws, jupyter                                                    Average Precision 0.74702
+query: decentralizedapp, equity, math, ethereum, technology                                          Average Precision 0.91667
+query: financial, value, metric, optimize, analysis                                                  Average Precision 0.76444
+query: risk, certain, computational, approach, c                                                     Average Precision 0.51206
+query: markov, supply, hidden, computational, payoff                                                 Average Precision 0.74167
+query: finance, value, long, average, business                                                       Average Precision 1.0
+query: financial, spark, science, focus, search                                                      Average Precision 0.48624
+query: supply, notebook, fundamental, know, basic                                                    Average Precision 0.76667
+query: r, linear, ethereum, c, machine                                                               Average Precision 1.0
+query: science, future, problem, demand, pytorch                                                     Average Precision 0.71667
+query: r, ec, kera, opponent, model                                                                  Average Precision 0.42986
+query: markov, descent, algebra, math, research                                                      Average Precision 0.82619
+query: clojurescript, ai, analysis, background, science                                              Average Precision 0.3619
+query: optimisation, opencv, risk, chain, urban                                                      Average Precision 0.71429
+query: maing, descent, science, clojurescript, knowledge                                             Average Precision 0.51667
+query: schedule, gradient, airport, analysis, system                                                 Average Precision 0.8254
+query: logistics, business, strategy, analytics, math                                                Average Precision 0.68571
+query: program, future, kera, ec, concept                                                            Average Precision 1.0
+Mean Average Precision on validation query (bm25 with no survey):  0.6802356701940034
+########################################################################################################################################################################################################
+Calculating Mean Average Precision after bm25 trained with relevance feedback
+query: network, term, model, technology, probability                                                 Average Precision 0.50741
+query: term, different, skill, mongodb, long                                                         Average Precision 0.30556
+query: logistics, analysis, operation, basic, r                                                      Average Precision 0.63333
+query: esd, network, evaluate, program, r                                                            Average Precision 0.76395
+query: operation, basic, evaluation, price, evaluate                                                 Average Precision 0.25
+query: infrastructure, metric, pytorch, model, client                                                Average Precision 0.56825
+query: approach, logistics, shag, infrastructure, equity                                             Average Precision 1.0
+query: data, sql, different, analytics, model                                                        Average Precision 0.63111
+query: computational, best, server, certain, ec                                                      Average Precision 0.41111
+query: sklearn, metric, demand, schedule, fundamental                                                Average Precision 0.75556
+query: digitalisation, skill, long, technology, aviation                                             Average Precision 0.44444
+query: r, hidden, artificial, schedule, simulate                                                     Average Precision 0.75556
+query: optimisation, decision, risk, aws, jupyter                                                    Average Precision 0.69778
+query: decentralizedapp, equity, math, ethereum, technology                                          Average Precision 0.86667
+query: financial, value, metric, optimize, analysis                                                  Average Precision 0.91667
+query: risk, certain, computational, approach, c                                                     Average Precision 0.53111
+query: markov, supply, hidden, computational, payoff                                                 Average Precision 0.60873
+query: finance, value, long, average, business                                                       Average Precision 0.73704
+query: financial, spark, science, focus, search                                                      Average Precision 0.51667
+query: supply, notebook, fundamental, know, basic                                                    Average Precision 0.76667
+query: r, linear, ethereum, c, machine                                                               Average Precision 0.82619
+query: science, future, problem, demand, pytorch                                                     Average Precision 0.48889
+query: r, ec, kera, opponent, model                                                                  Average Precision 0.68571
+query: markov, descent, algebra, math, research                                                      Average Precision 0.96173
+query: clojurescript, ai, analysis, background, science                                              Average Precision 0.425
+query: optimisation, opencv, risk, chain, urban                                                      Average Precision 0.67262
+query: maing, descent, science, clojurescript, knowledge                                             Average Precision 0.35
+query: schedule, gradient, airport, analysis, system                                                 Average Precision 0.91667
+query: logistics, business, strategy, analytics, math                                                Average Precision 0.73294
+query: program, future, kera, ec, concept                                                            Average Precision 0.97619
+Mean Average Precision on validation query (bm25 after relevance feedback training):  0.6567845804988662
+########################################################################################################################################################################################################
+Calculating Mean Average Precision for bm25 with pseudo relevance feedback
+query: network, term, model, technology, probability                                                 Average Precision 0.6
+query: term, different, skill, mongodb, long                                                         Average Precision 0.40278
+query: logistics, analysis, operation, basic, r                                                      Average Precision 0.45833
+query: esd, network, evaluate, program, r                                                            Average Precision 0.48333
+query: operation, basic, evaluation, price, evaluate                                                 Average Precision 0.5
+query: infrastructure, metric, pytorch, model, client                                                Average Precision 0.0
+query: approach, logistics, shag, infrastructure, equity                                             Average Precision 0.27778
+query: data, sql, different, analytics, model                                                        Average Precision 0.2
+query: computational, best, server, certain, ec                                                      Average Precision 0.43333
+query: sklearn, metric, demand, schedule, fundamental                                                Average Precision 0.83333
+query: digitalisation, skill, long, technology, aviation                                             Average Precision 0.65
+query: r, hidden, artificial, schedule, simulate                                                     Average Precision 0.51389
+query: optimisation, decision, risk, aws, jupyter                                                    Average Precision 0.48214
+query: decentralizedapp, equity, math, ethereum, technology                                          Average Precision 0.44444
+query: financial, value, metric, optimize, analysis                                                  Average Precision 0.425
+query: risk, certain, computational, approach, c                                                     Average Precision 0.64583
+query: markov, supply, hidden, computational, payoff                                                 Average Precision 0.44286
+query: finance, value, long, average, business                                                       Average Precision 0.525
+query: financial, spark, science, focus, search                                                      Average Precision 0.25
+query: supply, notebook, fundamental, know, basic                                                    Average Precision 0.57917
+query: r, linear, ethereum, c, machine                                                               Average Precision 0.90286
+query: science, future, problem, demand, pytorch                                                     Average Precision 0.625
+query: r, ec, kera, opponent, model                                                                  Average Precision 0.7875
+query: markov, descent, algebra, math, research                                                      Average Precision 0.425
+query: clojurescript, ai, analysis, background, science                                              Average Precision 0.29167
+query: optimisation, opencv, risk, chain, urban                                                      Average Precision 0.425
+query: maing, descent, science, clojurescript, knowledge                                             Average Precision 0.59028
+query: schedule, gradient, airport, analysis, system                                                 Average Precision 0.71825
+query: logistics, business, strategy, analytics, math                                                Average Precision 0.26667
+query: program, future, kera, ec, concept                                                            Average Precision 0.39286
+Mean Average Precision on validation query (bm25 with pseudo relevance feedback):  0.4857433862433862
