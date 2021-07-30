@@ -68,6 +68,7 @@ def bm25_pseudo_relevance_back(query, tf, tf_norm, idf, vocab, avg_doc_len, k=10
     associated_words = get_top_k_associated_words(relevant_courses, tf, norm_association_matrix, k=3)
     query = query + associated_words 
     #query = expand_query(query,glove_kv,topn=3)
+    # change get_result to bm25 reformulated
     result_reformed, ls_reformed = get_result(query=query,tf=tf,tf_norm=tf_norm,idf=idf,vocab=vocab,avg_doc_len=avg_doc_len)
     return result_reformed, ls_reformed
 

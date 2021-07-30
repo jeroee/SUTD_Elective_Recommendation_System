@@ -21,6 +21,8 @@ def get_wordnet_pos(word):
     return tag_dict.get(tag, wordnet.NOUN)
 
 def process_query(query):
+    '''
+    '''
     query = query.translate(str.maketrans('', '', string.punctuation))
     query = str(np.char.lower(query))
     query = ''.join([i for i in query if not i.isdigit()])
@@ -32,6 +34,8 @@ def process_query(query):
     return query.split()
 
 def expand_query(query,glove_kv,topn):
+    '''
+    '''
     model = KeyedVectors.load(glove_kv)
     expanded_query = []
     for word in query:

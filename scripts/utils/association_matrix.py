@@ -46,7 +46,7 @@ def get_associated_words(query, matrix):
 
 def get_top_k_associated_words(relevant_courses, tf, matrix, k):
     '''
-    get top k associated words and reformulate back into the query
+    get top k associated words based on relevant courses and reformulate back into the query
     '''
     total_new_words = []
     for course in relevant_courses:
