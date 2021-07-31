@@ -11,7 +11,10 @@ nltk.download('averaged_perceptron_tagger')
 lemmatizer = WordNetLemmatizer()
 
 def get_wordnet_pos(word):
-    """Map POS tag to first character lemmatize() accepts"""
+    '''
+    Identify the type of word in the sentence to generate the appropriate lemitsation 
+    Map POS tag to first character lemmatize() accepts
+    '''
     tag = nltk.pos_tag([word])[0][1][0].upper()
     tag_dict = {"J": wordnet.ADJ,
                 "N": wordnet.NOUN,
@@ -22,6 +25,9 @@ def get_wordnet_pos(word):
 
 def process_query(query):
     '''
+    Takes in input query. (string)
+    Performs punctuation removal, lower casing, stopword removal, lemitistion. 
+    Converts into a list of words. (list)
     '''
     query = query.translate(str.maketrans('', '', string.punctuation))
     query = str(np.char.lower(query))
@@ -35,6 +41,8 @@ def process_query(query):
 
 def expand_query(query,glove_kv,topn):
     '''
+    Expands query (list) with a pretrained glove 6B 300d corpus. 
+    Takes each word and expand the word by top n most similar word.
     '''
     model = KeyedVectors.load(glove_kv)
     expanded_query = []

@@ -40,6 +40,9 @@ def get_wordnet_pos(word):
 
 # get unique words on a istd course
 def get_unique_words(course):
+    '''
+    generate a list of unqique words for each course
+    '''
     course_name = course.pop('name', None)    # remove course name
     pre_requisite = course.pop('pre_requisite', None)   # remove pre-req
     topics = course.pop('topics_covered', None) # remove topics covered
@@ -68,16 +71,20 @@ def get_unique_words(course):
 with open(survey_info_path) as f:
   survey_results = json.load(f)
 
-# rename the survey title to the module name
+
+# for cleaning, rename the survey title to the module name
 survey_results['50.035 Computer Vision'] = survey_results.pop(" 50.035 Computer Vision")
 survey_results['50.043 Database Systems'] = survey_results.pop("50.043 Database Systems / Database and Big Data Systems (for class 2021)")
 opti_stochastic = survey_results.pop("40.302 Advanced Optim/ 40.305 Advanced Stochastic")
 survey_results['40.302 Advanced Topics in Optimisation#'] = opti_stochastic
 survey_results['40.305 Advanced Topics in Stochastic Modelling#'] = opti_stochastic
 
+
+''''
+To geneerate tf,df,idf,tf_norm,tf_idf from course info data merged with the survey scores
+'''
 list_of_courses = []    # course names
 list_of_course_words = []   # words about course
-
 for idx,course in enumerate(course_info):
     course_name, s = get_unique_words(course)
     list_of_courses.append(course_name)

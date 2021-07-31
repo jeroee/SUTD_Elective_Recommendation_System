@@ -5,7 +5,7 @@ import time
 
 def create_association_matrix(tf):
     '''
-    takes in tf dataframe to get association matrix df
+    generate an association matrix df with term-frequency df of corpus
     '''
     unique_words = tf.index.values.tolist()
     ls = list(itertools.combinations(tf.index, 2))
@@ -26,6 +26,9 @@ def create_association_matrix(tf):
     return association_matrix,unique_words
 
 def create_norm_association_matrix(association_matrix, unique_words):
+    '''
+    generate normalised association matrix using association matrix
+    '''
     norm_association_matrix = pd.DataFrame(index=unique_words,columns=unique_words)
     for i in tqdm(unique_words):
         for j in unique_words:
@@ -35,7 +38,7 @@ def create_norm_association_matrix(association_matrix, unique_words):
 
 def get_associated_words(query, matrix):
     '''
-    for each word in original query, add on a word which is best associated with it via the corpus
+    for each word in original query, add on a word which is best associated with it via the corpus (query expansion)
     '''
     extended_query = query.copy()
     for word in query:
@@ -46,7 +49,7 @@ def get_associated_words(query, matrix):
 
 def get_top_k_associated_words(relevant_courses, tf, matrix, k):
     '''
-    get top k associated words based on relevant courses and reformulate back into the query
+    get top k associated words based on relevant courses and reformulate back into the query (for query reformulation)
     '''
     total_new_words = []
     for course in relevant_courses:
@@ -60,15 +63,19 @@ def get_top_k_associated_words(relevant_courses, tf, matrix, k):
     return total_new_words
 
 
-
-
-
 '''
-uncomment to formulate association matrix and normalised association matrix from course_info_with_survey_tf.csv
+Generate association matrix and normalised association matrix from course_info_with_survey_tf.csv
 '''
-# tf_path = '../data/course_info_with_survey_scores/course_info__with_survey_tf.csv'
+# path of course info tf
+# tf_path = '../data/course_info_with_survey_scores/course_info_with_survey_tf.csv'
 # association_matrix_path = '../data/course_info_with_survey_scores/association_matrix.csv'
 # norm_association_matrix_path = '../data/course_info_with_survey_scores/norm_association_matrix.csv'
+
+# path of course info with survey scores tf
+# tf_path = '../data/course_info_scores/course_info_tf.csv'
+# association_matrix_path = '../data/course_info_scores/association_matrix.csv'
+# norm_association_matrix_path = '../data/course_info_scores/norm_association_matrix.csv'
+
 # tf = pd.read_csv(tf_path, header=0, index_col=0)
 # start_time = time.time()
 # association_matrix, unique_words = create_association_matrix(tf)

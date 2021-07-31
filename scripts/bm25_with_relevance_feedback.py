@@ -30,6 +30,9 @@ def bm25_basic(query, doc, tf, tf_norm, idf, vocab, avg_doc_len, k1=1.5, b=0.75)
     return score
 
 def bm25_reformulated(query, doc, relevant_courses, tf, df, vocab, tf_norm, avg_doc_len, k1=1.5, b=0.75, k3=1.5):
+    ''''
+    returns the score for a document given a reformulated query based on the bm25 algorithm (reformulated)
+    '''
     score = 0.0
     vr = len(relevant_courses)  # total retrieved relevant docs
     for term in query:
@@ -77,6 +80,9 @@ def bm25_prediction(query, tf, tf_norm, df, idf, vocab, avg_doc_len, reformulate
     return result, ls
 
 def update_scores(tf, relevant_courses, associated_words):
+    '''
+    Based on relevant courses associated words, update the tf, df, idf, tf_norm
+    '''
     courses = tf.columns.tolist()
     for course in relevant_courses:
         for word in associated_words:
@@ -102,6 +108,7 @@ def update_scores(tf, relevant_courses, associated_words):
     
     return tf, tf_norm, df, idf
 
+# retrieving of scores df
 tf = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_tf.csv', header=0, index_col=0)
 tf_norm = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_tf_norm.csv', header=0, index_col=0)
 idf = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_idf.csv', header=0, index_col=0)
@@ -112,7 +119,6 @@ association_matrix = pd.read_csv('../data/course_info_with_survey_scores/associa
 norm_association_matrix = pd.read_csv('../data/course_info_with_survey_scores/norm_association_matrix.csv', header = 0, index_col = 0)
 
 # cleaning of survey results used for training
-
 for idx_i, courses in enumerate(added_data['expectedElectivesInOrder']):
     added_data['expectedElectivesInOrder'][idx_i] = ast.literal_eval(courses)
     for idx_j,course in enumerate(added_data['expectedElectivesInOrder'][idx_i]):
@@ -125,8 +131,11 @@ for idx_i, courses in enumerate(added_data['expectedElectivesInOrder']):
             added_data['expectedElectivesInOrder'][idx_i].insert(idx_j,'40.302 Advanced Topics in Optimisation#')
             # added_data['expectedElectivesInOrder'][idx_i].insert(idx_j+1, '40.305 Advanced Topics in Stochastic Modelling#')
 
+
 def train(tf=tf,tf_norm=tf_norm,idf=idf,df=df,glove_kv=glove_kv,added_data=added_data,association_matrix=association_matrix,norm_association_matrix=norm_association_matrix):
-    # entire pipeline for training phase
+    '''
+    entire training pipeline
+    '''
     top_retrieved = 10
     start_time = time.time()
 
@@ -170,17 +179,17 @@ def train(tf=tf,tf_norm=tf_norm,idf=idf,df=df,glove_kv=glove_kv,added_data=added
         
         print('')
         if len(relevant_courses)>0: # if there are relevant courses, then update scores. else move to next iteration
-            tf, tf_norm, df, idf = update_scores(tf=tf, relevant_courses=relevant_courses, associated_words=associated_words)  # update tf, tf_norm, idf, df
+            tf, tf_norm, df, idf = update_scores(tf=tf, relevant_courses=relevant_courses, associated_words=associated_words)  # update tf, tf_norm, idf, df for words associated to each relevant retrieved courses
             association_matrix,unique_words = create_association_matrix(tf=tf)
-            norm_association_matrix = create_norm_association_matrix(association_matrix = association_matrix,unique_words = unique_words) # update correlation matrix
+            norm_association_matrix = create_norm_association_matrix(association_matrix = association_matrix,unique_words = unique_words) # update normalised association matrix
             print('updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...')
         elif len(relevant_courses)==0:
             print(f'no relevant courses retrieved. Moving to next iteration...')
         print(f'time elapsed: {(time.time()-start_time)//60}min {(time.time()-start_time)%60}s')
         print('')
-        
 
     print(f'time elapsed: {(time.time()-start_time)//60}min {(time.time()-start_time)%60}s') 
+    
     # saving trained scores 
     tf.to_csv('../data/trained_scores/course_info_with_survey_tf_trained.csv')
     tf_norm.to_csv('../data/trained_scores/course_info_with_survey_tf_norm_trained.csv')

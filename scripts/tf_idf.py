@@ -39,6 +39,9 @@ def get_wordnet_pos(word):
 
 # get unique words on a istd course
 def get_unique_words(course):
+    '''
+    generate a list of unqique words for each course
+    '''
     course_name = course.pop('name', None)    # remove course name
     pre_requisite = course.pop('pre_requisite', None)   # remove pre-req
     topics = course.pop('topics_covered', None) # remove topics covered
@@ -64,7 +67,9 @@ def get_unique_words(course):
     s = s.translate(str.maketrans('','',string.punctuation))
     return course_name,s 
 
-
+''''
+To geneerate tf,df,idf,tf_norm,tf_idf from course info data
+'''
 list_of_courses = []    # course names
 list_of_course_words = []   # words about course
 for idx,course in enumerate(course_info):
