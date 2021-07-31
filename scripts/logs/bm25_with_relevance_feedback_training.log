@@ -3,7 +3,7 @@ original query from training sample: analytics, library, retrieval, boolean, lib
 query expansion with correlation matrix: ['analytics', 'library', 'retrieval', 'boolean', 'library', 'esd', 'necessary', 'video', 'necessary']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:18:09.686209', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:14:28.524469', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['analytics', 'consultancy', 'visualization', 'predictive', 'library', 'libraries', 'archives', 'archive', 'retrieval', 'archiving', 'retrieving', 'semantic', 'boolean', 'propositional', 'commutative', 'algebra', 'library', 'libraries', 'archives', 'archive', 'esd', 'idr', 'hmda', 'bsm', 'necessary', 'needed', 'required', 'sufficient', 'video', 'videos', 'audio', 'dvd', 'necessary', 'needed', 'required', 'sufficient']
 running basic bm25
 initial predicted courses: 
@@ -18,7 +18,7 @@ initial predicted courses:
 40.302 Advanced Topics in Optimisation#
 40.260 Supply Chain Management
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.007 Machine Learning
 50.045 Information Retrieval
 50.006 User Interface Design and Implementation
@@ -46,14 +46,14 @@ prediction after query reformulation
 50.046 Cloud Computing and Internet of Things
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 0.0min 3.947998285293579s
+time elapsed: 0.0min 4.09284782409668s
 
 Training iteration: 2
 original query from training sample: nash, heuristic, financial, vector, answer
 query expansion with correlation matrix: ['nash', 'heuristic', 'financial', 'vector', 'answer', 'equilibrium', 'usability', 'services', 'discriminative', 'question']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:18:11.577208', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:14:30.358546', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['nash', 'finley', 'nowitzki', 'kidd', 'heuristic', 'heuristics', 'algorithms', 'probabilistic', 'financial', 'economic', 'banking', 'crisis', 'vector', 'vectors', 'formula_1', 'formula_2', 'answer', 'answers', 'questions', 'question', 'equilibrium', 'thermodynamic', 'equilibria', 'optimal', 'usability', 'accessibility', 'scalability', 'maintainability', 'services', 'service', 'provider', 'providers', 'discriminative', 'discriminatory', 'high-handed', 'cobweb', 'question', 'questions', 'answer', 'whether']
 running basic bm25
 initial predicted courses: 
@@ -68,7 +68,7 @@ initial predicted courses:
 40.317 Financial Systems Design
 40.240 Investment Science
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.045 Information Retrieval
 40.240 Investment Science
 40.316 Game Theory
@@ -97,14 +97,14 @@ prediction after query reformulation
 40.242 Derivative Pricing and Risk Management
 
 updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...
-time elapsed: 17.0min 4.253931045532227s
+time elapsed: 12.0min 28.86871600151062s
 
 Training iteration: 3
 original query from training sample: neural, analytics, hadoop, relevance, autocad
 query expansion with correlation matrix: ['neural', 'analytics', 'hadoop', 'relevance', 'autocad', 'network', 'esd', 'mongodb']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:11.765143', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:26:55.960210', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['neural', 'neuronal', 'neurons', 'cortical', 'analytics', 'consultancy', 'visualization', 'predictive', 'hadoop', 'mapreduce', 'open-source', 'openoffice', 'relevance', 'usefulness', 'significance', 'validity', 'autocad', 'autodesk', 'cad', 'revit', 'network', 'networks', 'cable', 'channel', 'esd', 'idr', 'hmda', 'bsm', 'mongodb', 'nosql', 'scriptable', 'rhizaria']
 running basic bm25
 initial predicted courses: 
@@ -119,7 +119,7 @@ initial predicted courses:
 50.039 Theory and Practice of Deep Learning
 40.316 Game Theory
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.043 Database Systems
 50.045 Information Retrieval
 40.321 Airport Systems Modelling and Simulation
@@ -147,14 +147,14 @@ prediction after query reformulation
 50.039 Theory and Practice of Deep Learning
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 5.995929002761841s
+time elapsed: 12.0min 31.19859004020691s
 
 Training iteration: 4
 original query from training sample: answer, visual, chain, handle, copywriting
 query expansion with correlation matrix: ['answer', 'visual', 'chain', 'handle', 'copywriting', 'question', 'supply']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:13.576148', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:26:57.488717', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['answer', 'answers', 'questions', 'question', 'visual', 'auditory', 'aural', 'imagery', 'chain', 'chains', 'stores', 'store', 'handle', 'handled', 'handles', 'handling', 'copywriting', 'copywriter', 'submittal', 'draftfcb', 'question', 'questions', 'answer', 'whether', 'supply', 'supplies', 'shortage', 'supplied']
 running basic bm25
 initial predicted courses: 
@@ -169,7 +169,7 @@ initial predicted courses:
 50.006 User Interface Design and Implementation
 50.007 Machine Learning
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 50.043 Database Systems
 40.260 Supply Chain Management
@@ -197,14 +197,14 @@ prediction after query reformulation
 40.323 Equity Valuation
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 7.797934055328369s
+time elapsed: 12.0min 32.28520703315735s
 
 Training iteration: 5
 original query from training sample: retrieval, wireframing, model, infrastructure, analysis
 query expansion with correlation matrix: ['retrieval', 'wireframing', 'model', 'infrastructure', 'analysis', 'video', 'annoy', 'learn', 'public', 'requirement']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:15.406143', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:26:58.569849', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['retrieval', 'archiving', 'retrieving', 'semantic', 'wireframing', 'model', 'models', 'concept', 'modeling', 'infrastructure', 'infrastructures', 'projects', 'upgrading', 'analysis', 'analyses', 'study', 'data', 'video', 'videos', 'audio', 'dvd', 'annoy', 'irritate', 'confuse', 'frighten', 'learn', 'learned', 'teach', 'understand', 'public', 'private', 'government', 'education', 'requirement', 'requirements', 'required', 'requiring']
 running basic bm25
 initial predicted courses: 
@@ -219,7 +219,7 @@ initial predicted courses:
 40.323 Equity Valuation
 01.117 Brain-Inspired Computing and its Applications (Term 8)
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.045 Information Retrieval
 50.006 User Interface Design and Implementation
 40.316 Game Theory
@@ -247,15 +247,15 @@ prediction after query reformulation
 01.117 Brain-Inspired Computing and its Applications (Term 8)
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 9.798929929733276s
+time elapsed: 12.0min 33.50946497917175s
 
 Training iteration: 6
 original query from training sample: business, airport, prototyping, track, statistic
 query expansion with correlation matrix: ['business', 'airport', 'prototyping', 'track', 'statistic', 'operations', 'management', 'ui', 'focus']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:17.352146', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
-query expansion with pretrained corpus: ['business', 'businesses', 'industry', 'companies', 'airport', 'airports', 'flights', 'heathrow', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'track', 'tracks', 'speed', 'song', 'statistic', 'statistics', 'bps', 'statistical', 'operations', 'operation', 'operating', 'operational', 'management', 'managers', 'managing', 'asset', 'ui', 'fiachrach', 'u�', 'pak', 'focus', 'focusing', 'focused', 'emphasis']
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:26:59.772776', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
+query expansion with pretrained corpus: ['business', 'businesses', 'industry', 'companies', 'airport', 'airports', 'flights', 'heathrow', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'track', 'tracks', 'speed', 'song', 'statistic', 'statistics', 'bps', 'statistical', 'operations', 'operation', 'operating', 'operational', 'management', 'managers', 'managing', 'asset', 'ui', 'fiachrach', 'uí', 'pak', 'focus', 'focusing', 'focused', 'emphasis']
 running basic bm25
 initial predicted courses: 
 40.260 Supply Chain Management
@@ -269,7 +269,7 @@ initial predicted courses:
 40.316 Game Theory
 40.324 Fundamentals of Investing
 
-gold standard courses from training query:
+gold standard courses from training query: 
 40.319 Statistical and Machine Learning
 50.006 User Interface Design and Implementation
 40.316 Game Theory
@@ -282,7 +282,7 @@ gold standard courses from training query:
 40.318 Supply Chain Digitalisation and Design
 
 
-reformulated query:['business', 'businesses', 'industry', 'companies', 'airport', 'airports', 'flights', 'heathrow', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'track', 'tracks', 'speed', 'song', 'statistic', 'statistics', 'bps', 'statistical', 'operations', 'operation', 'operating', 'operational', 'management', 'managers', 'managing', 'asset', 'ui', 'fiachrach', 'u�', 'pak', 'focus', 'focusing', 'focused', 'emphasis']
+reformulated query:['business', 'businesses', 'industry', 'companies', 'airport', 'airports', 'flights', 'heathrow', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'track', 'tracks', 'speed', 'song', 'statistic', 'statistics', 'bps', 'statistical', 'operations', 'operation', 'operating', 'operational', 'management', 'managers', 'managing', 'asset', 'ui', 'fiachrach', 'uí', 'pak', 'focus', 'focusing', 'focused', 'emphasis']
 running bm25 for reformulated query
 prediction after query reformulation
 40.260 Supply Chain Management
@@ -297,14 +297,14 @@ prediction after query reformulation
 40.321 Airport Systems Modelling and Simulation
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 11.590929985046387s
+time elapsed: 12.0min 34.76322793960571s
 
 Training iteration: 7
 original query from training sample: life, understand, design, service, focus
 query expansion with correlation matrix: ['life', 'understand', 'design', 'service', 'focus', 'social', 'real', 'system', 'technology', 'track']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:19.109141', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:01.042457', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['life', 'lives', 'years', 'living', 'understand', 'know', 'how', 'explain', 'design', 'designs', 'designed', 'architecture', 'service', 'services', '.', 'news', 'focus', 'focusing', 'focused', 'emphasis', 'social', 'welfare', 'education', 'political', 'real', 'true', 'just', 'what', 'system', 'systems', 'which', 'mechanism', 'technology', 'technologies', 'tech', 'technological', 'track', 'tracks', 'speed', 'song']
 running basic bm25
 initial predicted courses: 
@@ -319,7 +319,7 @@ Service Design Studio
 40.317 Financial Systems Design
 50.042 Foundations of Cybersecurity
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 40.320 Airport Systems Planning and Design
 40.240 Investment Science
@@ -347,14 +347,14 @@ prediction after query reformulation
 01.104 Networked Life
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 13.567281484603882s
+time elapsed: 12.0min 36.20363402366638s
 
 Training iteration: 8
 original query from training sample: probability, usability, heuristic, urban, neural
 query expansion with correlation matrix: ['probability', 'usability', 'heuristic', 'urban', 'neural', 'branching', 'evaluation', 'usability', 'basin', 'network']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:21.133752', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:02.464362', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['probability', 'probabilities', 'likelihood', 'parameter', 'usability', 'accessibility', 'scalability', 'maintainability', 'heuristic', 'heuristics', 'algorithms', 'probabilistic', 'urban', 'rural', 'sprawl', 'areas', 'neural', 'neuronal', 'neurons', 'cortical', 'branching', 'branched', 'stems', 'unbranched', 'evaluation', 'assessment', 'evaluations', 'evaluate', 'usability', 'accessibility', 'scalability', 'maintainability', 'basin', 'basins', 'river', 'watershed', 'network', 'networks', 'cable', 'channel']
 running basic bm25
 initial predicted courses: 
@@ -369,7 +369,7 @@ initial predicted courses:
 40.302 Advanced Topics in Optimisation#
 01.107 Urban Transportation
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 40.316 Game Theory
 40.320 Airport Systems Planning and Design
@@ -397,14 +397,14 @@ prediction after query reformulation
 40.230 Sustainable Engineering
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 15.398538589477539s
+time elapsed: 12.0min 37.41535210609436s
 
 Training iteration: 9
 original query from training sample: word, skill, balance, xd, analysis
 query expansion with correlation matrix: ['word', 'skill', 'balance', 'xd', 'analysis', 'automatic', 'library', 'binomial', 'requirement']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:23.018752', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:03.677567', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['word', 'phrase', 'meaning', 'words', 'skill', 'skills', 'abilities', 'ability', 'balance', 'balanced', 'balances', 'balancing', 'xd', 'jetix', 'xt', 'radeon', 'analysis', 'analyses', 'study', 'data', 'automatic', 'machine', 'automatically', 'automated', 'library', 'libraries', 'archives', 'archive', 'binomial', 'multinomial', 'nomenclature', 'derivation', 'requirement', 'requirements', 'required', 'requiring']
 running basic bm25
 initial predicted courses: 
@@ -419,7 +419,7 @@ initial predicted courses:
 40.240 Investment Science
 50.033 Foundations of Game Design and Development
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 40.321 Airport Systems Modelling and Simulation
 50.033 Foundations of Game Design and Development
@@ -447,14 +447,14 @@ prediction after query reformulation
 40.240 Investment Science
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 17.34554100036621s
+time elapsed: 12.0min 38.62249803543091s
 
 Training iteration: 10
 original query from training sample: ec, test, mining, copywriting, vector
 query expansion with correlation matrix: ['ec', 'test', 'mining', 'copywriting', 'vector', 'algebra', 'aspect', 'discriminative']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:24.955750', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:04.888957', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['ec', 'bimst', 'barroso', 'eu', 'test', 'tests', 'testing', 'tested', 'mining', 'mines', 'coal', 'mine', 'copywriting', 'copywriter', 'submittal', 'draftfcb', 'vector', 'vectors', 'formula_1', 'formula_2', 'algebra', 'algebras', 'commutative', 'algebraic', 'aspect', 'aspects', 'perspective', 'facet', 'discriminative', 'discriminatory', 'high-handed', 'cobweb']
 running basic bm25
 initial predicted courses: 
@@ -469,7 +469,7 @@ initial predicted courses:
 40.316 Game Theory
 50.039 Theory and Practice of Deep Learning
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 50.033 Foundations of Game Design and Development
 50.045 Information Retrieval
@@ -497,14 +497,14 @@ prediction after query reformulation
 40.316 Game Theory
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 19.087537050247192s
+time elapsed: 12.0min 39.71560001373291s
 
 Training iteration: 11
 original query from training sample: simulation, word, genre, learn, question
 query expansion with correlation matrix: ['simulation', 'word', 'genre', 'learn', 'question', 'management', 'automatic', 'python', 'answer']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:26.777749', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:05.967758', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['simulation', 'simulations', 'simulator', 'real-time', 'word', 'phrase', 'meaning', 'words', 'genre', 'genres', 'fiction', 'subgenre', 'learn', 'learned', 'teach', 'understand', 'question', 'questions', 'answer', 'whether', 'management', 'managers', 'managing', 'asset', 'automatic', 'machine', 'automatically', 'automated', 'python', 'monty', 'perl', 'cleese', 'answer', 'answers', 'questions', 'question']
 running basic bm25
 initial predicted courses: 
@@ -519,7 +519,7 @@ initial predicted courses:
 40.240 Investment Science
 40.319 Statistical and Machine Learning
 
-gold standard courses from training query:
+gold standard courses from training query: 
 40.319 Statistical and Machine Learning
 50.045 Information Retrieval
 40.321 Airport Systems Modelling and Simulation
@@ -547,14 +547,14 @@ prediction after query reformulation
 40.319 Statistical and Machine Learning
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 21.076536178588867s
+time elapsed: 12.0min 40.87302088737488s
 
 Training iteration: 12
 original query from training sample: python, principle, ampl, simulation, probability
 query expansion with correlation matrix: ['python', 'principle', 'ampl', 'simulation', 'probability', 'algorithm', 'requirement', 'management', 'branching']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:28.723750', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:07.134500', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['python', 'monty', 'perl', 'cleese', 'principle', 'principles', 'fundamental', 'respect', 'ampl', 'mangxamba', 'ufdots', 'uninitialized', 'simulation', 'simulations', 'simulator', 'real-time', 'probability', 'probabilities', 'likelihood', 'parameter', 'algorithm', 'algorithms', 'iterative', 'approximation', 'requirement', 'requirements', 'required', 'requiring', 'management', 'managers', 'managing', 'asset', 'branching', 'branched', 'stems', 'unbranched']
 running basic bm25
 initial predicted courses: 
@@ -569,7 +569,7 @@ initial predicted courses:
 50.040 Natural Language Processing
 50.007 Machine Learning
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.045 Information Retrieval
 40.321 Airport Systems Modelling and Simulation
 50.021 Artificial Intelligence
@@ -597,14 +597,14 @@ prediction after query reformulation
 40.321 Airport Systems Modelling and Simulation
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 22.933536529541016s
+time elapsed: 12.0min 42.04628300666809s
 
 Training iteration: 13
 original query from training sample: aviation, answer, autocad, embeddings, calculation
 query expansion with correlation matrix: ['aviation', 'answer', 'autocad', 'embeddings', 'calculation', 'question', 'certain']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:30.550751', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:08.313744', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['aviation', 'aircraft', 'airline', 'aerospace', 'answer', 'answers', 'questions', 'question', 'autocad', 'autodesk', 'cad', 'revit', 'embeddings', 'graphs', 'embedding', 'immersions', 'calculation', 'calculations', 'calculating', 'calculate', 'question', 'questions', 'answer', 'whether', 'certain', 'particular', 'such', 'these']
 running basic bm25
 initial predicted courses: 
@@ -619,7 +619,7 @@ initial predicted courses:
 40.318 Supply Chain Digitalisation and Design
 40.316 Game Theory
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.045 Information Retrieval
 40.240 Investment Science
 40.242 Derivative Pricing and Risk Management
@@ -647,14 +647,14 @@ prediction after query reformulation
 40.321 Airport Systems Modelling and Simulation
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 24.628536701202393s
+time elapsed: 12.0min 43.12340998649597s
 
 Training iteration: 14
 original query from training sample: technology, element, autocad, representation, cleaning
 query expansion with correlation matrix: ['technology', 'element', 'autocad', 'representation', 'cleaning', 'cloud', 'overview', 'necessary']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:32.243751', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:09.375029', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['technology', 'technologies', 'tech', 'technological', 'element', 'elements', 'component', 'aspect', 'autocad', 'autodesk', 'cad', 'revit', 'representation', 'representations', 'proportional', 'represent', 'cleaning', 'washing', 'cleaned', 'cleaners', 'cloud', 'clouds', 'ash', 'shadow', 'overview', 'synopsis', 'in-depth', 'chronology', 'necessary', 'needed', 'required', 'sufficient']
 running basic bm25
 initial predicted courses: 
@@ -669,7 +669,7 @@ Service Design Studio
 50.043 Database Systems
 50.037 Blockchain Technology
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 50.038 Computational Data Science
 40.321 Airport Systems Modelling and Simulation
@@ -697,14 +697,14 @@ Service Design Studio
 01.104 Networked Life
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 26.3895366191864s
+time elapsed: 12.0min 44.21722197532654s
 
 Training iteration: 15
 original query from training sample: retrieval, solidity, ec, personal, feedback
 query expansion with correlation matrix: ['retrieval', 'solidity', 'ec', 'personal', 'feedback', 'video', 'algebra', 'best', 'fairness']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:34.004752', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:10.467882', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['retrieval', 'archiving', 'retrieving', 'semantic', 'solidity', 'soundness', 'robustness', 'predictability', 'ec', 'bimst', 'barroso', 'eu', 'personal', 'own', 'his', 'individual', 'feedback', 'input', 'responses', 'interaction', 'video', 'videos', 'audio', 'dvd', 'algebra', 'algebras', 'commutative', 'algebraic', 'best', 'better', 'good', 'winning', 'fairness', 'honesty', 'impartiality', 'objectivity']
 running basic bm25
 initial predicted courses: 
@@ -719,7 +719,7 @@ Service Design Studio
 50.006 User Interface Design and Implementation
 01.107 Urban Transportation
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.045 Information Retrieval
 50.043 Database Systems
 40.316 Game Theory
@@ -747,14 +747,14 @@ Service Design Studio
 50.033 Foundations of Game Design and Development
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 17.0min 28.307538747787476s
+time elapsed: 12.0min 45.39776110649109s
 
 Training iteration: 16
 original query from training sample: forecasting, database, user, machine, space
 query expansion with correlation matrix: ['forecasting', 'database', 'user', 'machine', 'space', 'cargo', 'big', 'interface', 'algorithm', 'batch']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:35:35.802752', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:27:11.657783', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['forecasting', 'forecast', 'predicting', 'forecasts', 'database', 'databases', 'data', 'searchable', 'user', 'users', 'interface', 'allows', 'machine', 'machines', 'automatic', 'gun', 'space', 'nasa', 'spacecraft', 'spaces', 'cargo', 'passenger', 'freight', 'ship', 'big', 'bigger', 'huge', 'biggest', 'interface', 'interfaces', 'graphical', 'functionality', 'algorithm', 'algorithms', 'iterative', 'approximation', 'batch', 'batches', 'shipped', 'shipment']
 running basic bm25
 initial predicted courses: 
@@ -769,7 +769,7 @@ initial predicted courses:
 50.038 Computational Data Science
 50.045 Information Retrieval
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 40.319 Statistical and Machine Learning
 50.033 Foundations of Game Design and Development
@@ -798,14 +798,14 @@ prediction after query reformulation
 Service Design Studio
 
 updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...
-time elapsed: 38.0min 46.3018262386322s
+time elapsed: 24.0min 46.255627155303955s
 
 Training iteration: 17
 original query from training sample: flow, sketch, skill, ir, valuation
 query expansion with correlation matrix: ['flow', 'sketch', 'skill', 'ir', 'valuation', 'identify', 'applies', 'library', 'retrieval', 'firm']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T10:56:53.789040', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:39:12.520679', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['flow', 'flows', 'flowing', 'stream', 'sketch', 'sketches', 'skit', 'biographical', 'skill', 'skills', 'abilities', 'ability', 'ir', 'infrared', 'sha', 'infra-red', 'valuation', 'valuations', 'appraised', 'value', 'identify', 'identifying', 'locate', 'identified', 'applies', 'apply', 'applicable', 'applied', 'library', 'libraries', 'archives', 'archive', 'retrieval', 'archiving', 'retrieving', 'semantic', 'firm', 'consulting', 'company', 'firms']
 running basic bm25
 initial predicted courses: 
@@ -820,7 +820,7 @@ initial predicted courses:
 40.305 Advanced Topics in Stochastic Modelling#
 40.232 Water Resources Management
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 50.045 Information Retrieval
 40.323 Equity Valuation
@@ -849,15 +849,15 @@ prediction after query reformulation
 40.305 Advanced Topics in Stochastic Modelling#
 
 updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...
-time elapsed: 55.0min 35.97182869911194s
+time elapsed: 36.0min 49.31241297721863s
 
 Training iteration: 18
 original query from training sample: vector, brainstorming, wireframing, pytorch, prototyping
 query expansion with correlation matrix: ['vector', 'brainstorming', 'wireframing', 'pytorch', 'prototyping', 'discriminative', 'annoy', 'deep', 'ui']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:13:43.523044', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
-query expansion with pretrained corpus: ['vector', 'vectors', 'formula_1', 'formula_2', 'brainstorming', 'brainstorm', 'sessions', 'brainstormed', 'wireframing', 'pytorch', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'discriminative', 'discriminatory', 'high-handed', 'cobweb', 'annoy', 'irritate', 'confuse', 'frighten', 'deep', 'deeper', 'deepest', 'shallow', 'ui', 'fiachrach', 'u�', 'pak']
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T12:51:15.572479', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
+query expansion with pretrained corpus: ['vector', 'vectors', 'formula_1', 'formula_2', 'brainstorming', 'brainstorm', 'sessions', 'brainstormed', 'wireframing', 'pytorch', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'discriminative', 'discriminatory', 'high-handed', 'cobweb', 'annoy', 'irritate', 'confuse', 'frighten', 'deep', 'deeper', 'deepest', 'shallow', 'ui', 'fiachrach', 'uí', 'pak']
 running basic bm25
 initial predicted courses: 
 50.006 User Interface Design and Implementation
@@ -871,7 +871,7 @@ initial predicted courses:
 01.107 Urban Transportation
 50.040 Natural Language Processing
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 40.319 Statistical and Machine Learning
 50.039 Theory and Practice of Deep Learning
@@ -886,7 +886,7 @@ gold standard courses from training query:
 Relevant & Retrieved: Rank 1 50.006 User Interface Design and Implementation
 Relevant & Retrieved: Rank 3 50.039 Theory and Practice of Deep Learning
 
-reformulated query:['vector', 'vectors', 'formula_1', 'formula_2', 'brainstorming', 'brainstorm', 'sessions', 'brainstormed', 'wireframing', 'pytorch', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'discriminative', 'discriminatory', 'high-handed', 'cobweb', 'annoy', 'irritate', 'confuse', 'frighten', 'deep', 'deeper', 'deepest', 'shallow', 'ui', 'fiachrach', 'u�', 'pak', 'app', 'annoy', 'centre', 'loss', 'attention', 'argument']
+reformulated query:['vector', 'vectors', 'formula_1', 'formula_2', 'brainstorming', 'brainstorm', 'sessions', 'brainstormed', 'wireframing', 'pytorch', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'discriminative', 'discriminatory', 'high-handed', 'cobweb', 'annoy', 'irritate', 'confuse', 'frighten', 'deep', 'deeper', 'deepest', 'shallow', 'ui', 'fiachrach', 'uí', 'pak', 'app', 'annoy', 'centre', 'loss', 'attention', 'argument']
 running bm25 for reformulated query
 prediction after query reformulation
 50.006 User Interface Design and Implementation
@@ -901,14 +901,14 @@ prediction after query reformulation
 50.035 Computer Vision
 
 updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...
-time elapsed: 72.0min 35.30130648612976s
+time elapsed: 48.0min 57.15574789047241s
 
 Training iteration: 19
 original query from training sample: math, relevance, technology, graph, understand
 query expansion with correlation matrix: ['math', 'relevance', 'technology', 'graph', 'understand', 'graphical', 'cloud', 'fairness', 'real']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:42.779520', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:23.910569', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['math', 'mathematics', 'graders', 'maths', 'relevance', 'usefulness', 'significance', 'validity', 'technology', 'technologies', 'tech', 'technological', 'graph', 'graphs', 'vertices', 'planar', 'understand', 'know', 'how', 'explain', 'graphical', 'interface', 'interfaces', 'gui', 'cloud', 'clouds', 'ash', 'shadow', 'fairness', 'honesty', 'impartiality', 'objectivity', 'real', 'true', 'just', 'what']
 running basic bm25
 initial predicted courses: 
@@ -923,7 +923,7 @@ Service Design Studio
 50.007 Machine Learning
 50.042 Foundations of Cybersecurity
 
-gold standard courses from training query:
+gold standard courses from training query: 
 40.319 Statistical and Machine Learning
 40.320 Airport Systems Planning and Design
 50.021 Artificial Intelligence
@@ -951,15 +951,15 @@ prediction after query reformulation
 50.037 Blockchain Technology
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 37.09830689430237s
+time elapsed: 48.0min 59.52541184425354s
 
 Training iteration: 20
 original query from training sample: ui, personal, overview, copywriting, genre
 query expansion with correlation matrix: ['ui', 'personal', 'overview', 'copywriting', 'genre', 'prototyping', 'best', 'history']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:44.644520', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
-query expansion with pretrained corpus: ['ui', 'fiachrach', 'u�', 'pak', 'personal', 'own', 'his', 'individual', 'overview', 'synopsis', 'in-depth', 'chronology', 'copywriting', 'copywriter', 'submittal', 'draftfcb', 'genre', 'genres', 'fiction', 'subgenre', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'best', 'better', 'good', 'winning', 'history', 'historical', 'ever', 'career']
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:25.771547', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
+query expansion with pretrained corpus: ['ui', 'fiachrach', 'uí', 'pak', 'personal', 'own', 'his', 'individual', 'overview', 'synopsis', 'in-depth', 'chronology', 'copywriting', 'copywriter', 'submittal', 'draftfcb', 'genre', 'genres', 'fiction', 'subgenre', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'best', 'better', 'good', 'winning', 'history', 'historical', 'ever', 'career']
 running basic bm25
 initial predicted courses: 
 50.033 Foundations of Game Design and Development
@@ -973,7 +973,7 @@ Service Design Studio
 40.242 Derivative Pricing and Risk Management
 01.107 Urban Transportation
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 50.033 Foundations of Game Design and Development
 40.316 Game Theory
@@ -986,7 +986,7 @@ gold standard courses from training query:
 40.317 Financial Systems Design
 
 
-reformulated query:['ui', 'fiachrach', 'u�', 'pak', 'personal', 'own', 'his', 'individual', 'overview', 'synopsis', 'in-depth', 'chronology', 'copywriting', 'copywriter', 'submittal', 'draftfcb', 'genre', 'genres', 'fiction', 'subgenre', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'best', 'better', 'good', 'winning', 'history', 'historical', 'ever', 'career']
+reformulated query:['ui', 'fiachrach', 'uí', 'pak', 'personal', 'own', 'his', 'individual', 'overview', 'synopsis', 'in-depth', 'chronology', 'copywriting', 'copywriter', 'submittal', 'draftfcb', 'genre', 'genres', 'fiction', 'subgenre', 'prototyping', 'workflow', 'computer-aided', 'simulation', 'best', 'better', 'good', 'winning', 'history', 'historical', 'ever', 'career']
 running bm25 for reformulated query
 prediction after query reformulation
 50.044 System Security
@@ -1001,14 +1001,14 @@ Service Design Studio
 40.260 Supply Chain Management
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 38.88331127166748s
+time elapsed: 49.0min 0.5758030414581299s
 
 Training iteration: 21
 original query from training sample: handle, nash, search, question, personal
 query expansion with correlation matrix: ['handle', 'nash', 'search', 'question', 'personal', 'equilibrium', 'problem', 'answer', 'best']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:46.469522', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:26.824833', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['handle', 'handled', 'handles', 'handling', 'nash', 'finley', 'nowitzki', 'kidd', 'search', 'searching', 'searches', 'find', 'question', 'questions', 'answer', 'whether', 'personal', 'own', 'his', 'individual', 'equilibrium', 'thermodynamic', 'equilibria', 'optimal', 'problem', 'problems', 'solve', 'serious', 'answer', 'answers', 'questions', 'question', 'best', 'better', 'good', 'winning']
 running basic bm25
 initial predicted courses: 
@@ -1023,7 +1023,7 @@ initial predicted courses:
 Service Design Studio
 40.302 Advanced Topics in Optimisation#
 
-gold standard courses from training query:
+gold standard courses from training query: 
 40.316 Game Theory
 50.045 Information Retrieval
 50.043 Database Systems
@@ -1051,14 +1051,14 @@ prediction after query reformulation
 50.047 Mobile Robotics
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 40.71136927604675s
+time elapsed: 49.0min 1.6994681358337402s
 
 Training iteration: 22
 original query from training sample: retrieval, ampl, service, math, vector
 query expansion with correlation matrix: ['retrieval', 'ampl', 'service', 'math', 'vector', 'video', 'technology', 'graphical', 'discriminative']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:48.312823', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:27.943181', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['retrieval', 'archiving', 'retrieving', 'semantic', 'ampl', 'mangxamba', 'ufdots', 'uninitialized', 'service', 'services', '.', 'news', 'math', 'mathematics', 'graders', 'maths', 'vector', 'vectors', 'formula_1', 'formula_2', 'video', 'videos', 'audio', 'dvd', 'technology', 'technologies', 'tech', 'technological', 'graphical', 'interface', 'interfaces', 'gui', 'discriminative', 'discriminatory', 'high-handed', 'cobweb']
 running basic bm25
 initial predicted courses: 
@@ -1073,7 +1073,7 @@ Service Design Studio
 50.046 Cloud Computing and Internet of Things
 50.006 User Interface Design and Implementation
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.045 Information Retrieval
 40.240 Investment Science
 40.242 Derivative Pricing and Risk Management
@@ -1101,14 +1101,14 @@ Service Design Studio
 50.045 Information Retrieval
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 42.534615993499756s
+time elapsed: 49.0min 2.9340999126434326s
 
 Training iteration: 23
 original query from training sample: wireframing, calculation, forecasting, maze, aspect
 query expansion with correlation matrix: ['wireframing', 'calculation', 'forecasting', 'maze', 'aspect', 'argue', 'cargo', 'idea']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:50.109826', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:29.267419', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['wireframing', 'calculation', 'calculations', 'calculating', 'calculate', 'forecasting', 'forecast', 'predicting', 'forecasts', 'maze', 'mazes', 'labyrinth', 'labyrinthine', 'aspect', 'aspects', 'perspective', 'facet', 'argue', 'contend', 'argued', 'arguing', 'cargo', 'passenger', 'freight', 'ship', 'idea', 'notion', 'concept', 'something']
 running basic bm25
 initial predicted courses: 
@@ -1123,7 +1123,7 @@ initial predicted courses:
 50.036 Foundations of Distributed Autonomous Systems
 50.041 Distributed Systems and Computing
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 40.240 Investment Science
 40.242 Derivative Pricing and Risk Management
@@ -1151,14 +1151,14 @@ prediction after query reformulation
 40.305 Advanced Topics in Stochastic Modelling#
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 44.303613901138306s
+time elapsed: 49.0min 4.06193995475769s
 
 Training iteration: 24
 original query from training sample: probability, usability, python, answer, cast
 query expansion with correlation matrix: ['probability', 'usability', 'python', 'answer', 'cast', 'branching', 'evaluation', 'algorithm', 'question', 'airtop']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:51.870827', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:30.310405', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['probability', 'probabilities', 'likelihood', 'parameter', 'usability', 'accessibility', 'scalability', 'maintainability', 'python', 'monty', 'perl', 'cleese', 'answer', 'answers', 'questions', 'question', 'cast', 'casting', 'casts', 'actors', 'branching', 'branched', 'stems', 'unbranched', 'evaluation', 'assessment', 'evaluations', 'evaluate', 'algorithm', 'algorithms', 'iterative', 'approximation', 'question', 'questions', 'answer', 'whether', 'airtop']
 running basic bm25
 initial predicted courses: 
@@ -1173,7 +1173,7 @@ initial predicted courses:
 50.021 Artificial Intelligence
 50.035 Computer Vision
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.045 Information Retrieval
 50.006 User Interface Design and Implementation
 50.021 Artificial Intelligence
@@ -1201,14 +1201,14 @@ prediction after query reformulation
 50.047 Mobile Robotics
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 46.157612800598145s
+time elapsed: 49.0min 5.192245960235596s
 
 Training iteration: 25
 original query from training sample: info, history, chain, genre, search
 query expansion with correlation matrix: ['info', 'history', 'chain', 'genre', 'search', 'console', 'supply', 'problem']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:53.764824', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:31.447142', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['info', 'information', '(800)', 'tidbits', 'history', 'historical', 'ever', 'career', 'chain', 'chains', 'stores', 'store', 'genre', 'genres', 'fiction', 'subgenre', 'search', 'searching', 'searches', 'find', 'console', 'consoles', 'playstation', 'xbox', 'supply', 'supplies', 'shortage', 'supplied', 'problem', 'problems', 'solve', 'serious']
 running basic bm25
 initial predicted courses: 
@@ -1223,7 +1223,7 @@ initial predicted courses:
 50.033 Foundations of Game Design and Development
 01.116 AI for Healthcare (Term 7)
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.033 Foundations of Game Design and Development
 40.260 Supply Chain Management
 40.318 Supply Chain Digitalisation and Design
@@ -1251,14 +1251,14 @@ prediction after query reformulation
 01.116 AI for Healthcare (Term 7)
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 47.90361475944519s
+time elapsed: 49.0min 6.302714824676514s
 
 Training iteration: 26
 original query from training sample: statistic, learn, logistics, building, network
 query expansion with correlation matrix: ['statistic', 'learn', 'logistics', 'building', 'network', 'python', 'alignment', 'extend', 'neural']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:55.442824', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:32.552434', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['statistic', 'statistics', 'bps', 'statistical', 'learn', 'learned', 'teach', 'understand', 'logistics', 'logistic', 'logistical', 'transport', 'building', 'buildings', 'built', 'construction', 'network', 'networks', 'cable', 'channel', 'python', 'monty', 'perl', 'cleese', 'alignment', 'alignments', 'routing', 'terminus', 'extend', 'extending', 'extended', 'extends', 'neural', 'neuronal', 'neurons', 'cortical']
 running basic bm25
 initial predicted courses: 
@@ -1273,7 +1273,7 @@ initial predicted courses:
 50.037 Blockchain Technology
 40.232 Water Resources Management
 
-gold standard courses from training query:
+gold standard courses from training query: 
 40.319 Statistical and Machine Learning
 50.007 Machine Learning
 40.260 Supply Chain Management
@@ -1301,14 +1301,14 @@ prediction after query reformulation
 40.318 Supply Chain Digitalisation and Design
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 72.0min 49.73361563682556s
+time elapsed: 49.0min 7.469095945358276s
 
 Training iteration: 27
 original query from training sample: unity, element, vector, urban, game
 query expansion with correlation matrix: ['unity', 'element', 'vector', 'urban', 'game', 'development', 'overview', 'discriminative', 'basin', 'unity']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:30:57.328824', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:03:33.735764', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['unity', 'reconciliation', 'solidarity', 'peace', 'element', 'elements', 'component', 'aspect', 'vector', 'vectors', 'formula_1', 'formula_2', 'urban', 'rural', 'sprawl', 'areas', 'game', 'games', 'play', 'players', 'development', 'projects', 'project', 'developing', 'overview', 'synopsis', 'in-depth', 'chronology', 'discriminative', 'discriminatory', 'high-handed', 'cobweb', 'basin', 'basins', 'river', 'watershed', 'unity', 'reconciliation', 'solidarity', 'peace']
 running basic bm25
 initial predicted courses: 
@@ -1323,7 +1323,7 @@ Service Design Studio
 50.017 Graphics and Visualisation
 40.317 Financial Systems Design
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.033 Foundations of Game Design and Development
 50.006 User Interface Design and Implementation
 40.316 Game Theory
@@ -1352,14 +1352,14 @@ Service Design Studio
 50.017 Graphics and Visualisation
 
 updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...
-time elapsed: 89.0min 49.79203224182129s
+time elapsed: 61.0min 10.504395008087158s
 
 Training iteration: 28
 original query from training sample: design, element, customize, life, database
 query expansion with correlation matrix: ['design', 'element', 'customize', 'life', 'database', 'system', 'overview', 'social', 'big']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T11:47:57.260241', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:15:36.761768', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['design', 'designs', 'designed', 'architecture', 'element', 'elements', 'component', 'aspect', 'customize', 'personalize', 'customized', 'customise', 'life', 'lives', 'years', 'living', 'database', 'databases', 'data', 'searchable', 'system', 'systems', 'which', 'mechanism', 'overview', 'synopsis', 'in-depth', 'chronology', 'social', 'welfare', 'education', 'political', 'big', 'bigger', 'huge', 'biggest']
 running basic bm25
 initial predicted courses: 
@@ -1374,7 +1374,7 @@ Service Design Studio
 40.260 Supply Chain Management
 01.117 Brain-Inspired Computing and its Applications (Term 8)
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 50.043 Database Systems
 40.316 Game Theory
@@ -1403,15 +1403,15 @@ prediction after query reformulation
 50.041 Distributed Systems and Computing
 
 updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...
-time elapsed: 107.0min 11.788528203964233s
+time elapsed: 73.0min 11.200534105300903s
 
 Training iteration: 29
 original query from training sample: autocad, unity, figma, tensorflow, adobe
-query expansion with correlation matrix: ['autocad', 'unity', 'figma', 'tensorflow', 'adobe', 'development', 'guideline', 'opencv']
+query expansion with correlation matrix: ['autocad', 'unity', 'figma', 'tensorflow', 'adobe', 'development', 'annoy', 'opencv']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T12:05:19.305738', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
-query expansion with pretrained corpus: ['autocad', 'autodesk', 'cad', 'revit', 'unity', 'reconciliation', 'solidarity', 'peace', 'figma', 'tensorflow', 'adobe', 'photoshop', 'macromedia', 'acrobat', 'development', 'projects', 'project', 'developing', 'guideline', 'guidelines', 'specifies', 'stipulated', 'opencv']
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:27:37.458775', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
+query expansion with pretrained corpus: ['autocad', 'autodesk', 'cad', 'revit', 'unity', 'reconciliation', 'solidarity', 'peace', 'figma', 'tensorflow', 'adobe', 'photoshop', 'macromedia', 'acrobat', 'development', 'projects', 'project', 'developing', 'annoy', 'irritate', 'confuse', 'frighten', 'opencv']
 running basic bm25
 initial predicted courses: 
 50.035 Computer Vision
@@ -1425,7 +1425,7 @@ Service Design Studio
 01.116 AI for Healthcare (Term 7)
 50.042 Foundations of Cybersecurity
 
-gold standard courses from training query:
+gold standard courses from training query: 
 50.006 User Interface Design and Implementation
 50.038 Computational Data Science
 50.035 Computer Vision
@@ -1438,7 +1438,7 @@ gold standard courses from training query:
 40.316 Game Theory
 
 
-reformulated query:['autocad', 'autodesk', 'cad', 'revit', 'unity', 'reconciliation', 'solidarity', 'peace', 'figma', 'tensorflow', 'adobe', 'photoshop', 'macromedia', 'acrobat', 'development', 'projects', 'project', 'developing', 'guideline', 'guidelines', 'specifies', 'stipulated', 'opencv']
+reformulated query:['autocad', 'autodesk', 'cad', 'revit', 'unity', 'reconciliation', 'solidarity', 'peace', 'figma', 'tensorflow', 'adobe', 'photoshop', 'macromedia', 'acrobat', 'development', 'projects', 'project', 'developing', 'annoy', 'irritate', 'confuse', 'frighten', 'opencv']
 running bm25 for reformulated query
 prediction after query reformulation
 50.035 Computer Vision
@@ -1453,14 +1453,14 @@ Service Design Studio
 50.037 Blockchain Technology
 
 no relevant courses retrieved. Moving to next iteration...
-time elapsed: 107.0min 13.248526811599731s
+time elapsed: 73.0min 12.20267915725708s
 
 Training iteration: 30
 original query from training sample: service, machine, relevance, technology, understand
 query expansion with correlation matrix: ['service', 'machine', 'relevance', 'technology', 'understand', 'technology', 'algorithm', 'cloud', 'real']
 loading KeyedVectors object from ../pretrained_corpus/glove_6B_300d.kv
 loading vectors from ../pretrained_corpus/glove_6B_300d.kv.vectors.npy with mmap=None
-KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-27T12:05:20.823737', 'gensim': '4.0.1', 'python': '3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19041-SP0', 'event': 'loaded'}
+KeyedVectors lifecycle event {'fname': '../pretrained_corpus/glove_6B_300d.kv', 'datetime': '2021-07-31T13:27:38.447483', 'gensim': '4.0.1', 'python': '3.7.7 (default, Mar 23 2020, 17:31:31) \n[Clang 4.0.1 (tags/RELEASE_401/final)]', 'platform': 'Darwin-20.3.0-x86_64-i386-64bit', 'event': 'loaded'}
 query expansion with pretrained corpus: ['service', 'services', '.', 'news', 'machine', 'machines', 'automatic', 'gun', 'relevance', 'usefulness', 'significance', 'validity', 'technology', 'technologies', 'tech', 'technological', 'understand', 'know', 'how', 'explain', 'technology', 'technologies', 'tech', 'technological', 'algorithm', 'algorithms', 'iterative', 'approximation', 'cloud', 'clouds', 'ash', 'shadow', 'real', 'true', 'just', 'what']
 running basic bm25
 initial predicted courses: 
@@ -1475,7 +1475,7 @@ Service Design Studio
 40.317 Financial Systems Design
 40.242 Derivative Pricing and Risk Management
 
-gold standard courses from training query:
+gold standard courses from training query: 
 40.319 Statistical and Machine Learning
 40.240 Investment Science
 50.007 Machine Learning
@@ -1504,6 +1504,6 @@ prediction after query reformulation
 50.043 Database Systems
 
 updated tf, tf_norm, df, idf, asociation matrix, association matrix norm scores. Moving to next iteration...
-time elapsed: 123.0min 58.05887246131897s
+time elapsed: 85.0min 19.291576147079468s
 
-time elapsed: 123.0min 58.06286692619324s
+time elapsed: 85.0min 19.29175090789795s

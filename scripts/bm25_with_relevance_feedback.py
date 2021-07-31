@@ -83,9 +83,17 @@ def update_scores(tf, relevant_courses, associated_words):
     '''
     Based on relevant courses associated words, update the tf, df, idf, tf_norm
     '''
+    word_count = int(len(associated_words)/len(relevant_courses))
     courses = tf.columns.tolist()
-    for course in relevant_courses:
-        for word in associated_words:
+
+    i=0
+    words_per_course=[]
+    while i<len(associated_words):
+        words_per_course.append(associated_words[i:i+word_count])
+        i+=word_count
+
+    for idx,course in enumerate(relevant_courses):
+        for word in words_per_course[idx]:
             if word in tf.index.tolist():
                 tf[course][word] += 1
             else:
@@ -189,7 +197,7 @@ def train(tf=tf,tf_norm=tf_norm,idf=idf,df=df,glove_kv=glove_kv,added_data=added
         print('')
 
     print(f'time elapsed: {(time.time()-start_time)//60}min {(time.time()-start_time)%60}s') 
-    
+
     # saving trained scores 
     tf.to_csv('../data/trained_scores/course_info_with_survey_tf_trained.csv')
     tf_norm.to_csv('../data/trained_scores/course_info_with_survey_tf_norm_trained.csv')
