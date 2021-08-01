@@ -34,7 +34,7 @@ def process_query(query):
     query = ''.join([i for i in query if not i.isdigit()])
     query = remove_stopwords(query)
     query = [lemmatizer.lemmatize(w, get_wordnet_pos(w))
-             for w in nltk.word_tokenize(query)]
+            for w in nltk.word_tokenize(query)]
     query = ' '.join([str(elem) for elem in query])
     query = query.translate(str.maketrans('', '', string.punctuation))
     return query.split()
