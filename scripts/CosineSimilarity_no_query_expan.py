@@ -42,12 +42,12 @@ def queryVector(query,corpus):
     if type(query) != str:
         query = ' '.join(query)
     ## clean the query
-    
     query = utils.query_processing.process_query(query)
 
     "still lacking the query expansion"
     "Need  glove_kv and topn to be saved in the repo"
     glove_kv = '../pretrained_corpus/glove_6B_300d.kv'
+
     query = utils.query_processing.expand_query(query,glove_kv,3)    
     
     ## iterate over query terms
