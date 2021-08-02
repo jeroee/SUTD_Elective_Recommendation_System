@@ -71,6 +71,8 @@ def cosineSimilarities(queryVector,docVector):
     "        queryVector ([list]): [query]"
     "        docVector ([list]): [description]"
     from scipy import spatial
+    import warnings
+    warnings.filterwarnings("ignore")
     distance = 1 - spatial.distance.cosine(queryVector, docVector)
     return(round(distance,5))
 
@@ -125,6 +127,8 @@ def rankedModuleOfCosineSim(queries,corpus):
         queries ([list of list]): [description] it contain a list of string or list of list of queries
         corupus ([dataframe]): [description] it is a tf document with row index as words and columns headers as modules
     """
+    import time
+    start=time.time()
     import pandas as pd 
     ## iterate over the vaildationQueries
     queriesScore = {}
@@ -147,6 +151,10 @@ def rankedModuleOfCosineSim(queries,corpus):
     
     ##obtaining top modules for each query
     rankedModule = topModulesForEachQuery(df)
+    end = time.time()- start
+    averageQueringTime = end/ len(queries)
+    print("################################")
+    print("average Querying Time: {}".format(averageQueringTime))
     return(rankedModule)
 
 

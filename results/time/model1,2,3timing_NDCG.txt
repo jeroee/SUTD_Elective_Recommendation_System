@@ -1,0 +1,10 @@
+Model 1
+average Querying Time: 0.6955019315083821
+
+Model 2
+################################
+average Querying Time: 0.6920429547627767
+
+Model 3
+################################
+average Querying Time: 0.6834187984466553
