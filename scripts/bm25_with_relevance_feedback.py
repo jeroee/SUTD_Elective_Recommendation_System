@@ -46,14 +46,15 @@ def bm25_reformulated(query, doc, relevant_courses, tf, df, vocab, tf_norm, avg_
         vnr_t = vr-vr_t  # total retrieved relevant docs where term t does not appear
         df_t = float(df.loc[term]) # document frequency with given term 
         doc_len = tf[doc].to_numpy().sum()
-        tf_d = float(tf_norm[doc][term]) + 0.0001 # term frequency in document (include 0.0001 smoothing if not code will break lol)
+        #tf_d = float(tf_norm[doc][term]) + 0.0001 # term frequency in document (include 0.0001 smoothing if not code will break lol)
+        tf_d = float(tf_norm[doc][term])
         tf_q = query.count(term)/len(query) # term frequency in reformulated query normalised
         N = len(tf.columns) # total number of documents
         part_a = ((abs(vr_t)+0.5)/(abs(vnr_t)+0.5))/((df_t-abs(vr_t)+0.5)/(N-df_t-abs(vr)+abs(vr_t)+0.5))
         part_b = ((k1+1)*tf_d)/((k1*((1-b)+b*(doc_len/avg_doc_len)))+tf_d)
         part_c = ((k3+1)*tf_q)/(k3+tf_q)
-
-        score += math.log10(part_a*part_b*part_c)
+        #print("[]"part_a, part_b, part_c)
+        score += math.log10(part_a*part_b*part_c + 1)
     return score
 
 def bm25_prediction(query, tf, tf_norm, df, idf, vocab, avg_doc_len, reformulated, relevant_courses=[]):
@@ -77,7 +78,7 @@ def bm25_prediction(query, tf, tf_norm, df, idf, vocab, avg_doc_len, reformulate
     for k, v in sorted_result.items():
         ls.append(k)
         # print(f"{k}: {v}")
-    return result, ls
+    return sorted_result, ls
 
 def update_scores(tf, relevant_courses, associated_words):
     '''

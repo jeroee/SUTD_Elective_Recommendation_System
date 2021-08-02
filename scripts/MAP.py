@@ -166,7 +166,7 @@ if __name__ == '__main__':
     print("#"*200)
     print('Calculating Mean Average Precision for bm25 after training with relevance feedback')
     tf_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_tf_trained.csv', header=0, index_col=0)
-    tf_norm_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_tf_norm_trained.csv', header=0, index_col=0)
+    tf_norm_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_tf_norm.csv', header=0, index_col=0)
     idf_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_idf_trained.csv', header=0, index_col=0)
     map_relevance_feedback = get_map(query_val, tf=tf_relevance_feedback, tf_norm=tf_norm_relevance_feedback, idf=idf_relevance_feedback)
     print("Mean Average Precision on validation query (bm25 after relevance feedback training): ", map_relevance_feedback)

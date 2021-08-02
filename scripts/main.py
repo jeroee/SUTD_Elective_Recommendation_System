@@ -24,15 +24,18 @@ def get_map_scores():
     map_with_survey = get_map(query_val, tf=tf_with_survey, tf_norm=tf_norm_with_survey, idf=idf_with_survey)
     print("Mean Average Precision on validation query (bm25 after relevance feedback training): ", map_with_survey)
 
-
     print("#"*200)
     print('Calculating Mean Average Precision for bm25 after training with relevance feedback')
     tf_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_tf_trained.csv', header=0, index_col=0)
+    #tf_relevance_feedback = pd.read_csv('../data/course_info_scores/course_info_tf.csv', header=0, index_col=0)
     tf_norm_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_tf_norm_trained.csv', header=0, index_col=0)
     idf_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_idf_trained.csv', header=0, index_col=0)
     map_relevance_feedback = get_map(query_val, tf=tf_relevance_feedback, tf_norm=tf_norm_relevance_feedback, idf=idf_relevance_feedback)
     print("Mean Average Precision on validation query (bm25 after relevance feedback training): ", map_relevance_feedback)
-
+    
+    # for index, row in idf_with_survey.iterrows():
+    #     if row['idf'] == idf_relevance_feedback['idf'][index]:
+    #         print(index)
     df_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_df_trained.csv', header=0, index_col=0)
     norm_association_matrix = pd.read_csv('../data/trained_scores/norm_association_matrix_trained.csv', header = 0, index_col = 0)
     print("#"*200)

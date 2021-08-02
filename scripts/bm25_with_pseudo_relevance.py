@@ -56,7 +56,8 @@ def bm25_pseudo_relevance_back(query, df, tf, tf_norm, idf, norm_association_mat
     query = process_query(query) # lemitize query
     query = expand_query(query,glove_kv,topn=3)  # expand query by including words from pretrianed w2v corpus
 
-    result_initial, ls_initial = get_result(query=query,tf=tf,tf_norm=tf_norm,idf=idf,vocab=vocab,avg_doc_len=avg_doc_len)
+    #result_initial, ls_initial = get_result(query=query,tf=tf,tf_norm=tf_norm,idf=idf,vocab=vocab,avg_doc_len=avg_doc_len)
+    result_initial, ls_initial = bm25_prediction(query=query, df=df, tf=tf, tf_norm=tf_norm, idf=idf, vocab=vocab, avg_doc_len=avg_doc_len, reformulated=False, relevant_courses=[] )
     relevant_courses = ls_initial[k:]
     associated_words = get_top_k_associated_words(relevant_courses, tf, norm_association_matrix, k=3)
     query = query + associated_words 
