@@ -1,0 +1,8 @@
+Model 4
+Average Time for 30 number of queries : 0.008278592427571615
+
+Model 5
+Average Time for 30 number of queries : 0.020481332143147787
+
+Model 6
+Average Time for 30 number of queries : 0.02061302661895752
