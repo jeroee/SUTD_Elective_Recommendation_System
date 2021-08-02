@@ -1,2 +1,5 @@
 Model 7
 Average Time for 30 number of queries : 0.04130353927612305
+
+Model 8
+Average Time for 30 number of queries : 126.65554592609405
