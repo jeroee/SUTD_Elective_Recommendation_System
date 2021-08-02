@@ -18,6 +18,13 @@ def bm25_basic(query, doc, tf, tf_norm, idf, vocab, avg_doc_len, k1=1.5, b=0.75)
     return score
 
 def get_result(query,tf,tf_norm,idf,vocab,avg_doc_len):
+    '''
+    Sort and return the bm25 scores for all the SUTD Courses
+
+    return
+        sorted_result : {module_name: bm25_score}
+        ls: a ranked list of module names in descending bm25 score 
+    '''
     courses = tf.columns.tolist()
     result = {}
     for course in courses:
