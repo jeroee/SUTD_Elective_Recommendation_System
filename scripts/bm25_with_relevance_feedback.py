@@ -8,10 +8,10 @@ from utils.query_processing import *
 import logging
 import ast
 
-logging.basicConfig(level=logging.INFO, format='%(message)s')
-logger = logging.getLogger()
-logger.addHandler(logging.FileHandler("logs/bm25_with_relevance_feedback_training.log", 'a'))
-print = logger.info
+# logging.basicConfig(level=logging.INFO, format='%(message)s')
+# logger = logging.getLogger()
+# logger.addHandler(logging.FileHandler("logs/bm25_with_relevance_feedback_training.log", 'a'))
+# print = logger.info
 
 
 def bm25_basic(query, doc, tf, tf_norm, idf, vocab, avg_doc_len, k1=1.5, b=0.75):
@@ -207,4 +207,9 @@ def train(tf=tf,tf_norm=tf_norm,idf=idf,df=df,glove_kv=glove_kv,added_data=added
     norm_association_matrix.to_csv('../data/trained_scores/norm_association_matrix_trained.csv')
 
 
-train()
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
+    logger = logging.getLogger()
+    logger.addHandler(logging.FileHandler("logs/bm25_with_relevance_feedback_training.log", 'a'))
+    print = logger.info
+    train()
