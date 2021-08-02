@@ -1,6 +1,6 @@
 # 50.045 Information Retrieval Project 
 ## SUTD Elective Course Recommendation System :books:
-This project entails building a course elective recommendation system catered for SUTD students. The idea is to find out more about the students by understanding their interests and skills and recommending the electives to them based on the information given. As a proof of concept, the system is currently catered towards ESD and ISTD pillars and will only be able to recommend elective courses only. (Term 6 - Term 8). 
+This project entails utilizing information retrieval techniques to build a course elective recommendation system catered for SUTD students. The idea is to find out more about the students by understanding their interests and skills and recommending the electives to them based on the information given. As a proof of concept, the system is currently catered towards ESD and ISTD pillars and will only be able to recommend elective courses only. (Term 6 - Term 8). 
 
 ### Usage
 To use our recommendation system:
@@ -24,8 +24,7 @@ We experimented with several methods to construct our recommendation system:
 8. Bm25 with Reformulation and Pseudo Relevance Feedback (with query expansion, with course information data and 50% of survey data. Reformulation training with 25% of survey data)
 
 ### Folder Struture
-- scripts
-    - archived
+- scripts ()
     - logs
     - pre_processing
     - utils
@@ -43,3 +42,15 @@ We experimented with several methods to construct our recommendation system:
     - trained_scores
     - web_scrap
 - pretrained_corpus
+
+var routes = (
+  <Route name="App">
+    <Route name="Admin">
+      <Route name="Users"/>
+      <Route name="Reports"/>
+    </Route>
+    <Route name="Course">
+      <Route name="Assignments"/>
+    </Route>
+  </Route>
+);
