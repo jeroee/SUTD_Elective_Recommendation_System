@@ -86,7 +86,7 @@ def update_scores(tf, relevant_courses, associated_words):
     '''
     word_count = int(len(associated_words)/len(relevant_courses))
     courses = tf.columns.tolist()
-
+    
     i=0
     words_per_course=[]
     while i<len(associated_words):

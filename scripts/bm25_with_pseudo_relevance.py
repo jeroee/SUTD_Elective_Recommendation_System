@@ -22,35 +22,6 @@ lemmatizer = WordNetLemmatizer()
 
 glove_kv = '../pretrained_corpus/glove_6B_300d.kv'   # pretrained vectors for query expansion
 
-# def bm25_prediction(query, tf, tf_norm, df, idf, vocab, avg_doc_len, reformulated, relevant_courses=[]):
-#     '''
-#     ranks the documents based on the scores of all the documents
-#     reformulated: if true run bm25_reformulated algorithm, else run bm25_basic algorithm.
-#     '''
-#     courses = tf.columns.tolist()
-#     result = {}
-#     for course in courses:
-#         result[course] = bm25_basic(query, course, tf, tf_norm, idf, vocab, avg_doc_len)
-#     sorted_result = dict(sorted(result.items(), key=operator.itemgetter(1), reverse=True))
-#     ls = []
-#     for k, v in sorted_result.items():
-#         ls.append(k)
-        
-#     return sorted_result, ls
-
-# def bm25_pseudo_relevance_back(query, tf, tf_norm, df, idf, vocab, avg_doc_len, k=10):
-#     query = process_query(query) # lemitize query
-#     query = expand_query(query,glove_kv,topn=3)  # expand query by including words from pretrianed w2v corpus
-
-#     result_initial, ls_initial = bm25_prediction(query=query, df=df, tf=tf, tf_norm=tf_norm, idf=idf, vocab=vocab, avg_doc_len=avg_doc_len, reformulated=False)
-#     relevant_courses = ls_initial[k:]
-
-#     associated_words = get_top_k_associated_words(relevant_courses, tf, norm_association_matrix, k=3)
-#     query = query + associated_words 
-    
-#     result_reformed, ls_reformed = bm25_prediction(query=query, df=df, tf=tf, tf_norm=tf_norm, idf=idf, vocab=vocab, avg_doc_len=avg_doc_len, reformulated=False)
-#     return result_reformed, ls_reformed
-
 
 def bm25_pseudo_relevance_back(query, df, tf, tf_norm, idf, norm_association_matrix, vocab, avg_doc_len, k=10):
     query = process_query(query) # lemitize query
