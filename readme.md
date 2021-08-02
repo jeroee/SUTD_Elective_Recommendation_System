@@ -1,5 +1,5 @@
 # 50.045 Information Retrieval Project 
-## SUTD Elective Course Recommendation System
+## SUTD Elective Course Recommendation System :books:
 This project entails building a course elective recommendation system catered for SUTD students. The idea is to find out more about the students by understanding their interests and skills and recommending the electives to them based on the information given. As a proof of concept, the system is currently catered towards ESD and ISTD pillars and will only be able to recommend elective courses only. (Term 6 - Term 8). 
 
 ### Usage
