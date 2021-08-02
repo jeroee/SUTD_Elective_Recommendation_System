@@ -5,14 +5,6 @@ from gensim.parsing.preprocessing import remove_stopwords
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
-import operator
-import time
-
-# import logging
-# logging.basicConfig(level=logging.INFO, format='%(message)s')
-# logger = logging.getLogger()
-# logger.addHandler(logging.FileHandler("logs/MAP.log", 'a'))
-# print = logger.info
 
 
 from utils.association_matrix import  get_top_k_associated_words, get_associated_words
