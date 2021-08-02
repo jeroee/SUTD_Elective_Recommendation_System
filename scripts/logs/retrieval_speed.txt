@@ -1,0 +1,5 @@
+time taken for basic bm25 without query expansion: 1.5328257083892822
+time taken for basic bm25 with query expansion: 2.2446577548980713
+running basic bm25
+running bm25 for reformulated query
+time taken for basic bm25 with pseudo relevance feedback: 27.21775722503662
