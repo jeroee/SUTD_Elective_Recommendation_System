@@ -1,0 +1,2 @@
+Model 7
+Average Time for 30 number of queries : 0.04130353927612305
