@@ -28,13 +28,14 @@ We experimented with several models to construct our recommendation system:
 - scripts                                       
     - logs
         - bm25_with_relevance_feedback_training.log   # bm25 with relevance feedback training logs
-        - MAP_log.txt                                 # MAP scores for the methods experimented 
+        - MAP_log.txt                                 # MAP scores for the methods experimented
+        - NDCG@10_log.txt                             # NDCG@10 scores for the methods experimented
         - retrieval_speed.txt                         # query speeds for the methods 
     - pre_processing
         - survey
-            - query_sample_types.py                   #
-            - survey_analysis.py                      #
-            - survey_results_converted.py             #
+            - query_sample_types.py                   # Sampling Query based on selected portion of the suvery
+            - survey_analysis.py                      # Analysis of the survey with visualization
+            - survey_results_converted.py             # Converting survey results to be mergered with course_info_scores
         - web_scrap
             - esd_scrap.py                            # scrap esd course information from esd course website
             - istd_scrap.py                           # scrap istd course information from istd course website
@@ -55,8 +56,11 @@ We experimented with several models to construct our recommendation system:
     - course_info_scores                              # tf,df,idf,association matrix scores on course information
     - course_info_with_survey                         # tf,df,idf,association matrix scores on course information with survey data
     - survey
-        -
-        -                                            
+        - CustomerFeedback(Responses).xlsx            # raw data from our google forms survey
+        - merged_survey.json                          # reformed survey_for_merging_converted.csv  to json file for merging with web_scrap folder's files
+        - survey_for_merging_converted.csv            # 50% of CustomerFeedback(Responses).xlsx to be merged
+        - training_sample_query.csv                   # 25% of CustomerFeedback(Responses).xlsx to be used for relevance feedback for selected models
+        - vaildation_sample_query.csv                 # 25% of CustomerFeedback(Responses).xlsx to be used for vaildation
     - trained_scores                                  # tf,df,idf,association matrix scores after training (bm25)
     - web_scrap                                       # course information from web scrap
 - pretrained_corpus
