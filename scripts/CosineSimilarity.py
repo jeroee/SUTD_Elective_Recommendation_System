@@ -166,7 +166,7 @@ if __name__ == "__main__":
     
     ## vaildation set
     """[summary]
-    U can contorl which vaildation set to choose to test the cosine similarity model
+    U can control which vaildation set to choose to test the cosine similarity model
     True : would be for the testingQuery that is self create which ensure a value when computing cosineSimilarities
     False : obtain the query based on 50% of vaildation dataset which might have all cosine similarities of zero
     """

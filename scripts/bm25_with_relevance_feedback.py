@@ -61,6 +61,9 @@ def bm25_prediction(query, tf, tf_norm, df, idf, vocab, avg_doc_len, reformulate
     '''
     ranks the documents based on the scores of all the documents
     reformulated: if true run bm25_reformulated algorithm, else run bm25_basic algorithm.
+    return
+        sorted_result : {module_name: bm25_score}
+        ls: a ranked list of module names in descending bm25 score 
     '''
     courses = tf.columns.tolist()
     result = {}
