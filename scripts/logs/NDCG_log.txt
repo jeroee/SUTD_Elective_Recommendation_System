@@ -1,0 +1,279 @@
+########################################################################################################################################################################################################
+Calculating NDCCG for Cosine Similarity (without query expansion, only with course information data)
+query: network, term, model, technology, probability                                                 NDCG@10 0.40563
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.31546
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.83676
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.39238
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.36065
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.73776
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 0.82853
+query: data, sql, different, analytics, model                                                        NDCG@10 0.94621
+query: computational, best, server, certain, ec                                                      NDCG@10 0.33744
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.78451
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.56595
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.89274
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.89381
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.82038
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.72978
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.8527
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.82593
+query: finance, value, long, average, business                                                       NDCG@10 0.57218
+query: financial, spark, science, focus, search                                                      NDCG@10 0.5556
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.81872
+query: r, linear, ethereum, c, machine                                                               NDCG@10 1.0
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.80527
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.87602
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.97762
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.84642
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.95568
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.8841
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.77461
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.88691
+query: program, future, kera, ec, concept                                                            NDCG@10 0.71152
+average Querying Time: 0.6879093488057454
+Average NDCG@10 for model 1: 0.73971
+
+########################################################################################################################################################################################################
+Calculating NDCCG for Model 2 Cosine Similarity (with query expansion, only with course information data)
+query: network, term, model, technology, probability                                                 NDCG@10 0.40563
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.31546
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.83676
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.39238
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.36065
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.73776
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 0.82853
+query: data, sql, different, analytics, model                                                        NDCG@10 0.94621
+query: computational, best, server, certain, ec                                                      NDCG@10 0.33744
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.78451
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.56595
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.89274
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.89381
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.82038
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.72978
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.8527
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.82593
+query: finance, value, long, average, business                                                       NDCG@10 0.57218
+query: financial, spark, science, focus, search                                                      NDCG@10 0.5556
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.81872
+query: r, linear, ethereum, c, machine                                                               NDCG@10 1.0
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.80527
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.87602
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.97762
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.84642
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.95568
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.8841
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.77461
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.88691
+query: program, future, kera, ec, concept                                                            NDCG@10 0.71152
+average Querying Time: 0.8751342137654622
+Average NDCG@10 for model 2: 0.73971
+
+########################################################################################################################################################################################################
+Calculating NDCCG for model 3 Cosine Similarity (with query expansion, with course information data and 50% of survey data)
+query: network, term, model, technology, probability                                                 NDCG@10 0.41378
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.53811
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.93147
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.57294
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.51236
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.33333
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 0.82315
+query: data, sql, different, analytics, model                                                        NDCG@10 0.97244
+query: computational, best, server, certain, ec                                                      NDCG@10 0.35621
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.76413
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.56593
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.92731
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.86629
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.74929
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.76664
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.87236
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.8172
+query: finance, value, long, average, business                                                       NDCG@10 0.72725
+query: financial, spark, science, focus, search                                                      NDCG@10 0.75404
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.79306
+query: r, linear, ethereum, c, machine                                                               NDCG@10 1.0
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.59257
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.68639
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.99165
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.85907
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.81763
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.43068
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.74383
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.96967
+query: program, future, kera, ec, concept                                                            NDCG@10 0.81329
+average Querying Time: 0.7044387181599935
+Average NDCG@10 for model 3: 0.73207
+
+########################################################################################################################################################################################################
+Calculating NDCCG for Model 4 BM25 Basic (without query expansion, course information)
+query: network, term, model, technology, probability                                                 NDCG@10 0.63733
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.3003
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.64478
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.68379
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.30771
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.75553
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 1.0
+query: data, sql, different, analytics, model                                                        NDCG@10 0.83945
+query: computational, best, server, certain, ec                                                      NDCG@10 1.0
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.92565
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.47804
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.93868
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.82906
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.97009
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.93213
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.61049
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.83712
+query: finance, value, long, average, business                                                       NDCG@10 1.0
+query: financial, spark, science, focus, search                                                      NDCG@10 0.7571
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.89718
+query: r, linear, ethereum, c, machine                                                               NDCG@10 1.0
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.78679
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.57317
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.96004
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.81191
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.92182
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.90692
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.97484
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.98233
+query: program, future, kera, ec, concept                                                            NDCG@10 0.88052
+Average Time for 30 number of queries : 0.007946626345316569
+Average NDCG@10 for model 4: 0.80476
+
+########################################################################################################################################################################################################
+Calculating NDCCG for Model 5 BM25 Basic (query expansion, course information)
+query: network, term, model, technology, probability                                                 NDCG@10 0.57785
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.12155
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.56729
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.66837
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.21113
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.59612
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 0.80461
+query: data, sql, different, analytics, model                                                        NDCG@10 0.8515
+query: computational, best, server, certain, ec                                                      NDCG@10 0.30557
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.79454
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.70168
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.92157
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.8334
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.98862
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.88277
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.70366
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.89938
+query: finance, value, long, average, business                                                       NDCG@10 0.70384
+query: financial, spark, science, focus, search                                                      NDCG@10 0.47446
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.75296
+query: r, linear, ethereum, c, machine                                                               NDCG@10 1.0
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.73551
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.7489
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.97928
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.72483
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.91006
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.86038
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.92173
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.93913
+query: program, future, kera, ec, concept                                                            NDCG@10 0.7001
+Average Time for 30 number of queries : 0.022575068473815917
+Average NDCG@10 for model 5: 0.72936
+
+########################################################################################################################################################################################################
+Calculating NDCCG for Model 6 BM25 Basic (query expansion, course information + survey (50%))
+query: network, term, model, technology, probability                                                 NDCG@10 0.62827
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.43588
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.77423
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.82501
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.42692
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.54151
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 0.79053
+query: data, sql, different, analytics, model                                                        NDCG@10 0.64661
+query: computational, best, server, certain, ec                                                      NDCG@10 0.21801
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.8232
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.72501
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.92876
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.80224
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.96178
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.84402
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.72426
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.9001
+query: finance, value, long, average, business                                                       NDCG@10 0.53065
+query: financial, spark, science, focus, search                                                      NDCG@10 0.4893
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.82859
+query: r, linear, ethereum, c, machine                                                               NDCG@10 0.95993
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.34092
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.81978
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.97175
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.52125
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.79368
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.3098
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.94641
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.83859
+query: program, future, kera, ec, concept                                                            NDCG@10 0.873
+Average Time for 30 number of queries : 0.022269996007283528
+Average NDCG@10 for model 6: 0.70733
+
+########################################################################################################################################################################################################
+Calculating NDCCG for Model 7 Bm25 with Reformulation (query expansion, course information + survey (50%))
+query: network, term, model, technology, probability                                                 NDCG@10 0.62833
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.67724
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.77372
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.82498
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.42331
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.54208
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 0.79047
+query: data, sql, different, analytics, model                                                        NDCG@10 0.64541
+query: computational, best, server, certain, ec                                                      NDCG@10 0.21851
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.82336
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.75841
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.89522
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.80245
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.96179
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.84426
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.7245
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.89973
+query: finance, value, long, average, business                                                       NDCG@10 0.53084
+query: financial, spark, science, focus, search                                                      NDCG@10 0.49002
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.82807
+query: r, linear, ethereum, c, machine                                                               NDCG@10 0.96014
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.34036
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.8201
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.97187
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.52127
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.79406
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.31096
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.94645
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.83863
+query: program, future, kera, ec, concept                                                            NDCG@10 0.87323
+Average Time for 30 number of queries : 0.022780013084411622
+Average NDCG@10 for model 7: 0.71533
+
+########################################################################################################################################################################################################
+Calculating NDCCG for Model 8 Bm25 with Reformulation and Pseudo Relevance Feedback (query expansion, course information + survey (50%))
+query: network, term, model, technology, probability                                                 NDCG@10 0.41456
+query: term, different, skill, mongodb, long                                                         NDCG@10 0.33602
+query: logistics, analysis, operation, basic, r                                                      NDCG@10 0.53355
+query: esd, network, evaluate, program, r                                                            NDCG@10 0.68286
+query: operation, basic, evaluation, price, evaluate                                                 NDCG@10 0.56154
+query: infrastructure, metric, pytorch, model, client                                                NDCG@10 0.0
+query: approach, logistics, shag, infrastructure, equity                                             NDCG@10 0.19764
+query: data, sql, different, analytics, model                                                        NDCG@10 0.0
+query: computational, best, server, certain, ec                                                      NDCG@10 0.42577
+query: sklearn, metric, demand, schedule, fundamental                                                NDCG@10 0.62624
+query: digitalisation, skill, long, technology, aviation                                             NDCG@10 0.7001
+query: r, hidden, artificial, schedule, simulate                                                     NDCG@10 0.61334
+query: optimisation, decision, risk, aws, jupyter                                                    NDCG@10 0.34586
+query: decentralizedapp, equity, math, ethereum, technology                                          NDCG@10 0.0
+query: financial, value, metric, optimize, analysis                                                  NDCG@10 0.5874
+query: risk, certain, computational, approach, c                                                     NDCG@10 0.39024
+query: markov, supply, hidden, computational, payoff                                                 NDCG@10 0.56175
+query: finance, value, long, average, business                                                       NDCG@10 0.37532
+query: financial, spark, science, focus, search                                                      NDCG@10 0.1562
+query: supply, notebook, fundamental, know, basic                                                    NDCG@10 0.90579
+query: r, linear, ethereum, c, machine                                                               NDCG@10 0.92249
+query: science, future, problem, demand, pytorch                                                     NDCG@10 0.52792
+query: r, ec, kera, opponent, model                                                                  NDCG@10 0.84635
+query: markov, descent, algebra, math, research                                                      NDCG@10 0.13874
+query: clojurescript, ai, analysis, background, science                                              NDCG@10 0.38032
+query: optimisation, opencv, risk, chain, urban                                                      NDCG@10 0.20343
+query: maing, descent, science, clojurescript, knowledge                                             NDCG@10 0.69486
+query: schedule, gradient, airport, analysis, system                                                 NDCG@10 0.84453
+query: logistics, business, strategy, analytics, math                                                NDCG@10 0.0
+query: program, future, kera, ec, concept                                                            NDCG@10 0.59878
+Average Time for 30 number of queries : 22.559599216779073
+Average NDCG@10 for model 8: 0.45239
