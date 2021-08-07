@@ -11,6 +11,7 @@ from utils.association_matrix import  get_top_k_associated_words, get_associated
 from utils.query_processing import get_wordnet_pos, process_query, expand_query
 from basic_bm25 import bm25_basic, get_result
 from bm25_with_pseudo_relevance import bm25_pseudo_relevance_back
+
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
@@ -58,6 +59,78 @@ def mean_average_precision(rs):
     return np.mean([average_precision(r) for r in rs])
 
 
+
+##########################################################################################
+# Cossim related MAP
+import CosineSimilarity_no_query_expan
+import CosineSimilarity 
+def get_map_cossim_no_query_expan(query_val, tf):
+    '''
+        Get MAP using cosine similarity with just the scraped data and no query expansion
+    '''
+    
+    cossim_results = CosineSimilarity_no_query_expan.rankedModuleOfCosineSim(query_val,tf)
+    #cossim_results.to_csv("cossim_no_expan.csv")
+    rs = []
+    for index, row in query_val.iterrows():
+        query = row['querySample']
+        predicted = cossim_results[query]["topModules"]
+        predicted = clean_elective_names(predicted)
+
+        relevant_results = eval(row['expectedElectivesInOrder'])
+        relevant_results = clean_elective_names(relevant_results)
+
+        r = []
+        for query_result in predicted:
+            if query_result in relevant_results:
+                r.append(1)
+            else:
+                r.append(0)
+
+        ap = round(average_precision(r), 5)
+        print(f"query: {query}".ljust(100, " "), f"Average Precision {ap}")
+        rs.append(r)
+
+    map = mean_average_precision(rs)
+    #print("Mean Average Precision on validation query: ", map)
+    return map
+
+
+def get_map_cossim(query_val, tf):
+    '''
+        Get MAP using cosine similarity with just the scraped data + query expansion 
+    '''
+    
+    cossim_results = CosineSimilarity.rankedModuleOfCosineSim(query_val,tf)
+    #cossim_results.to_csv("cossim.csv")
+    rs = []
+    for index, row in query_val.iterrows():
+        query = row['querySample']
+        predicted = cossim_results[query]["topModules"]
+        predicted = clean_elective_names(predicted)
+
+        relevant_results = eval(row['expectedElectivesInOrder'])
+        relevant_results = clean_elective_names(relevant_results)
+        r = []
+        for query_result in predicted:
+            if query_result in relevant_results:
+                r.append(1)
+            else:
+                r.append(0)
+
+        ap = round(average_precision(r), 5)
+        print(f"query: {query}".ljust(100, " "), f"Average Precision {ap}")
+        rs.append(r)
+
+    map = mean_average_precision(rs)
+    #print("Mean Average Precision on validation query: ", map)
+    return map
+
+
+
+
+###########################################################################################
+# bm 25 related MAP
 def get_map_no_query_expansion(query_val, tf, tf_norm, idf):
 
     '''
@@ -148,7 +221,7 @@ def get_map_pseudo_relevance(query_val, df, tf, tf_norm, idf, norm_association_m
         avg_doc_len = total_length / len(tf.columns) # average document length across all courses
         query_original = row['querySample']  # take in query from training sample
         #query = process_query(query=query_original)
-        result, ls = bm25_pseudo_relevance_back(query=query_original, df=df, tf=tf, tf_norm=tf_norm, idf=idf, norm_association_matrix=norm_association_matrix, vocab=vocab, avg_doc_len=avg_doc_len, k=10)
+        result, ls = bm25_pseudo_relevance_back(query=query_original, df=df, tf=tf, tf_norm=tf_norm, idf=idf, norm_association_matrix=norm_association_matrix, vocab=vocab, avg_doc_len=avg_doc_len, k=5)
         predicted = ls[:top_retrieved] # retrieve top 10 courses from predictions
         relevant_results = eval(row['expectedElectivesInOrder'])
         relevant_results = clean_elective_names(relevant_results)  
@@ -172,45 +245,35 @@ def get_map_pseudo_relevance(query_val, df, tf, tf_norm, idf, norm_association_m
 
 
 if __name__ == '__main__':
-    # print("#"*200)
-    # print('Calculating Mean Average Precision for bm25 without survey data added')
-    # query_val = pd.read_csv('../data/survey/vaildation_sample_query.csv', header = 0 , index_col = 0)
 
-    # # scores without survey
-    # tf = pd.read_csv('../data/course_info_scores/course_info_tf.csv', header=0, index_col=0)
-    # tf_norm = pd.read_csv('../data/course_info_scores/course_info_tf_norm.csv', header=0, index_col=0)
-    # idf = pd.read_csv('../data/course_info_scores/course_info_idf.csv', header=0, index_col=0)
-    # map = get_map(query_val, tf=tf, tf_norm=tf_norm, idf=idf)
-    # print("Mean Average Precision on validation query (bm25 with no survey): ", map)
-
-    # print("#"*200)
-    # print('Calculating Mean Average Precision for bm25 with survey data added')
-    # tf_with_survey = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_tf.csv', header=0, index_col=0)
-    # tf_norm_with_survey = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_tf_norm.csv', header=0, index_col=0)
-    # idf_with_survey = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_idf.csv', header=0, index_col=0)
-    # map_with_survey = get_map(query_val, tf=tf_with_survey, tf_norm=tf_norm_with_survey, idf=idf_with_survey)
-    # print("Mean Average Precision on validation query (bm25 after relevance feedback training): ", map_with_survey)
-
-
-    # print("#"*200)
-    # print('Calculating Mean Average Precision for bm25 after training with relevance feedback')
-    # tf_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_tf_trained.csv', header=0, index_col=0)
-    # tf_norm_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_tf_norm_trained.csv', header=0, index_col=0)
-    # idf_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_idf_trained.csv', header=0, index_col=0)
-    # map_relevance_feedback = get_map(query_val, tf=tf_relevance_feedback, tf_norm=tf_norm_relevance_feedback, idf=idf_relevance_feedback)
-    # print("Mean Average Precision on validation query (bm25 after relevance feedback training): ", map_relevance_feedback)
-
-    # df_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_df_trained.csv', header=0, index_col=0)
-    # norm_association_matrix = pd.read_csv('../data/trained_scores/norm_association_matrix_trained.csv', header = 0, index_col = 0)
-    # print("#"*200)
-    # print('Calculating Mean Average Precision for bm25 with pseudo relevance feedback')
-    # map_pseudo_relevance_feedback = get_map_pseudo_relevance(query_val, df=df_relevance_feedback, tf=tf_relevance_feedback, tf_norm=tf_norm_relevance_feedback, idf=idf_relevance_feedback, norm_association_matrix=norm_association_matrix)
-    # print("Mean Average Precision on validation query (bm25 with pseudo relevance feedback): ", map_pseudo_relevance_feedback)
     query_val = pd.read_csv('../data/survey/vaildation_sample_query.csv', header = 0 , index_col = 0)
     
 
 
+    ##################################################################################################
+    # MAP for Cosine similarity retrievals 
 
+    tf = pd.read_csv('../data/course_info_scores/course_info_tf.csv', header=0, index_col=0)
+    tf_with_survey = pd.read_csv('../data/course_info_with_survey_scores/course_info_with_survey_tf.csv', header=0, index_col=0)
+
+    print("#"*200)
+    print('Calculating Mean Average Precision for Cosine Similarrity (with no query expansion) without survey data added')
+    map_basic = get_map_cossim_no_query_expan(query_val=query_val, tf=tf)
+    print("Mean Average Precision on validation query (Cosine Similarity without query expansion and with no survey): ", map_basic)
+
+    print("#"*200)
+    print('Calculating Mean Average Precision for Cosine Smilarrity (with query expansion) without survey data added')
+    map_query_expand = get_map_cossim(query_val=query_val, tf=tf)
+    print("Mean Average Precision on validation query (Cosine Similarity with query expansion and with no survey): ", map_query_expand)
+
+    print("#"*200)
+    print('Calculating Mean Average Precision for Cosine Smilarrity (with query expansion) with survey data added')
+    map_with_survey = get_map_cossim(query_val=query_val, tf=tf_with_survey)
+    print("Mean Average Precision on validation query (Cosine Similarity with query expansion and with no survey): ",map_with_survey)
+    
+
+    ################################################################################################
+    # Map for BM25 retrievals
 
     print("#"*200)
     print('Calculating Mean Average Precision for bm25 (with no query expansion) without survey data added')
@@ -246,9 +309,7 @@ if __name__ == '__main__':
     map_relevance_feedback = get_map(query_val, tf=tf_relevance_feedback, tf_norm=tf_norm_relevance_feedback, idf=idf_relevance_feedback)
     print("Mean Average Precision on validation query (bm25 after relevance feedback training): ", map_relevance_feedback)
     
-    # for index, row in idf_with_survey.iterrows():
-    #     if row['idf'] == idf_relevance_feedback['idf'][index]:
-    #         print(index)
+
     df_relevance_feedback = pd.read_csv('../data/trained_scores/course_info_with_survey_df_trained.csv', header=0, index_col=0)
     norm_association_matrix = pd.read_csv('../data/trained_scores/norm_association_matrix_trained.csv', header = 0, index_col = 0)
     print("#"*200)

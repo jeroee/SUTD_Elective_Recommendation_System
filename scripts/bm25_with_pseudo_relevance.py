@@ -23,7 +23,7 @@ lemmatizer = WordNetLemmatizer()
 glove_kv = '../pretrained_corpus/glove_6B_300d.kv'   # pretrained vectors for query expansion
 
 
-def bm25_pseudo_relevance_back(query, df, tf, tf_norm, idf, norm_association_matrix, vocab, avg_doc_len, k=10):
+def bm25_pseudo_relevance_back(query, df, tf, tf_norm, idf, norm_association_matrix, vocab, avg_doc_len, k=5):
     query = process_query(query) # lemitize query
     query = expand_query(query,glove_kv,topn=3)  # expand query by including words from pretrianed w2v corpus
 
@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
     #query = "I am planning to go 'ESD' interested in Finances and wanting to learn python and R"
     query = "network, term, model, technology, probability"
-    result, ls = bm25_pseudo_relevance_back(query=query, df=df, tf=tf, tf_norm=tf_norm, idf=idf, norm_association_matrix=norm_association_matrix, vocab=vocab, avg_doc_len=avg_doc_len, k=10)
+    result, ls = bm25_pseudo_relevance_back(query=query, df=df, tf=tf, tf_norm=tf_norm, idf=idf, norm_association_matrix=norm_association_matrix, vocab=vocab, avg_doc_len=avg_doc_len, k=5)
     print(result)
     for k, v in result.items():
         print(f"{k}: {v}")
