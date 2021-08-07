@@ -555,7 +555,7 @@ if __name__ == "__main__":
         query_val= pd.read_csv('../data/survey/vaildation_sample_query.csv',index_col = 0)
         model1NDCG = get_NDCG_cosine_no_expan(query_val,tf)
         model1NDCGAverage = model1NDCG.iloc[:, 1:].mean(axis=1)
-        model1NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel1.csv')
+        # model1NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel1.csv')
         print("Average NDCG@10 for model 1: {}".format(round(model1NDCGAverage.iloc[9],5)))
     if True:
         ## model 2 Cosine Similarity (with query expansion, only with course information data)
@@ -565,7 +565,7 @@ if __name__ == "__main__":
         query_val= pd.read_csv('../data/survey/vaildation_sample_query.csv',index_col = 0)
         model2NDCG = get_NDCG_cosine(query_val,tf)
         model2NDCGAverage = model2NDCG.iloc[:, 1:].mean(axis=1)
-        model2NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel2.csv')
+        # model2NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel2.csv')
         print("Average NDCG@10 for model 2: {}".format(round(model2NDCGAverage.iloc[9],5)))
         
         ## model 3 Cosine Similarity (with query expansion, with course information data and 50% of survey data)
