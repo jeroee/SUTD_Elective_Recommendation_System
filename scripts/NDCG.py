@@ -547,7 +547,7 @@ def get_NDCG_BM25WPseudo(query_val,tf,tf_norm,idf):
 if __name__ == "__main__":
     # model 1 2 and 3
     import pandas as pd
-    if True:
+    if False:
         ## model 1 Cosine Similarity (without and with query expansion, course information + (50% survey))
         print("#"*200)
         print('Calculating NDCCG for Model 1 Cosine Similarity (without query expansion, only with course information data)')
@@ -557,7 +557,7 @@ if __name__ == "__main__":
         model1NDCGAverage = model1NDCG.iloc[:, 1:].mean(axis=1)
         # model1NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel1.csv')
         print("Average NDCG@10 for model 1: {}".format(round(model1NDCGAverage.iloc[9],5)))
-    if True:
+    if False:
         ## model 2 Cosine Similarity (with query expansion, only with course information data)
         print("#"*200)
         print('Calculating NDCCG for Model 2 Cosine Similarity (with query expansion, only with course information data)')
@@ -575,7 +575,7 @@ if __name__ == "__main__":
         query_val= pd.read_csv('../data/survey/vaildation_sample_query.csv',index_col = 0)
         model3NDCG = get_NDCG_cosine(query_val,tf)
         model3NDCGAverage = model3NDCG.iloc[:, 1:].mean(axis=1)
-        model3NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel3.csv')
+        # model3NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel3.csv')
         print("Average NDCG@10 for model 3: {}".format(round(model3NDCGAverage.iloc[9],5)))
 
 
