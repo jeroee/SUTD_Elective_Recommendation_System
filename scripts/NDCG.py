@@ -253,10 +253,18 @@ def displayNdcgAt10(queryCount,query_val,NDCGWithVariousKdf):
 
 # %%
 ## function to compute the NDCG for cosine simliarities for model 1
-def get_NDCG_cosine_no_expan(query_val,tf):
-    import CosineSimilarity_no_query_expan
+def get_NDCG_cosine_no_expan(query_val,tf,queryExpansion = 0):
+    """[summary]
+    To obtain the NDCG @ for cosine simliarities model without query expansion
+
+    Args:
+        query_val ([dataframe]): [description] queries for vaildation
+        tf ([dataframe]): [description] tf of courpus
+        queryExpansion (int, optional): [description]. Defaults to 0.
+    """
+    import CosineSimilarity
     ## compute Cosine simliarities score
-    cosineSimDf = CosineSimilarity_no_query_expan.rankedModuleOfCosineSim(query_val,tf)
+    cosineSimDf = CosineSimilarity.rankedModuleOfCosineSim(query_val,tf,queryExpansion)
     cosineSimDf = cosineSimDf.T
 
     ## this section help to compute and obtain the NDCG for each query and store in df
@@ -294,10 +302,19 @@ def get_NDCG_cosine_no_expan(query_val,tf):
 
 # %%
 ## function to compute the NDCG for cosine simliarities for model 2 and 3
-def get_NDCG_cosine(query_val,tf):
+def get_NDCG_cosine(query_val,tf,queryExpansion = 1):
+    """[summary]
+    To obtain the NDCG @ for cosine simliarities model with query expansion
+
+    Args:
+        query_val ([dataframe]): [description] queries for vaildation
+        tf ([dataframe]): [description] tf of courpus
+        queryExpansion (int, optional): [description]. Defaults to 1.
+    """
     import CosineSimilarity
+    
     ## compute Cosine simliarities score
-    cosineSimDf = CosineSimilarity.rankedModuleOfCosineSim(query_val,tf)
+    cosineSimDf = CosineSimilarity.rankedModuleOfCosineSim(query_val,tf,queryExpansion)
     cosineSimDf = cosineSimDf.T
 
     ## this section help to compute and obtain the NDCG for each query and store in df
@@ -337,6 +354,14 @@ def get_NDCG_cosine(query_val,tf):
 ## function to compute the NDCG for bm25basic for model 4
 ## model 4 BM25 Basic (without query expansion, course information)
 def get_NDCG_BM25BasicNoExpan(query_val,tf,tf_norm,idf):
+    """[summary]
+    To obtain NDCG at 10 for BM25 using basic formale with no query expansion
+    Args:
+        query_val ([df]): [description] queries for vaildation
+        tf ([df]): [description] tf of corpus
+        tf_norm ([df]): [description] tf_norm of corpus
+        idf ([df]): [description] idf of corpus
+    """
     import time
     import basic_bm25
     import utils.query_processing
@@ -354,6 +379,7 @@ def get_NDCG_BM25BasicNoExpan(query_val,tf,tf_norm,idf):
     for index,row in query_val.iterrows():
         query = row['querySample']
         query = utils.query_processing.process_query(query)
+        
     ## compute basic_bm25 score
         start = time.time()
         retrievedDocs, rankedLs = basic_bm25.get_result(query,tf,tf_norm,idf,vocab,avg_doc_len)
@@ -393,6 +419,14 @@ def get_NDCG_BM25BasicNoExpan(query_val,tf,tf_norm,idf):
 ## model 7 Bm25 with Reformulation (query expansion, course information + survey (50%))
 
 def get_NDCG_BM25Basic(query_val,tf,tf_norm,idf):
+    """[summary]
+    To obtain NDCG at 10 for BM25 using basic formale with query expansion
+    Args:
+        query_val ([df]): [description] queries for vaildation
+        tf ([df]): [description] tf of corpus
+        tf_norm ([df]): [description] tf_norm of corpus
+        idf ([df]): [description] idf of corpus
+    """
     import basic_bm25
     import utils.query_processing
     import time
@@ -415,7 +449,6 @@ def get_NDCG_BM25Basic(query_val,tf,tf_norm,idf):
         glove_kv = '../pretrained_corpus/glove_6B_300d.kv'   # pretrained vectors for query expansion
         topn = 3
         query = utils.query_processing.expand_query(query,glove_kv,topn)
-        
     ## compute basic_bm25 score and start the timer for querying
         start = time.time()
         retrievedDocs, rankedLs = basic_bm25.get_result(query,tf,tf_norm,idf,vocab,avg_doc_len)
@@ -451,6 +484,14 @@ def get_NDCG_BM25Basic(query_val,tf,tf_norm,idf):
 ## function to compute the NDCG for bm25basic for model 8
 ## model 8 Bm25 with Reformulation and Pseudo Relevance Feedback (query expansion, course information + survey (50%))
 def get_NDCG_BM25WPseudo(query_val,tf,tf_norm,idf):
+    """[summary]
+    To obtain NDCG at 10 for BM25 with relevance feedback with query expansion
+    Args:
+        query_val ([df]): [description] queries for vaildation
+        tf ([df]): [description] tf of corpus
+        tf_norm ([df]): [description] tf_norm of corpus
+        idf ([df]): [description] idf of corpus
+    """
     import bm25_with_pseudo_relevance
     import utils.query_processing
     import time
@@ -514,7 +555,7 @@ if __name__ == "__main__":
         query_val= pd.read_csv('../data/survey/vaildation_sample_query.csv',index_col = 0)
         model1NDCG = get_NDCG_cosine_no_expan(query_val,tf)
         model1NDCGAverage = model1NDCG.iloc[:, 1:].mean(axis=1)
-        # model1NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel1.csv')
+        model1NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel1.csv')
         print("Average NDCG@10 for model 1: {}".format(round(model1NDCGAverage.iloc[9],5)))
     if True:
         ## model 2 Cosine Similarity (with query expansion, only with course information data)
@@ -524,7 +565,7 @@ if __name__ == "__main__":
         query_val= pd.read_csv('../data/survey/vaildation_sample_query.csv',index_col = 0)
         model2NDCG = get_NDCG_cosine(query_val,tf)
         model2NDCGAverage = model2NDCG.iloc[:, 1:].mean(axis=1)
-        # model2NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel2.csv')
+        model2NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel2.csv')
         print("Average NDCG@10 for model 2: {}".format(round(model2NDCGAverage.iloc[9],5)))
         
         ## model 3 Cosine Similarity (with query expansion, with course information data and 50% of survey data)
@@ -534,7 +575,7 @@ if __name__ == "__main__":
         query_val= pd.read_csv('../data/survey/vaildation_sample_query.csv',index_col = 0)
         model3NDCG = get_NDCG_cosine(query_val,tf)
         model3NDCGAverage = model3NDCG.iloc[:, 1:].mean(axis=1)
-        # model3NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel3.csv')
+        model3NDCGAverage.to_csv('../results/ndcg_score/ndcg_score_mdoel3.csv')
         print("Average NDCG@10 for model 3: {}".format(round(model3NDCGAverage.iloc[9],5)))
 
 
@@ -542,7 +583,7 @@ if __name__ == "__main__":
 # model 4 5 and 6
 if __name__ == "__main__":
     import pandas as pd
-    if True:
+    if False:
         ## model 4 BM25 Basic (without query expansion, course information)
         print("#"*200)
         print('Calculating NDCCG for Model 4 BM25 Basic (without query expansion, course information)')
@@ -586,7 +627,7 @@ if __name__ == "__main__":
 # %%
 if __name__ == "__main__":
     import pandas as pd
-    if True:
+    if False:
         ## to create the function to obtain the NDCG for model 7 and 8
         ## model 7 Bm25 with Reformulation (query expansion, course information + survey (50%))
         print("#"*200)

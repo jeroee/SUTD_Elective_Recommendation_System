@@ -25,12 +25,15 @@ def readFile(_filePath):
 
 
 # %%
-def queryVector(query,corpus):
+def queryVector(query,corpus, queryExpansion = 0):
     """[summary]
     vectorize query based on corpus
     
     Args:
         query ([list]): [list containing query terms]
+        corupus([dataframe]) : cosine simliarities corupus
+        queryExpansion([int]):  0 (do not query expansion)
+                                1 (query expansion)
     """
     corpusList = list(corpus.index)
     ## vector to track the corpusList
@@ -41,14 +44,16 @@ def queryVector(query,corpus):
     ## convert to string if not string\r\n"
     if type(query) != str:
         query = ' '.join(query)
-    ## clean the query
     
+    ## clean the query
     query = utils.query_processing.process_query(query)
 
-    "still lacking the query expansion"
-    "Need  glove_kv and topn to be saved in the repo"
-    glove_kv = '../pretrained_corpus/glove_6B_300d.kv'
-    query = utils.query_processing.expand_query(query,glove_kv,3)    
+    ## query expansion
+    if queryExpansion == 1:
+        "Need  glove_kv and topn to be saved in the repo"
+        glove_kv = '../pretrained_corpus/glove_6B_300d.kv'
+        query = utils.query_processing.expand_query(query,glove_kv,3)
+    print('Query After expansion: {}'.format(query))    
     
     ## iterate over query terms
     for wordOfQuery in query:
@@ -120,12 +125,14 @@ def topModulesForEachQuery(_df):
 
 
 # %%
-def rankedModuleOfCosineSim(queries,corpus):
+def rankedModuleOfCosineSim(queries,corpus, queryExpansion = 0):
     """[summary]
     function to compute cosine simliar for each query and obtaining the relvant module
     Args:
         queries ([list of list]): [description] it contain a list of string or list of list of queries
         corupus ([dataframe]): [description] it is a tf document with row index as words and columns headers as modules
+        queryExpansion([int]):  0 (do not query expansion)
+                                1 (query expansion)
     """
     import time
     start=time.time()
@@ -134,7 +141,7 @@ def rankedModuleOfCosineSim(queries,corpus):
     queriesScore = {}
     for row,query in queries.T.iteritems():
         print('\nCurrent computing Query: {}'.format(query['querySample']))
-        singleQueryVector = queryVector(query['querySample'],corpus)
+        singleQueryVector = queryVector(query['querySample'],corpus, queryExpansion)
         print("Number of terms in corpus: {}".format(sum(singleQueryVector)))
         
         CosineSimilaritiesScore = []
