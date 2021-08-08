@@ -62,46 +62,46 @@ def mean_average_precision(rs):
 
 ##########################################################################################
 # Cossim related MAP
-import CosineSimilarity_no_query_expan
+#import CosineSimilarity_no_query_expan
 import CosineSimilarity 
-def get_map_cossim_no_query_expan(query_val, tf):
-    '''
-        Get MAP using cosine similarity with just the scraped data and no query expansion
-    '''
+# def get_map_cossim_no_query_expan(query_val, tf):
+#     '''
+#         Get MAP using cosine similarity with just the scraped data and no query expansion
+#     '''
     
-    cossim_results = CosineSimilarity_no_query_expan.rankedModuleOfCosineSim(query_val,tf)
-    #cossim_results.to_csv("cossim_no_expan.csv")
-    rs = []
-    for index, row in query_val.iterrows():
-        query = row['querySample']
-        predicted = cossim_results[query]["topModules"]
-        predicted = clean_elective_names(predicted)
+#     cossim_results = CosineSimilarity_no_query_expan.rankedModuleOfCosineSim(query_val,tf)
+#     #cossim_results.to_csv("cossim_no_expan.csv")
+#     rs = []
+#     for index, row in query_val.iterrows():
+#         query = row['querySample']
+#         predicted = cossim_results[query]["topModules"]
+#         predicted = clean_elective_names(predicted)
 
-        relevant_results = eval(row['expectedElectivesInOrder'])
-        relevant_results = clean_elective_names(relevant_results)
+#         relevant_results = eval(row['expectedElectivesInOrder'])
+#         relevant_results = clean_elective_names(relevant_results)
 
-        r = []
-        for query_result in predicted:
-            if query_result in relevant_results:
-                r.append(1)
-            else:
-                r.append(0)
+#         r = []
+#         for query_result in predicted:
+#             if query_result in relevant_results:
+#                 r.append(1)
+#             else:
+#                 r.append(0)
 
-        ap = round(average_precision(r), 5)
-        print(f"query: {query}".ljust(100, " "), f"Average Precision {ap}")
-        rs.append(r)
+#         ap = round(average_precision(r), 5)
+#         print(f"query: {query}".ljust(100, " "), f"Average Precision {ap}")
+#         rs.append(r)
 
-    map = mean_average_precision(rs)
-    #print("Mean Average Precision on validation query: ", map)
-    return map
+#     map = mean_average_precision(rs)
+#     #print("Mean Average Precision on validation query: ", map)
+#     return map
 
 
-def get_map_cossim(query_val, tf):
+def get_map_cossim(query_val, tf, query_expansion=0):
     '''
         Get MAP using cosine similarity with just the scraped data + query expansion 
     '''
     
-    cossim_results = CosineSimilarity.rankedModuleOfCosineSim(query_val,tf)
+    cossim_results = CosineSimilarity.rankedModuleOfCosineSim(query_val,tf, query_expansion)
     #cossim_results.to_csv("cossim.csv")
     rs = []
     for index, row in query_val.iterrows():
@@ -258,18 +258,18 @@ if __name__ == '__main__':
 
     print("#"*200)
     print('Calculating Mean Average Precision for Cosine Similarrity (with no query expansion) without survey data added')
-    map_basic = get_map_cossim_no_query_expan(query_val=query_val, tf=tf)
+    map_basic = get_map_cossim(query_val=query_val, tf=tf, query_expansion=0)
     print("Mean Average Precision on validation query (Cosine Similarity without query expansion and with no survey): ", map_basic)
 
     print("#"*200)
     print('Calculating Mean Average Precision for Cosine Smilarrity (with query expansion) without survey data added')
-    map_query_expand = get_map_cossim(query_val=query_val, tf=tf)
+    map_query_expand = get_map_cossim(query_val=query_val, tf=tf, query_expansion=1)
     print("Mean Average Precision on validation query (Cosine Similarity with query expansion and with no survey): ", map_query_expand)
 
     print("#"*200)
     print('Calculating Mean Average Precision for Cosine Smilarrity (with query expansion) with survey data added')
-    map_with_survey = get_map_cossim(query_val=query_val, tf=tf_with_survey)
-    print("Mean Average Precision on validation query (Cosine Similarity with query expansion and with no survey): ",map_with_survey)
+    map_with_survey = get_map_cossim(query_val=query_val, tf=tf_with_survey, query_expansion=1)
+    print("Mean Average Precision on validation query (Cosine Similarity with query expansion and with survey): ",map_with_survey)
     
 
     ################################################################################################
