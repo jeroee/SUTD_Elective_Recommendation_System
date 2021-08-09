@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUTD Course Recommendation System</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body style="background-color: #98B4D4"></body>
+<div style="text-align:center", class="login">
+    <h1 >SUTD Course Recommendation System</h1>
+    
+    <h3>Please input your query and press the recommend button</h2>
+
+    <form action="{{ url_for('get_relevant_courses')}}" method="post">
+
+        <div>
+            <input size="50" type="text" name="query" placeholder="Your query" required="required" />
+        </div>
+
+        <br></br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Recommend</button>
+    </form>
+
+    <p>
+        {% for title in retrieved_courses %} 
+            <br>{{ title }}</br>
+        {% endfor %}
+    </p>
+
+</div>
+</body>
+
+</html>
