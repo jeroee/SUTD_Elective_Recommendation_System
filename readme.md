@@ -2,10 +2,15 @@
 ## SUTD Elective Course Recommendation System :books:
 This project entails utilizing information retrieval techniques to build a course elective recommendation system catered for SUTD students. The idea is to find out more about the students by understanding their interests and skills and recommending the electives to them based on the information given. As a proof of concept, the system is currently catered towards ESD and ISTD pillars and will only be able to recommend elective courses only. (Term 6 - Term 8). 
 
+### Installation
+```bash
+pip install -r requirements.txt or pip3 install -r requirements.txt
+```
+
 ### Usage
 To use our recommendation system:
 ```
-update when we have completed our UI
+python gui.py or python3 gui.py
 ```
 ### Data Collection
 Our recommedation system is built in accordance to two types of data. 
@@ -65,4 +70,8 @@ We experimented with several models to construct our recommendation system:
     - web_scrap                                       # course information from web scrap
 - pretrained_corpus
     - pretrained_corpus_readme.md                     # pretrained_corpus files for query expansion                                                                  
+- templates
+    - index.html                                      # html rendering of GUI
+- gui.py                                              # backend to run GUI
+- requirements.txt                                    # packages to install
 ```
