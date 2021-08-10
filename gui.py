@@ -48,7 +48,7 @@ def get_relevant_courses():
         if score != 0:
             rank += 1
             d = {'rank': rank, 'result': result,
-                 'score': '%s' % float('%.1g' % score)}
+                 'score': '%s' % float('%.3g' % score)}
             # display_info.append(f"{result}:  {score}")
             display_info.append(d)
 
