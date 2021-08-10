@@ -41,14 +41,37 @@
                 </button>
             </div>
         </form>
+    </div>
+    <div class="container" style="text-align:center;">
         <br />
-        {% if retrieved_courses != null and retrieved_courses.length > 0 %}
-        <p>
+        {% if retrieved_courses == null %}
+        <p> </p>
+        </p>
+        {% elif retrieved_courses != null and retrieved_courses|length > 0 %}
+        <table class="table" style="margin-left: auto; margin-right: auto;min-width: 500px; max-width: 500px;">
+            <thead>
+                <tr>
+                    <th style="text-align:center;" scope="col">#</th>
+                    <th style="text-align:center;" scope="col">Course</th>
+                    <th style="text-align:center;" scope="col">Relevance Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for course in retrieved_courses %}
+                <tr>
+                    <td>{{ course['rank'] }}</td>
+                    <td>{{ course['result'] }}</td>
+                    <td>{{ course['score'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <!-- <p>
             {% for title in retrieved_courses %}
             <br>{{ title }}</br>
             {% endfor %}
-        </p>
-        {% else %}
+        </p> -->
+        {% elif retrieved_courses != null and retrieved_courses|length == 0 %}
         <p>
             Please refine your query, unable to find any relevant courses! :(
         </p>

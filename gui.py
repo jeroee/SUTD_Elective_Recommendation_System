@@ -43,9 +43,14 @@ def get_relevant_courses():
     top_k = 10
     result_dic = dict(itertools.islice(result_dic.items(), top_k))
     display_info = []
+    rank = 0
     for result, score in result_dic.items():
         if score != 0:
-            display_info.append(f"{result}:  {score}")
+            rank += 1
+            d = {'rank': rank, 'result': result,
+                 'score': '%s' % float('%.1g' % score)}
+            # display_info.append(f"{result}:  {score}")
+            display_info.append(d)
 
     return render_template('index.html', retrieved_courses=display_info)
 
