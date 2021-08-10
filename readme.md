@@ -8,7 +8,7 @@ pip install -r requirements.txt or pip3 install -r requirements.txt
 ```
 
 ### Usage
-To use our recommendation system:
+To try out our recommendation system with a GUI:
 ```
 python gui.py or python3 gui.py
 ```
