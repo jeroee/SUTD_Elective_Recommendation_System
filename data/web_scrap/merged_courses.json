@@ -1,1 +1,1518 @@
-[{"name": "50.006 User Interface Design and Implementation", "description": "The course will introduce the field of Human-Computer Interaction (HCI), Interaction Design and Usability in the context of today\u2019s diverse interactive products. The course will cover usability principles, design guidelines and heuristics, user-centred design, usability engineering, user experience and evaluation techniques, and will include a series of mini design exercises and design-implementation projects. Students who successfully complete the course will be well-equipped with the concepts and language to argue and discuss how well a system\u2019s front-end (e.g. a website, a mobile app, a museum kiosk, etc.) is designed and be able to design usable, easy-to-use, intuitive, attractive user-interfaces informed by the concepts and knowledge learned during the course.", "pre_requisite": [["10.014 Computational Thinking for Design"]], "learning_objectives": [["Understand the concept of usability, design principles, guidelines, heuristics and other fundamentals of Human-Computer Interaction.", "Analyze a set of requirements in terms of its user-interface implications.", "Develop a usage scenario for a given set of user requirements and available technologies.", "Construct a user-interaction strategy for a given problem.", "Sketch a series of user-interfaces for a given use scenario.", "Implement a designed user-interface to demonstrate its functionality and usability.", "Employ a set of usability engineering methods to refine a designed user-interface.", "Evaluate a user-interface using suitable evaluation methodology."]], "measurable_outcomes": [["Apply design principles, guidelines and heuristics to create a user-interaction strategy that solves a real-world problem.", "Design a usable and compelling user-interface given a set of requirements and available technologies.", "Communicate effectively the designed user-interface to relevant stakeholders using design rationale and a sketching/presentation tool in an informed, reasonable and persuasive way.", "Conduct an evaluation of a user-interface by employing a series of evaluation methods available in usability engineering."]], "topics_covered": [["User classification and user centred design", "Information visualisation and interactivity", "Usability principles and guidelines, UI prototyping tools", "Anthropomorphism and framing the interaction strategies; metaphor", "Personal and social impact of technology and experience design; ethical issues of interaction design", "Usability evaluation techniques"]]}, {"name": "50.007 Machine Learning", "description": "Machine learning is the study of algorithms that improve their performance at some task with experience. In this course, students will learn how machine learning has led to many innovative real-world applications. The students will also gain an in-depth understanding of a broad range of machine learning algorithms from basic to state-of-the-art, such as: na\u00efve Bayes, logistic regression, neural networks, clustering, probabilistic graphical models, reinforcement learning and SVMs.", "pre_requisite": [["50.001 Information Systems & Programming and 50.004 Algorithms; or", "A working knowledge of programming in Python or Java and a strong foundation in probability and statistics, and optimization (topics such as dynamic programming)"]], "learning_objectives": [["Recognize the characteristics of machine learning that make it useful to real-world problems.", "Explain the basic underlying concepts for supervised discriminative and generative learning.", "Explain the concepts of cross-validation and regularization, be able to use them for estimation of algorithm parameters.", "Characterize machine learning algorithms as supervised, semi-supervised, and unsupervised.", "Have heard of a few machine learning toolboxes.", "Use support vector machines.", "Use regularized regression algorithms.", "Explain the concept behind neural networks for learning non-linear functions.", "Apply unsupervised algorithms for clustering.", "Explain the foundation of generative models.", "Implement the inference and learning algorithms for the hidden Markov model.", "Explain the learning algorithm for hidden Markov model with latent variables.", "Explain algorithms for learning Bayesian networks.", "Explain reinforcement learning algorithms."]], "measurable_outcomes": [["List useful real-world applications of machine learning.", "Implement and apply machine learning algorithms.", "Choose appropriate algorithms for a variety of problems."]], "topics_covered": [["Introduction", "Perceptron", "Linear Regression", "Logistic Regression", "Support Vector Machines", "Kernel Methods", "Neural Networks and Deep Learning", "Clustering", "Generative Models", "Mixture Models and Expectation Maximization", "Hidden Markov Model", "Bayesian networks", "Reinforcement Learning"]]}, {"name": "50.012 Networks", "description": "This course will introduce the principles and practice of computer networking, with emphasis on the Internet. Students will learn concepts, principles, protocols, and applications of computer networks, including packet switching, layered architectures, TCP/IP, physical layer, error control, window flow control, local area networks (Ethernet, Token Ring; FDDI), network layer, congestion control, quality of service, multicast, network programming interfaces, networked applications.", "pre_requisite": [["50.005 Computer System Engineering or", "A working knowledge of programming in Python and a strong foundation in computer systems"]], "learning_objectives": [["Explain fundamental network protocols.", "Describe the organisation of computer networks, and classify factors influencing computer network development and the reasons for having variety of different types of networks.", "Solve standard problems in interconnections between autonomous networks.", "Model the Internet structure and derive operational parameters.", "Design optimized network topology for given problem settings.", "Analyze and evaluate a provided network setup.", "Design and implement a server-client architecture based on sockets."]], "measurable_outcomes": [["Description of the essential features of different networking protocols, such as TCP, IP, DNS, and ARP.", "Conceptual design of a computer network based on a set of provided operational requirements.", "Application of routing algorithms to determine the shortest path in an network such as the internet, modeled as a weighted graph.", "Model and analysis of a network of autonomous systems.", "Analysis of a real network setup and critique of the design decisions.", "Design and implementation of a client-server application program using sockets."]], "topics_covered": [["Computer Networks and the Internet", "Application Layer", "Transport Layer", "The Network Layer", "The Link Layer: Links, Access Networks, and LANs", "Embedded networks and bus systems", "Wireless Networks", "Mobile Networks", "Multimedia Networking and QoS", "Network Management", "Recent trends in networking (SDN, overlay networks)"]]}, {"name": "50.017 Graphics and Visualisation", "description": "Introduction to computer graphics algorithms, software and hardware. Topics include ray tracing, the graphics pipeline, transformations, texture mapping, shadows, sampling, global illumination, splines, animation, color, fundamentals of virtual and augmented reality (VR and AR).", "pre_requisite": [["C/C++: All assignments are in C/C++", "Calculus, Linear Algebra: Solving equations, derivatives, integral; vectors, matrices, basis, solving systems of equations."]], "learning_objectives": [["Implement graphics algorithms for a variety of applications: video games, movies, CAD, etc.", "Understand the different requirements of different applications.", "Understand the basics of real-time rendering and graphics hardware.", "Use C/C++ and OpenGL programming to build 3D graphics applications"]], "measurable_outcomes": [["Coordinate transformations", "Bezier curves and splines", "Representation and interpolation of rotations", "Computer animation", "Particle systems", "Collision detection", "Ray Tracing", "Rasterization and Shading", "Texture mapping", "Global illumination approaches"]], "topics_covered": [["Bezier Curve", "Curve and Surface", "Coordinates & Transformations", "Hierarchical Modeling", "Animation Basics", "Particle Systems", "Cloth Simulation & Mass Spring", "Ray Casting", "Ray Tracing", "Ray Tracing Acceleration", "Shading", "Texture Mapping", "Antialiasing", "Global Illumination", "Displays and Fabrication", "Rasterization", "Graphics Hardware", "Latest Research in Graphics"]]}, {"name": "50.020 Network Security", "description": "This course covers theory and practice of network security. Starting with general introduction of network security, this course focuses on Internet security. The first part addresses common security issues and countermeasures at each of the five layers from the TCP/IP protocol stack. Subsequently, Firewall and Intrusion Detection/ Prevention System are covered as two of the most common tools/technologies to protect a network. Finally, the course ends with special topics such as wireless network security, IoT security, etc.", "pre_requisite": [["50.042 Foundations of Cybersecurity"]], "learning_objectives": [["Explain common attacks and countermeasures in a networked system, particularly on the commonly used network protocols.", "Model, analyse and apply effective countermeasures for secure networked systems.", "Apply layered defense technologies to a secure network design.", "Design and optimise network design for given problem settings.", "Evaluate the security of an existing network design."]], "measurable_outcomes": [["Description of the fundamental concepts of network security, through proper threat modeling and security goal definition in a design project.", "Application of security countermeasures to design a secure networked system.", "Applications of security countermeasures to mitigate common attacks by demonstrating security level improvement of a vulnerable networked system.", "Application of layered defense technologies/tools and practical considerations for securing a complex network in a design project.", "Security assessment and optimisation of a given networked system through an experimental project.", "Demonstration of common attacks fro common network protocols, through successful packet sniffing and editing in a laboratory environment."]], "topics_covered": [["Network protocol and the OSI model", "Packet sniffing and spoofing", "TCP protocol and attacks", "DNS protocol and attacks", "Public key infrastructure and TLS protocol", "Firewall and intrusion detection systems", "VPN", "Web security", "Wireless security", "Security economy"]]}, {"name": "50.021 Artificial Intelligence", "description": "Artificial intelligence (AI) is a rich field spanning formal systems for representing and processing symbolic information, computational models of human cognition, and a range of techniques for learning, planning and reasoning under uncertainty. In this course, students will gain an appreciation of what \u201cartificial intelligence\u201d means, and how it can be usefully applied to real-world problems. Students will learn the intricacies of state-space search and constraint programming. Through an in-depth treatment of knowledge representation via propositional and first-order logic, students will understand how expert knowledge can be fed into and be processed by modern computers. In addition, students will acquire skills in using planning algorithms to find solutions to optimization problems, and understand how to use probabilistic reasoning to draw inferences in uncertain environments.", "pre_requisite": [["50.007 Machine Learning/ 40.319 Statistical & Machine Learning", "50.034 Introduction to Probability and Statistics/ 30.003 Introduction to Probability and Statistics/ 40.001 Probability + 40.004 Statistics", "10.014 Modeling Uncertainty"]], "learning_objectives": [["Define the meaning of \u201cartificial intelligence\u201d.", "Name examples of AI that are successful in real-world problems.", "Describe the strengths and limitations of various state-space search algorithms, and choose the appropriate algorithm for a problem.", "Formulate and solve problems in the framework of constraint satisfaction problems.", "Formulate and solve planning problems.", "Use probabilistic modelling techniques to solve problems with noise, incomplete information, and uncertainty.", "Summarize the essential components of gradient-based optimization in supervised learning problems", "Explain the impact of stepsizes in gradient-based optimization", "Recognize the difference between batch and stochastic/mini-batch gradient descent and apply improved weight update methods such as momentum term, RMSProp and Adam.", "Be able to apply the training and running of trained neural networks in Pytorch", "Be able to investigate the impact of essential parameters such as stepsize, batchsize and training iterations when training a neural network", "Discuss the usage of different neural network structures such as fully connected, convolutional and pooling layers", "Be able to recall state of the art neural network components such as batch normalization layers and residual connections", "Be able to recall the basic ideas behind neural networks used for machine translation and sequence to sequence learning.", "Be able to construct input samples that are able to fool neural networks", "Explain the difference between training from scratch and finetuning, be able to run finetuning of neural networks."]], "measurable_outcomes": [["List current useful real-world applications of AI.", "Implement state-space search algorithms for a variety of problems.", "Solve constraint programming problems.", "Infer new information from provided knowledge.", "Use planning algorithms to find optimal solutions.", "Solve problems with noise and uncertainty using probabilistic techniques."]], "topics_covered": [["Introduction to Artificial Intelligence", "Search", "Adversarial Search", "Constraint Satisfaction", "Logic", "Planning"]]}, {"name": "50.033 Foundations of Game Design and Development", "description": "This is an introductory course about the basic of game creation. This course provides an overview of different aspects of game development. Student will get in touch with C++ Programming (industry standard), starting with console application, then GUI games on various platform with graphics, dialog boxes, and user control. There are also basic overview of topics including game architecture, interface design, graphics for game, audio for game, prototyping and play testing. Students will be able to implement their creative gaming idea by using the latest gaming tools which are easy and readily usable.", "pre_requisite": [["50.001 Information Systems & Programming", "50.004 Algorithms"]], "learning_objectives": [["Have a board but general overview of different aspects of game development.", "Understand the complete flow of game development in a high level perspective, be prepared to master the complete skill set of game development."]], "measurable_outcomes": [["Produce simple games with student\u2019s novel idea by using existing tools.", "Ability to use code libraries to quickly create runnable games."]], "topics_covered": [["Introduction", "Game theory, challenges, and strategies", "Story Telling, story elements, traditional story structure, nonlinear and collaborative storytelling", "Point-of-View and archetype", "Game Characters, character development elements, visual and verbal character development", "Rules of Game Play", "Interactivity modes, balance, and economies", "Level Design, Structure, Time and Space", "Structures of environmental design", "Player control", "Perspective, style, temporal and spatial features", "Documentation", "Unity and Unreal engine basic (workflow, scene basic, game object, gameplay creation)", "Editor and scripting", "Graphics (Lighting, cameras, terrain, shaders, particles system, sprite, rendering features, mesh geometry, layers)", "Physics (rigidbodies, colliders, joints, controllers)", "User Interface objects (canvas, layout, interaction components)", "Navigation and path finding", "Music, sound design, audio sequencing and mixing using Audacity", "Exploration of player motivation", "Player-Centred Design", "Interface and Game Features", "Interface Types", "Usability", "The Player Experience", "Resources constrain (CPU, memory, control space)", "The difference between simulator and real gaming device", "Memory leak and detection tools", "Lazy loading vs preloading", "Basic of cloud gaming", "Mobility design (instant save load, localization, running time optimization)", "Development Phases", "Management", "Roles and responsibilities", "Community management and customer support", "Advertising, public relations, sales and promotion", "Previous and current successful business model, target customer"]]}, {"name": "50.035 Computer Vision", "description": "This is an advanced undergraduate level course on the concepts, algorithms and system design in computer vision. The particular focus in this course is on the underlying computational/mathematical principles, and data-driven and neural networks (aka \u201cdeep learning\u201d) approaches. The course introduces different computer vision tasks such as image/video classification, localization, detection, among others, and discusses different computational algorithms for these tasks, including recently proposed deep learning methods: convolutional neural networks (CNN), recurrent neural networks (RNN), long short-term memory (LSTM), Generative Adversarial Networks (GAN), etc. Students will learn to design, implement, train and debug their own systems and neural networks, and gain understanding of, and the skills to use, cutting-edge technologies in computer vision. A semester-long, 1-D design project requires students to design, implement, and train multi-million parameter neural networks to address real-world computer vision problems.", "pre_requisite": [["List useful real-world applications of computer vision", "Apply and design computer vision systems and algorithms", "Evaluate appropriate computer vision algorithms for a variety of problems"]], "learning_objectives": [["List useful real-world applications of computer vision", "Apply and design computer vision systems and algorithms", "Evaluate appropriate computer vision algorithms for a variety of problems"]], "measurable_outcomes": [["Design image convolution and filtering using OpenCV [LO 1,2]", "Design image recognition system using data driven approach and linear classification [LO 2]", "Design convolutional neural networks using TensorFlow [LO 2]", "Develop the training of convolutional neural networks using back-propagation and stochastic gradient descent [LO 2]", "Design image recognition system using convolutional neural networks [LO 1,2,3]", "Develop the training of convolutional neural networks using GPU programming [LO 2]", "Design convolutional neural networks using dropout and batch normalization [LO 2]", "Design image segmentation systems using convolutional neural networks [LO 1,2,3]", "Design object detection and localization systems using convolutional neural networks [LO 1,2,3]", "Design video activity recognition systems using recurrent neural networks [LO 1,2,3]", "Develop the training of LSTM using TensorFlow [LO 2]"]], "topics_covered": [["Image, Filtering, Convolution", "Image Histogram", "Image classification, data-driven approach, knn", "Linear Classifier", "Gradient Descent", "Deep Learning", "Convolutional Neural Network", "CNN Architectures", "Back Propagation", "Regularization", "Object detection and segmentation", "Advanced gradient descent", "Generative Adversarial Networks (GAN)", "Improved GAN and Applications"]]}, {"name": "50.036 Foundations of Distributed Autonomous Systems", "description": "The course  introduces fundamental principles that underlie  the design and validation of complex autonomous systems. The usage of such systems is gaining popularity at a rapid pace, including but not limited to their usage in robotics, smart home, and autonomous vehicles. The course  delves into the theoretical and practical aspects of designing mixed hardware-software systems \u2013 criteria shared by most autonomous systems envisioned in a smart nation. Topics include the essence of hardware-software systems via appropriate abstractions, models and tools; use of  Simulink/Stateflow paradigm to design distributed hardware-software systems; understanding key principles for programming in resource constrained environments; performance optimization and performance tuning tailored to such environments; and programming hardware-software systems using custom hardware module such as mobile GPGPUs (general-purpose graphics processing units) for enhanced performance.", "pre_requisite": [["50.002 Computation Structure or permission of instructor"]], "learning_objectives": [["Design a distributed and networked embedded system from scratch (required tools, devices and hardware will be provided). This includes formulation of the problem, capturing the design using formal models, such as via Simulink/Stateflow and implementations of the system running on custom embedded platform.", "Apply key ideas on performance tuning and performance optimization for resource-constrained embedded systems.", "Learning techniques to validate the systems beyond their functionality, such as for real-time performance.", "Apply key ideas on hardware/software partitioning for designing distributed embedded systems.", "Apply key ideas to maintain correctness in a distributed and resource-constrained environment."]], "measurable_outcomes": [["Design models of hybrid (discrete + continuous) systems [LO 1]", "Develop distributed embedded systems [LO 1,2,3,4]", "Develop autonomous decision making systems in embedded platform [LO 1,2]", "Develop optimization techniques for resource-constrained environment [LO 4,5]", "Analyze the design of a distributed embedded system to reason about correctness [LO 5]", "Analyze the design of a distributed embedded system to reason about performance [LO 3]", "Analyze the requirement of a system to find the hardware/software partitioning [LO 4]", "Develop high-performance and distributed embedded system via custom platform [LO 2]", "Develop and analyze Simulink Stateflow models at earlier stage of the design [LO 1]"]], "topics_covered": []}, {"name": "50.037 Blockchain Technology", "description": "Decentralized blockchain-based systems, such as Bitcoin and Ethereum, are successful beyond all expectations. Although still in their infancy, they promise to revolutionize how we think of financial, information, and other infrastructures. This course covers the technical aspects of public distributed ledgers, blockchain systems, cryptocurrencies, and smart contracts. Students will learn how these systems are built, how to interact with them, how to design and build secure distributed applications.", "pre_requisite": [["50.004 Algorithms", "50.005 Computer System Engineering", "50.012 Networks, 50.020 Security, and 50.043 Database and Big Data are helpful but not required. Needed concepts will be introduced during the class"]], "learning_objectives": [["Understand how blockchain systems (mainly Bitcoin and Ethereum) work,", "To securely interact with them,", "Design, build, and deploy smart contracts and distributed applications,", "Integrate ideas from blockchain technology into their own projects."]], "measurable_outcomes": [["Explain design principles of Bitcoin and Ethereum.", "Explain Nakamoto consensus.", "Explain the Simplified Payment Verification protocol.", "List and describe differences between proof-of-work and proof-of-stake consensus.", "Interact with a blockchain system by sending and reading transactions.", "Design, build, and deploy a distributed application.", "Evaluate security, privacy, and efficiency of a given blockchain system."]], "topics_covered": [["Intro to Cryptographic Tools", "Distributed Systems and Consensus", "Bitcoin Basics", "Bitcoin Mechanisms", "Ethereum", "Smart Contracts", "Anonymity and Privacy of Blockchain", "Miscellaneous topics of Blockchain"]]}, {"name": "50.038 Computational Data Science", "description": "This course provides students the necessary background and experience in data science technology and concepts. Students will gain experience with tackling a complete data science project, from data gathering and preprocessing to data analysis through machine learning tools. Students will learn to apply fundamental concepts in machine learning to data storage and distributed processing as a foundation for their project.", "pre_requisite": [["10.014 Computational Thinking for Design", "50.034 Introduction to Probability and Statistics / 30.003 Introduction to Probability & Statistics / 40.001 Probability + 40.004 Statistics"]], "learning_objectives": [["Be aware of the main goals of data science, its main application domains and current challenges.", "Apply tools to build basic models for solving typical data analytics problems.", "Visualise the structure of big data in order to uncover hidden patterns.", "Design and implement distributed database systems for managing heterogeneous data.", "Perform basic operations on a moderately complex distributed computation system, such as Spark.", "Explain the fundamentals of statistical machine learning and deep learning.", "Appreciate the technical skills necessary to be a capable data scientist."]], "measurable_outcomes": [["Identify important concepts and current challenges in data science.", "Design feature representations for image, text and time series data.", "Analyse data and build simple models in tools such as Weka, Python and Tableau.", "Implement distributed computation model using Spark.", "Evaluate the performance of different models using empirical benchmarks.", "Mathematically explain common machine learning models such as SVMs, logistic regression systems and neutral networks.", "Implement machine learning algorithms using software such as R, C++ and PyTorch.", "Manage big data using Hadoop and MapReduce."]], "topics_covered": [["Intro DS and Hadoop", "Features + Text", "Visualisation", "Regression and Time Series", "Classification", "Into to Deep Learning", "Word2vec", "Digital Media (CNN)", "RNN", "Negative Sampling, Attention Mechanism, 1D Convolution and Pre-trained Feature Extraction"]]}, {"name": "50.039 Theory and Practice of Deep Learning", "description": "The course goal is to familiarize students with deep learning for vision, text, reinforcement learning and multimodal combinations thereof. The meaning of deep learning for this course is the training and application of neural networks as prediction models for various setups of input and output modalities. The course will include coding a subset of approaches for vision (so to avoid overlap with computer vision), approaches for sequential data such as 1D\u2010CNNs, temporal causal networks and recurrent neural networks, multimodal approaches, attention models, explainable AI and generative adversarial neural nets. The coding will cover the whole chain from data loader to training to parameter tuning to performance evaluation. The course will also focus on important practical aspects which are required to make the training part of deep learning work on smaller datasets such as transfer learning, the various forms of data augmentation, different optimizers and learning rate tuning.", "pre_requisite": [["Explain the concept of \ufd3ediscriminative\ufd3f learning from data, generalization and overfitting.", "Be able to explain how the decision boundary of a linear neuron depends on its parameters in a general vector space.", "Be able to explain what backpropagation is used for.", "List for different prediction problems. Suitable outputs of predictors and suitable loss functions.", "Explain the basic ideas behind convolutional and recurrent neural networks.", "Be able to retell methods of data augmentation.", "Be able to use deep learning toolboxes for loading data, training and performance evaluation of deep neural networks.", "Construct data loaders for custom datasets of various types with various types of ground truth annotations, such as images, sequential data e.g. text and multi\u2010modal data.", "Being able to set up neural networks for vision, and apply training algorithms to them and evaluate the performance of transfer learning tasks with two state of the art deep learning toolboxes.", "Being able to set up neural networks for sequence classification, and apply training algorithms to them and evaluate the performance of transfer learning tasks with one state of the art deep learning toolboxes.", "Be able to explain the functioning principle of a generative adversarial neural network."]], "learning_objectives": [["Explain the concept of \ufd3ediscriminative\ufd3f learning from data, generalization and overfitting.", "Be able to explain how the decision boundary of a linear neuron depends on its parameters in a general vector space.", "Be able to explain what backpropagation is used for.", "List for different prediction problems. Suitable outputs of predictors and suitable loss functions.", "Explain the basic ideas behind convolutional and recurrent neural networks.", "Be able to retell methods of data augmentation.", "Be able to use deep learning toolboxes for loading data, training and performance evaluation of deep neural networks.", "Construct data loaders for custom datasets of various types with various types of ground truth annotations, such as images, sequential data e.g. text and multi\u2010modal data.", "Being able to set up neural networks for vision, and apply training algorithms to them and evaluate the performance of transfer learning tasks with two state of the art deep learning toolboxes.", "Being able to set up neural networks for sequence classification, and apply training algorithms to them and evaluate the performance of transfer learning tasks with one state of the art deep learning toolboxes.", "Be able to explain the functioning principle of a generative adversarial neural network."]], "measurable_outcomes": [["Evaluate deep learning models and loss functions by suitability based on the intended prediction outputs for several prediction task types (ad: LO suitable loss functions).", "Compute the terms used in backpropagation for a given neural network topology (ad: LO backprop)", "Sketch the set of points for which a linear unit has constant outputs, sketch the directions for which the function values change fastest for a linear unit (ad LO decision boundary of a linear unit).", "For a given model and a layer give arguments when to use a fully connected and when to use convolutional layers.", "for a given problem give arguments when to use feedforward and when to use recurrent neural networks ad LO convolutional NNs, recurrent NNs.", "Create code for dataloaders for custom datasets with groundtruths for image and text data.", "Create code for neural networks for vision, which loads data, applies training algorithms and evaluates the prediction performance with two state of the art deep learning toolboxes.", "Create code for neural networks for sequence classification, which loads data, applies training algorithms and evaluates the prediction performance of transfer learning tasks with one state of the art deep learning toolbox.", "Compute train and test loss curves from a training process and be able to examine the amount of overfitting when comparing different pairs of train/test loss curves (ad LO generalization and overfitting).", "Employ data augmentation methods and transfer learning in code, evaluate their impact on performance (ad LO data augmentation).", "Produce example code for a generative deep neural network, be able to give possible use cases for GANs (ad LO generative adversarial neural network)."]], "topics_covered": [["Introduction, Review of ML", "Syntactic Tagging, Word Senses and Embeddings", "Language Modeling", "Chunking (Shallow Syntactic Parsing)", "Information Extraction", "Syntactic Parsing", "Semantic Role Labeling (Shallow Semantic Parsing)", "Semantic Parsing", "Sentiment Analysis", "Text Generation", "Machine Translation"]]}, {"name": "50.040 Natural Language Processing", "description": "Natural Language Processing (NLP) is an important area within the general field of artificial Intelligence (AI). Modern NLP models focus on using machine learning algorithms for solving various text processing problems. This course covers fundamental topics within the domain of NLP, including part-of-speech tagging, word embeddings, chunking, syntactic parsing, semantic role labeling, semantic parsing, named entity recognition, sentiment analysis, generation, summarization and machine translation. Students will get a chance to learn fundamental algorithms as well as state-of-the-art, deep-learning based techniques for NLP and will get a chance to implement and play with advanced NLP algorithms and models.", "pre_requisite": [["50.007 Machine Learning/40.319 Statistical & Machine Learning and", "A good foundation in: 1) programming, 2) design and analysis of algorithms, 3) mathematics including linear algebra, calculus, optimization, probability, and statistics."]], "learning_objectives": [["Explain the fundamental tasks within NLP", "Explain possible algorithms as solutions to NLP tasks", "Implement the algorithms used for various NLP tasks", "Design novel algorithms for solving new NLP tasks, and use existing NLP technologies for solving real problems"]], "measurable_outcomes": [["Explain the major tasks within NLP that involve supervised structured prediction", "Explain the major tasks within NLP that involve unsupervised learning", "Apply the relevant models that need to be used for each task", "Apply the major guiding principles when choosing a model for a specific task within NLP", "Decide when to and when not to use neural network based or deep learning methods for a specific task within NLP", "Design and implement fundamental algorithms used for various NLP tasks", "Analyze the time complexity involved for a specific NLP algorithm", "Evaluate the performance of an NLP model based on certain evaluation metrics on standard datasets"]], "topics_covered": []}, {"name": "50.041 Distributed Systems and Computing", "description": "This course introduces fundamental concepts for designing and implementing large\u2010scale distributed systems. The course will not only focus on the design aspects of distributed systems, but will also focus on the fundamental principles to ensure the correctness in a distributed environment. We will apply the concepts via hands on assignments using GO programming language. The course will also deep dive into specific concepts of distributed systems e.g. designing distributed file systems (such as in Google File Systems) to accommodate arbitrarily many application\u2010level users. Finally, we will discuss concepts on recovering from faults (both normal and byzantine) in a distributed system.", "pre_requisite": [["Design and implement a distributed system from scratch.", "Apply key ideas to maintain the correctness in distributed systems.", "Learning techniques to design and develop massively parallel systems using GO programming language.", "Learning techniques to design and implement a distributed file system.", "Learning and applying techniques to recover from faults in distributed systems."]], "learning_objectives": [["Design and implement a distributed system from scratch.", "Apply key ideas to maintain the correctness in distributed systems.", "Learning techniques to design and develop massively parallel systems using GO programming language.", "Learning techniques to design and implement a distributed file system.", "Learning and applying techniques to recover from faults in distributed systems."]], "measurable_outcomes": [["Build models of distributed systems [LO 1].", "Prototype distributed software systems [LO 1,2,3,4,5].", "Build distributed algorithms using industry-strength programming language [LO 3].", "Build algorithms to analyse the correctness of distributed systems [LO 2].", "Prototype software and systems to manage files and records in a distributed environment [LO 4].", "Build algorithms to analyse and test possible faults in distributed systems [LO 1, 5].", "Build techniques to recover from faults in distributed systems [LO 5].", "Build techniques at the level of supervisory software to support distributed applications [LO 1,4,5]."]], "topics_covered": [["Introduction, Clocks, Election", "Clocks and Election", "Distributed Mutual Exclusion", "Consistency Model", "Distributed File Systems", "Fault Tolerance 1", "Fault Tolerance 2", "Byzantine Faults"]]}, {"name": "50.042 Foundations of Cybersecurity", "description": "This course provides students with a basic appreciation and understanding of the core concepts of information security. Topics to be covered include concepts for confidentiality, integrity and availability; introduction to cybercrimes and security issues; threats to information systems and devices; cryptographic primitives such as symmetric and asymmetric cryptography; core problems such as random number generation, entropy, and key distribution; and common topics such as security protocols and public\u2010key infrastructures.", "pre_requisite": [["List basic security solutions and models; explain concepts for confidentiality, integrity and availability.", "Apply protocols used for key establishment, encryption, and authentication to secure a system.", "Apply known attacks to vulnerable cryptographic primitives.", "Model, analyse, and apply cryptographic primitives used for encryption, secure hashing, and digital signatures.", "Evaluate the security of existing system designs respect to different attacker models."]], "learning_objectives": [["List basic security solutions and models; explain concepts for confidentiality, integrity and availability.", "Apply protocols used for key establishment, encryption, and authentication to secure a system.", "Apply known attacks to vulnerable cryptographic primitives.", "Model, analyse, and apply cryptographic primitives used for encryption, secure hashing, and digital signatures.", "Evaluate the security of existing system designs respect to different attacker models."]], "measurable_outcomes": [["Evaluate security models like CIA model (confidentiality, integrity, availability) by defining and assessing security level for an existing system in a design project", "Perform attacks related to block ciphers in Electronic\u2010Codebook mode, through successful retrieval of partial or full information related to the plaintext or key used, and", "show the outcome of the attacks.", "Implement a scheme for pre\u2010image recovery of hashes through brute force and hybrid attacks for hash related password authentication systems.", "Apply substitution ciphers, One\u2010time\u2010pads, and AES in real\u2010life applications to prevent sensitive data exposure and thus preserve the confidentiality of secret data.", "Analyse network logs , based on that, implement potential attacks on schemes for encryption, authentication, key establishment and digital signatures, through a challenge design and solving project."]], "topics_covered": [["Introduction", "Hash Functions", "Password and Rainbow Tables", "Applications for Hashing", "Block Ciphers", "Modular Arithmetics", "Key Establishment", "Public Key Crypto", "Digital Signatures", "Security Protocols", "Side Channel Attacks", "Security Policy", "Information Flow", "Distributed Systems"]]}, {"name": "50.043 Database Systems", "description": "Database systems manage data which is at the heart of modern computing applications. We are in the era of big data, in which data is generated from many sources, in high velocity and with great variety. This poses numerous challenges in using and improving database technologies. Big data systems designed to support analytics are maturing and are becoming increasingly important to many applications.", "pre_requisite": [["10.014 Computational Thinking for Design", "50.004 Algorithms", "50.005 Computer System Engineering"]], "learning_objectives": [["Design and implement a database application on top of a relational database management systems (RDBMS).", "Identify major components of database and big data systems.", "Estimate the costs of different database operations.", "Explain how state\u2010of\u2010the\u2010art big data systems differ to one another.", "Implement a cloud\u2010based big data application.", "Explain how database and big data systems fit together in real\u2010world applications.", "Use cloud\u2010based systems."]], "measurable_outcomes": [["Develop a database design for an application.", "List and explain major components of database and big data systems.", "Write complex SQL queries.", "Estimate cost of different database operations.", "Compare different classes of big data systems.", "Write MapReduce and Spark jobs.", "Explain how a database differs to a big data system.", "Design, implement, and deploy database and big data systems on AWS."]], "topics_covered": [["Database systems internal", "Relational model", "ER to Relational Model", "Relational Algebra", "SQL", "Functional Dependency", "DB normalization", "Data Storage", "Indexing", "Query evaluation", "Query optimization", "Transaction Management", "Big data systems architecture", "AWS", "HDFS", "Spark"]]}, {"name": "50.044 System Security", "description": "This course covers the security of users, individual computer systems, including personal computers, smart cards and embedded platforms. The course starts with considerations of common security flaws in a computer system, security of widely used computer platforms and user authentication. Then, topics such as physical\u2010layer attacks and tamper resistant hardware are discussed. Finally, the course ends with a set of selected security topics like biometrics, computer forensics, and Bitcoin.", "pre_requisite": [["50.042 Foundations of Cybersecurity"]], "learning_objectives": [["Define security objectives for a given computer system based on problem setting and requirements", "Explain how computer systems are compromised", "Learn how to defend against common attacks to various computer systems", "Apply basic security design principles to a secure computer system design and implementation"]], "measurable_outcomes": [["Identify the security objectives of a computer system by defining and assessing the security level of an existing computer system properly and comprehensively, through a design project", "Demonstrate ability to apply and analyse common attacks on various computer systems, through successfully compromising a computer system in a laboratory environment", "Analyze and apply defensive technology and software to defend various computer systems, by demonstrating security level improvement of existing vulnerable computer systems", "Demonstrate mastery of applying system security design principles and best practices by interpreting the process of securing a computer system in a design project"]], "topics_covered": [["Introduction", "Memory safety attacks", "Defenses for memory safety", "Authentication", "Privilege Separation", "Isolation", "Hardware Security", "Mobile Security", "Web Security", "Secure Channels", "Secure Messaging"]]}, {"name": "50.045 Information Retrieval", "description": "Automatic methods of Information Retrieval (IR) have gained greater significance in recent years due to the dramatic increase in the amount of data available on the Web. The data is often present in multiple forms (such as text, image, video) and hence it is necessary that the IR techniques being deployed on the web are able to perform various operations such as search and retrieval across all these different data formats. In this course, the study of IR will be focused on the methodologies of indexing, processing, and querying of primary textual data and will be extended to video and image data in the latter part of the course. The primary learning objective of the course will be \u2013 i) to gain knowledge about the basic concepts and techniques of IR.; ii) understand the basic functionality and underlying algorithm of an IR system.; iii) understand modern neural networks and deep learning-based techniques that are used in today\u2019s\u2019 IR systems.; and iv) to learn about several applications of e.g., question answering, image, and video retrieval; v) learn how to develop a basic IR system from scratch and evaluate the system; vi) learn classification, clustering, topic modeling which are the core modules in an IR system.", "pre_requisite": [["Prior knowledge of elementary linear algebra would be helpful but is not required for this course.", "Programming knowledge preferably in Python.", "Object-orientated programming.", "Data structure."]], "learning_objectives": [["Gain knowledge about the basic concepts and techniques of IR.", "Understand the basic functionality and underlying algorithms of an IR system.", "Understand modern neural networks and deep learning-based techniques that are used in today\u2019s IR systems.", "Learn about several applications of e.g., question answering, image, and video retrieval.", "Learn how to develop a basic IR system from scratch and evaluate the system.", "Learn clarification, clustering, topic modeling which are the core modules in an IR system."]], "measurable_outcomes": [["Identifying important concepts of Information Retrieval.", "Learn vector space modeling, modern deep learning techniques for IR and evaluation methods. Finally, utilize this knowledge to complete the project.", "Evaluate the performance of different IR models using empirical benchmarks.", "Implement different IR applications such as Question Answering, Image and Video Retrieval systems.", "Able to use libraries such as Sklearn, Keras for data processing and IR model creation.", "Mathematically explain common neural network-based models, word2vec and Glove distributed word representations for IR system building."]], "topics_covered": []}, {"name": "50.046 Cloud Computing and Internet of Things", "description": "The Internet of Things and its integration with cloud computing are transforming our world in a fundamental way. This course teaches some of the essential IoT and cloud computing technologies from the ground up. Specific topics covered include IoT devices programming (ESP32), sensing technologies, IoT protocols (Zigbee, LPWAN, MQTT), and multiple cloud-based services including storage, distributed and parallel computing, and virtualization. Students will learn how to design, develop, and deploy end-to-end cloud-based IoT applications, by formulating a real-world problem and identifying its key design objectives, challenges, and constraints.", "pre_requisite": [["10.009 The Digital World (For Intake AY2019) or [NEW] 10.020 Data Driven World (For Intake AY2020 and subsequent batches)", "50.005 Computer System Engineering (recommended) or a strong foundation in computer systems"]], "learning_objectives": [["To understand the related architecture designs and technologies of cloud computing", "To explain the overall architecture and key design principles of IoT systems, including both functional and non-functional aspects", "To design cloud-based IoT applications using proper cloud services", "To gain hands-on experience in key technologies for developing an IoT system, including sensor selection / interfacing, embedded system programming, use of suitable network protocols, and various cloud services (compute, storage, data analytics, management)", "To gain design experience in solving a real-world problem using IoT and cloud technologies", "To gain both the experience and confidence in learning a new IoT technology independently"]], "measurable_outcomes": [["List the functions of different IoT and cloud computing components", "Use various sensors, embedded device libraries, IoT protocols, and cloud services", "Develop skills in systematic testing and debugging", "Work in a team to formulate a real-world problem that can be solved using IoT and cloud technologies, including design objectives, challenges, and constraints", "Apply suitable IoT and cloud technologies to develop a proof-of-concept system, and present the solution in the class with explanation of its key design considerations", "Apply new cloud services or sensors if relevant to the project"]], "topics_covered": [["Sensors", "Embedded systems and RTOS", "Wireless networking for IoT", "Edge computing", "Energy efficiency design", "Accessing Cloud", "Storage as a Service", "Computing as a Service", "Task parallelism", "Cloud scaling and Container", "Batch and streaming analytics", "ML in the Cloud, tinyML", "Cloud infrastructure and management mechanism", "Advanced cloud infrastructure", "Security in the Cloud and IoT systems"]]}, {"name": "50.047 Mobile Robotics", "description": null, "pre_requisite": [], "learning_objectives": [], "measurable_outcomes": [], "topics_covered": []}, {"name": "50.048 Computational Fabrication", "description": "This course introduces students to the concepts and tools of computational design and manufacturing. Topics include: computational design and data acquisition (advanced geometry representations, procedural modeling, 3D scanning), physics-based modeling and simulation (kinematic mechanisms, solid mechanics, material modeling, finite element method), and an introduction to fabrication methods with a focus on additive manufacturing (e.g., 3D printing).", "pre_requisite": [["10.020 Data-driven World or permission of instructor"]], "learning_objectives": [["Implement fundamental methods for computational fabrication.", "Apply software systems for computational design and fabrication.", "Analyze the physical property on the geometric modeling process for fabrication; conduct simulation for the model and measure the physical property of the 3D printed model.", "Analyze research papers in computational fabrication."]], "measurable_outcomes": [["Know and understand the basic concepts of computational design, simulation and fabrication methods.", "Implement fundamental algorithms for computational fabrication.", "Use software systems for computational design and fabrication.", "Design geometric models for fabrication, predict their physical behavior using computational simulation, fabricate the models, e.g. using 3D printing or laser cutting, and measure their physical properties.", "Analyze and understand latest research papers in computational fabrication."]], "topics_covered": [["Solid modeling", "Procedural modeling", "3D scanning and fabrication", "3D printing technologies", "3D printing software pipeline", "Finite element method", "Structural analysis for 3D printing", "Functional specifications for 3D printing", "Mechanism kinematics", "Mechanism design", "Assembly planning", "Structurally stable assemblies", "Assembly-based 3D printing", "Case study: reconfigurables", "Case study: discrete architecture", "Case study: articulated character", "Latest Research in Computational Fabrication"]]}, {"name": "Service Design Studio", "description": "In Service Design Studio, students will form a team to respond to a \u201cService Design Challenge\u201d by conceptualizing, designing and implementing a new AI-based application to deliver a service. Students will learn web technologies to deploy cross-platform service solutions to various industry needs. The course is offered as a project-based course and managed in a tripartite collaboration involving SUTD, a Technology Expert company, and industries. Google is our key partner for the Technology Expert company for the first two initial offerings.", "pre_requisite": [["10.009 The Digital World", "50.004 Algorithms"]], "learning_objectives": [["Conduct all phases of development from problem analysis to deployment", "Present software design work and critique other students\u2019 designs", "Build medium-scale web applications using standard technologies on the cloud", "Design key components of a software system", "Exercise good work ethics in dealing with different stake holders"]], "measurable_outcomes": [["Analyze problems and write design documents for a software system.", "Design and implement key components of a software system including data models, event structures, and interfaces.", "Build and deploy a medium-scale web or cross-platform applications using HTML, CSS,  Javascript, and Ruby on Rails framework.", "Present and pitch their design solutions as well as give constructive critique on other students\u2019 design.", "Implement Cloud Services as key technology components in the overall service solutions.", "Communicate well and exercise good work ethics both among group members as well as with industry mentors."]], "topics_covered": [["Introduction to Software as a Service (SaaS), Agile Development and Cloud Computing", "SaaS Application Architecture, Requirements: BDD and User Stories", "SaaS Framework Part I, Introduction to UI/UX Design", "SaaS Framework Part II", "Mobile and Desktop SaaS Clients, Introduction to Javascript", "Test-Driven Development, Agile Teams", "Design Patterns for SaaS Apps", "Dev/Ops", "Cloud AI and ML toolbox"]]}, {"name": "01.116 AI for Healthcare (Term 7)", "description": "This course introduces the concept of artificial intelligence through machine learning and deep learning algorithms. In evidence\u2010based medicine, it is important to gather useful insights from both structured (e.g. data collected by machines) and unstructured data (e.g. notes from clinicians\u2019 observations). The course highlights the use of AI for medical diagnostics, doctor consultation, personalized disease treatments, electronic health records, drug discovery and others. This poses both opportunities and challenges to gather buy\u2010in from various stakeholders, namely patients, doctors, researchers, and telehealth. In their various group projects, students will get to work on real\u2010life healthcare problems faced in hospitals and use AI to solve them.", "pre_requisite": [["Explain the key concepts and terminology in healthcare.", "Understand how AI is used in healthcare especially in the admin and operations of hospitals, diagnostics and therapeutics and health monitoring.", "Compare and contrast the various applications of AI (case studies) and their effectiveness of their implementation.", "Synthesize their understanding of the tools learnt (AI) for healthcare and apply them to the design of appropriate technology solutions.", "Interpret and describe major characteristics and potential applications of various AI\u2010based platforms, tools and techniques.", "Analyse key data challenges in healthcare and develop data science proposals with clear objectives towards overcoming these challenges", "Design AI frameworks and leverage on state\u2010of\u2010the\u2010art toolboxes and techniques for solving data science problems in healthcare."]], "learning_objectives": [["Explain the key concepts and terminology in healthcare.", "Understand how AI is used in healthcare especially in the admin and operations of hospitals, diagnostics and therapeutics and health monitoring.", "Compare and contrast the various applications of AI (case studies) and their effectiveness of their implementation.", "Synthesize their understanding of the tools learnt (AI) for healthcare and apply them to the design of appropriate technology solutions.", "Interpret and describe major characteristics and potential applications of various AI\u2010based platforms, tools and techniques.", "Analyse key data challenges in healthcare and develop data science proposals with clear objectives towards overcoming these challenges", "Design AI frameworks and leverage on state\u2010of\u2010the\u2010art toolboxes and techniques for solving data science problems in healthcare."]], "measurable_outcomes": [["Describe and understand how AI is used for healthcare, especially in the admin and operations of hospitals, diagnostics and therapeutics and health monitoring (lab exercise, concept quiz", "and field trip).", "Learn and use the steps involved in choosing a strategic focus for a healthcare problem that can be solved with AI (design project).", "Ability to use the AI techniques taught to solve real\u2010life healthcare problems (lab exercise, design project).", "Evaluate the different applications of AI for healthcare (case studies and invited guest speakers)."]], "topics_covered": []}, {"name": "01.117 Brain-Inspired Computing and its Applications (Term 8)", "description": "This course is offered to both undergraduates and graduates, and focuses on understanding the fundamental principles of brain and cognitive functions used for edge computing, artificial intelligence (AI) tasks and bioinformatics. This includes advanced theoretical models and practical aspect of major processes, such as description of neurons, the response of neurons to sensory stimuli, neuronal networks, state-of-the-art brain-inspired computer architectures and chips. Other topics covered include: statistical inference, decision making and so on. Speakers will be invited for advanced topics.", "pre_requisite": [["Understand the basic biophysics of neurons and networks and other principles underlying brain and cognitive functions", "Use mathematical techniques (e.g., equivalent circuit model, differential equations, etc) to analyze simple models of neurons and networks", "Use mathematical techniques (i.e., equivalent circuit model, differential equations, etc) to do data analysis of behavioral and neuronal data", "Become proficient at using numerical methods to implement these techniques (Matlab or similar software)"]], "learning_objectives": [["Understand the basic biophysics of neurons and networks and other principles underlying brain and cognitive functions", "Use mathematical techniques (e.g., equivalent circuit model, differential equations, etc) to analyze simple models of neurons and networks", "Use mathematical techniques (i.e., equivalent circuit model, differential equations, etc) to do data analysis of behavioral and neuronal data", "Become proficient at using numerical methods to implement these techniques (Matlab or similar software)"]], "measurable_outcomes": [["Translate a simple model of neurons and neural circuits into a mathematical model", "Simulate simple model of neurons and networks using Matlab or similar software", "Analyze neuronal data or model output of neurons and networks using Matlab or similar software."]], "topics_covered": []}, {"name": "40.230 Sustainable Engineering", "description": "Sustainable engineering is the integration of social, environmental, and economic considerations in the design of products, processes, and engineered systems. This course introduces the concept of sustainability \u2013 both theory and applications \u2013 to engineers and designers. Students will apply tools to perform environmental impact assessment, life-cycle cost and benefits analyses, which provide decision guidance on the design, maintenance, and operations of products and systems.", "pre_requisite": [], "learning_objectives": [["Learn about grand societal challenges in energy and environment", "Explain the role of technology, economics and policy in addressing these challenges", "Evaluate the environmental impact of products, processes, services and systems", "Develop and apply life cycle and systems thinking methods to design"]], "measurable_outcomes": [["Conduct, report and orally present a conceptual eco-design process", "Recognize and evaluate environmentally preferable designs and solutions", "Develop a life cycle assessment of a product, service or system"]]}, {"name": "40.232 Water Resources Management", "description": "The goal of this course is to develop basic skills and knowledge for modelling, managing and planning water resources systems in a participated and sustainable way. Particular emphasis is given to 1) the application of statistical modelling and optimisation techniques to the design and management of natural and urban water systems, and 2) the implementation of these techniques in numerical computing environments (e.g., MatLab and R). A key aspect of the course is a term-long project.", "pre_requisite": [["40.001 Probability"]], "learning_objectives": [["Define, discuss and apply the basic ideas of integrated water resources management to both natural and urban environments", "Employ and test statistical and process-based models to describe the main components of a river basin", "Develop and evaluate optimization-based models for the planning and management of river basins", "Analyse the main components of urban water systems"]], "measurable_outcomes": [["Identify and model the socio-economic functions of a river basin;", "Run simple mathematical models to describe hydrological and hydraulic processes, and analyse the corresponding outputs;", "Aggregate different models and use them for decision-making (optimization) problems;", "Assess the outcomes of planning and management problems;", "Apply mathematical models for drainage systems and pressure pipe networks."]]}, {"name": "40.240 Investment Science", "description": "This course will focus on the financial theory of asset pricing. While this course will be broad in scope and will cover many different topics relating to finance, a particular emphasis will be placed on topics related to financial markets. The primary topics covered in the class include present value, asset valuation, expected utility, portfolio selection, and the trade-off between risk and return.", "pre_requisite": [["10.004 Advanced Math II"]], "learning_objectives": [["Define, model and price various financial instruments, including stocks and bonds", "Construct optimal portfolios, based on mean-variance efficiency and utility theory, using probability and optimization", "Use the trading lab to research stocks and select a portfolio of stocks in one sector for semester-long \u201cstock pitching\u201d project."]], "measurable_outcomes": [["Price stocks, bonds and work with the term structure of interest rates.", "Use portfolio theory to select mean-variance optimal portfolios.", "Provide sector analysis and insight on individual stocks within a sector.", "Improve professional presentation skills with in class \u201cstock pitches.\u201d"]]}, {"name": "40.242 Derivative Pricing and Risk Management", "description": "Introduction to the theory and practice of mathematical finance: basics of derivative securities; interest rate and bonds; forward and futures contracts, hedging using futures contracts; option contracts and arbitrage relationship; binomial model, no-arbitrage pricing, risk-neutral pricing, and American options pricing; Brownian motion, Black-Scholes-Merton model, delta hedging, Greek letters, implied volatility, and volatility smile; classical and advanced portfolio management and execution models and strategies.", "pre_requisite": [["40.001 Probability"]], "learning_objectives": [["Master the basics of derivatives, such as the mechanics, properties and functions of futures and options", "Use derivatives to conduct trading and hedging", "Price options using appropriate models including Black-Scholes-Merton model, binomial model and no-arbitrage principle", "Design basic portfolio management and execution strategies"]], "measurable_outcomes": [["Master the basics of derivatives, including terms, characteristics, pricing and execution.", "Use appropriate trading strategies based on the derivative properties, such as straddle strategy and butterfly strategy.", "Construct hedging strategies based on different risk concerns, including delta-neutral strategy, delta-gamma-neutral strategy.", "Price options using different methods, including BSM model, Binomial model.", "Construct the optimal portfolio balancing return and risk.", "Designing the optimal asset execution strategy targeting at minimum trading cost or risk exposure."]]}, {"name": "40.260 Supply Chain Management", "description": "Introduces concepts of supply chain design and operation. Topics include demand estimation, location and capacity planning, process analysis, inventory management, revenue management, supply chain procurement and coordination, and emerging topics in supply chains. A major aspect of the class is a student project on supply chain design.", "pre_requisite": [["40.012 Manufacturing and Service Operations"]], "learning_objectives": [["Develop an understanding of the challenges in the design and operation of supply chains.", "Learn modeling skills and problem-solving tools, applicable to the design, planning, and operation of supply chains.", "Conduct projects related to the design of a supply chain."]], "measurable_outcomes": [["Formulate mathematical models for demand modeling and forecasting, network design and transportation, production flow control and inventory management, revenue management, procurement and contracting.", "Solved above problems using xl based solvers.", "Present and critiqued industry cases related to above topics as well as emerging topics in supply chains.", "Participate in supply chain related simulation game that simulates real world decision making scenarios."]]}, {"name": "40.302 Advanced Topics in Optimisation#", "description": "This course is a follow-up to the ESD core course in Optimisation that students take in Term 4. The course will cover advanced topics in optimisation with a strong focus on modelling, formulations and optimisation techniques. Students will be introduced to the basics and design of algebraic modelling languages and spreadsheet models for describing optimisation problems. The primary application on which the course will be based is scheduling. Through the application, students will be exposed to advanced topics in optimisation such as proving optimality of schedules, integer programming formulations, heuristics, deterministic and stochastic dynamic optimization frameworks.", "pre_requisite": [["40.002 Optimisation"]], "learning_objectives": [["Use optimization techniques as a decision-making tool in scheduling applications.", "Model optimization problems using algebraic modeling languages and spreadsheets.", "Solve moderate-sized yet practical optimization problems that are not simple enough to be solved by hand using techniques such as integer programming, heuristics, deterministic and stochastic dynamic optimization."]], "measurable_outcomes": [["Formulate practical optimization problems in the scheduling domain that effectively tradeoff realism with tractability", "Use an algebraic modeling language to solve scheduling problems using the tool of integer programming", "Identify and develop appropriate methodologies to solve optimization problems in scheduling"]]}, {"name": "40.305 Advanced Topics in Stochastic Modelling#", "description": "This is a follow-up to the introduction course on Stochastic Modelling. Students learn advanced methods in stochastic modelling with a focus on business, engineering and financial math applications. Topics to be covered include renewal theory and martingales (discrete time). Time permitting other topics such as branching processes, spatial processes or stochastic networks could be introduced.", "pre_requisite": [["40.001 Probability"]], "learning_objectives": [["Apply the technique of Martingale in finance", "Apply renewal theory in operations management"]], "measurable_outcomes": [["Show the examples of Martingale, Renewal Process, and Brownian Motion.", "Construct or develop a stochastic model using these concepts.", "Identify and solve engineering problems involving these concepts.", "Analyse these concepts in a broader context of probability theory."]]}, {"name": "40.316 Game Theory", "description": "The course will provide a consistent framework for game-theoretic concepts, some of which have already been informally presented to the students in other courses. The course will cover the basic concepts in game theory, allowing the students to use strategic models in their capstone research.", "pre_requisite": [["10.007 Modelling The Systems World"]], "learning_objectives": [["Introduce elementary concepts of numerical methods for ODEs and PDEs.", "Develop the practice of error analysis.", "Analyse and solve, numerically, the PDEs that often arise in financial problems using finite difference and Monte-Carlo methods."]], "measurable_outcomes": [["Formalize a real life problem as a game,", "Find equilibria in simple strategic form games", "Compute some refinements of equilibria in extensive form games,", "Compute the price of anarchy in simple games,", "Design and run a simple experiment to test strategic behavior."]]}, {"name": "40.317 Financial Systems Design", "description": "This is a course in computational finance in which students learn the tools for delivering financial services and the algorithms used to price complex financial instruments (derivatives). It also abstracts the design of financial services, focusing on interface design, which reduces to language design. Only moderate coding proficiency is required (Python 3) but there are weekly coding exercises. The design exercise is to propose an interactive, distributed trading game and to specify the interfaces. Topics include:", "pre_requisite": [["40.242 Derivative Pricing and Risk Management", "At least one course beyond 10.009 The Digital World requiring the use of Python. Alternatively, by instructor permission upon demonstration of a software portfolio."]], "learning_objectives": [["Recognize and apply the tools of financial systems design in distributed environments;", "Create a systems level design by designing the system interfaces, viewing each interface as a \u201clittle language\u201d; and", "Recognize and implement algorithms for pricing financial instruments (derivatives)"]], "measurable_outcomes": [["Create a code repository for version control;", "Create a console-based client;", "Create a multi-threaded server;", "Create a graphical user interface for the client;", "Store a history of transactions in a blockchain;", "Design the interfaces for a distributed system;", "Compute the price of a derivative via forward, backward, and central differences;", "Solve an ODE using numerical techniques;", "Solve a PDE using numerical techniques;", "Price an option using Monte Carlo simulation and apply variance reduction techniques;", "Price an American option."]]}, {"name": "40.318 Supply Chain Digitalisation and Design", "description": "Successful orchestration of planning and execution processes across virtual and global supply chain networks is a critical success factor for today\u2019s businesses. This necessitates tight information integration across business functions and a strong alignment between the business and information technology functions. In the first half of the course we will study supply chain operations of a global manufacturing and distribution company, the NOVA Corporation. Using an experiential simulation of the company\u2019s supply chain, we will identify common errors in the design of such systems. We will see in greater detail how logistics policies, organizational design, performance measurement systems, information flows, and even currency fluctuations can impact a company\u2019s performance. Customer requirements ultimately determine a company\u2019s manufacturing and distribution system requirements. The course material is unified around the theme of applying five basic principles of supply chain management to global manufacturing and logistics. The second half of the course develops a framework and process for discovering the value potential of digitalisation and ensuring value realization from investments in digital technologies.", "pre_requisite": [["40.260 Supply Chain Management"]], "learning_objectives": [["Enumerate five key principles in designing supply chains as a framework for analysis and action.", "Enumerate five key systems within a supply chain organization and describe their function.", "Observe and articulate the impact of uncertainty in supply chain operations.", "Contrast a capacity-based inventory strategy with a lead-time-based inventory strategy.", "Formulate an optimization-based approach to multi-item production planning.", "Apply customer requirements analysis to design a supply chain strategy.", "Identify key disconnects between Business and IT functions, from a strategy, process and technology systems requirements point of view.", "Demonstrate a clear understanding of the Approach, Methodology and Tools that can be used to align and discover value potential of digital technologies in supporting business and to ensure that the promised alignment and value of digital technologies is indeed being realized.", "Apply the methodologies and tools of Value Discovery and Value Realization in developing business cases."]], "measurable_outcomes": [["Calculate the impact on inventory levels of various degrees of uncertainty in upstream capacity and downstream demand.", "Formulate an optimization-based approach to multi-item production planning.", "Apply customer requirements analysis to design a supply chain strategy with reference to supply chain design principles and detailed at the level of supply chain functional systems.", "Construct a business value-driven digital technologies roadmap for a business case."]]}, {"name": "40.319 Statistical and Machine Learning", "description": "An agent is intelligent if it perceives its environment and takes actions that maximize its chances of successfully achieving its goals. In this course, we will study how to imbue machines with intelligence, focusing on foundational principles and mathematical theories of real-world modeling, problem solving and statistical learning. We will borrow strategies from biological intelligence such as neural networks and reinforcement learning. Students will learn powerful concepts from decision theory, information theory, generative models, deep learning, dimensionality reduction, expectation-maximization, time-series prediction, control theory and machine reasoning, and will exploit software tools for building intelligent systems.", "pre_requisite": [["10.007 Modelling The Systems World", "40.004 Statistics  (or 30.003/50.034 Introduction to Probability and Statistics)"]], "learning_objectives": [["Acquire a basic understanding in the fundamental concepts and principles of machine learning; decision theory, information theory, model selection, time series prediction, machine reasoning", "Understand and apply methods in supervised learning and generative models;", "generalized linear models, kernel methods, graphical models", "Understand and apply concepts in unsupervised learning and dimensionality reduction; autoencoders, matrix factorization, expectation-maximization, latent variables, mixture models", "Understand and apply techniques in reinforcement learning; Kalman filters, Q-learning", "Acquire a working knowledge of neural networks and backpropagation, and extend the techniques learnt to analyze standard deep learning models such as convolutional neural networks and recurrent neural networks"]], "measurable_outcomes": [["Design suitable mathematical models for real-world problems.", "Build intelligent systems by composing appropriate algorithms.", "Critique the strengths and weaknesses of different solutions."]]}, {"name": "40.320 Airport Systems Planning and Design", "description": "An airport is one of the most complex engineering systems in existence. It must simultaneously achieve ultra-high levels of safety and security while providing high throughput of passengers and cargo on a daily basis. It is an integrated system of systems bringing together airlines, air traffic controllers, baggage and cargo handlers, airport operators, customs, immigration, and security officers, as well as various ancillary support services such as connection to ground transportation and the provision of food, beverage, and emergency services. If you can appreciate the multiple dimensions of planning and design of an airport system, you are well-prepared to tackle many other system of systems challenges.", "pre_requisite": [["40.012 Manufacturing and Service Operations", "40.014 Engineering Systems Architecture"]], "learning_objectives": [["Know the basic systems, both airside and landside, that constitute an airport system from a functional perspective (what roles do they play).", "Know the basic terminology used to describe these systems.", "Know the performance metrics by which these systems are judged.", "Comprehend some of the interactions between these systems and the performance tradeoffs.", "Apply basic forecasting techniques to predict demand on these systems.", "Apply basic process analysis to compute the capacity of these systems.", "Comprehend the difficulty of making long term predictions of the impact of technology and economics on these demands and capacities.", "Recognize the rapid degradation in performance that accompanies highly utilized systems in the presence of uncertainty.", "Explain the need for flexibility in design for airport systems."]], "measurable_outcomes": [["Demonstrate mastery of the basic terminology used to describe airport systems.", "Demonstrate familiarity with basic tools of demand forecasting and capacity analysis.", "Demonstrate by means of an oral and written report, the ability to identify, describe, and analyze an issue in airport planning, design, or operation and to recommend policy changes or technology enhancements to address the issue."]]}, {"name": "40.321 Airport Systems Modelling and Simulation", "description": "Airports are complex systems that require the use of specialized modelling tools to be operated and managed efficiently. This course aims to provide students with appropriate knowledge and modelling skillset to critically apply simulation and optimization tools for airport systems planning, management and design. The modelling mindset is also applicable to other complex systems such as manufacturing facilities and hospitals. Topics include: airside capacity estimation, optimization of airport capacity utilization, airport demand management, simulation of airside aircraft movements, simulation of landside processes and air traffic flow management. A major aspect of this class is a final project where students are required to conduct a comprehensive simulation study on airport management using fast-time airport simulation tools (TAAM, Airtop, or CAST).", "pre_requisite": [["40.002 Optimisation", "40.015 Simulation Modelling and Analysis"]], "learning_objectives": [["Understand and identify the major challenges faced by airport planners and air traffic controllers in the planning and management of airport systems;", "Apply fast-time airport simulation tools to model airport systems (TAAM, Airtop, or CAST);", "Formulate mathematically classic problems of airport capacity/demand management and air traffic flow management;", "Analyse and assess the performance of airport systems using simulation and optimization tools;", "Design solutions aimed to address a given research problem within the context of airport planning and management."]], "measurable_outcomes": [["Demonstrate proficiency with the use of fast-time airport simulation tools (TAAM, Airtop, or CAST);", "Apply simulation tools to estimate airport capacity and predict airport flight delays;", "Apply optimization tools to make decisions with respect to airport capacity utilization, airport demand management, and air traffic flow management;", "Evaluate and improve the performance and utilization of airport systems by modelling airside aircraft movements;", "Evaluate and improve the performance of airspace systems by modelling en-route air traffic movements;", "Evaluate and improve the performance of landside facilities by modelling passenger movements."]]}, {"name": "40.323 Equity Valuation", "description": "This course introduces two key tools used by professional investors.", "pre_requisite": [["40.011 Data and Business Analytics", "40.240 Investment Science"]], "learning_objectives": [["Create a framework that links causal factors of firm performance with changes in the value of the company", "Combine the framework with analytic models of the value of equity share prices", "Hypothesize and prioritize the assumptions required for the analysis to be valid", "Identify data used to validate (or invalidate) the model and model assumptions"]], "measurable_outcomes": [["Estimate firm cash flows and cash flow growth, and integrate the analysis within the valuation framework", "Apply Damodaran\u2019s methodology to estimating equity valuation risk and discount rate parameters", "Determine factors which drive changes in firm value using causal modelling techniques", "Devise methods to assess the merits of investment theses and assumptions required for the theses to hold"]]}, {"name": "40.324 Fundamentals of Investing", "description": "This course introduces topics relevant for students who want to understand the modern framework for evaluating investment opportunities. It combines key elements of managerial accounting and finance, as well as modern portfolio and asset pricing theory. After completing this course, students will be able to apply the core tool of analytic finance to assess the value of company projects, including those undertaken by start\u2010ups. They will also be able to analyze financial market conditions to recommend investment strategies.", "pre_requisite": [["10.001 Advanced Mathematics I", "10.004 Advanced Math II", "30.3003 / 50.034 Introduction to Probability and Statistics"]], "learning_objectives": [["Define key accounting metrics and apply these metrics to evaluate the performance of a company.", "Identity and interpret techniques to value cash flows from investing in firm projects.", "Develop equity valuation frameworks that link stock prices to firm cash flows and risk.", "Derive optimal allocation rules for investing in portfolios with one or two risky assets.", "Identify optimal portfolio allocation rules for many risky assets, such as stocks, commodities, real estate and bonds. Combine the optimal allocation rules with index models to identify the degree of diversification in an optimal portfolio.", "Hypothesize and derive a linear relation between risk and expected returns.", "Define factors that determine bond prices. Synthesize bond pricing relations with no\u2010arbitrage equilibrium models of spot and forward rates."]], "measurable_outcomes": [["Create a financial planning spreadsheet for a start\u2010up company.", "Estimate cash flows generated by a company project, and develop decision rules for whether to invest in the project.", "Determine the value of the stock using valuation by comparables.", "Use optimal allocation rules to recommend allocations to stocks vs cash.", "Construct optimal portfolios for investors that account for the risk and expected returns of the assets in the portfolio.", "Devise and implement methods to estimate and test the linear relation between risk and expected return.", "Design no\u2010arbitrage trading strategies to identify possible violations of no\u2010arbitrage equilibrium."]]}, {"name": "01.102 Energy Systems and Management", "description": "Broadly, this course aims to acquaint students with both the operation and economics of modern electric power systems. Topics include optimal power flow, unit commitment, economic dispatch, electricity markets, as well as emerging techniques for renewable energy integration and demand response. By the end of the course, students will have developed a firm grasp of optimal power system operations, the emerging challenges facing deep renewable energy integration, tools to effectively tackle said challenges, as well as the energy system and markets in Singapore.", "pre_requisite": [["10.004 Advanced Math II"]], "learning_objectives": [["Solve basic power flow equations by incorporating engineering constraints in power networks", "Apply mathematical models to analyse the operation and economics of wholesale electricity markets", "Identify the opportunity and challenges brought by renewable energy integration"]], "measurable_outcomes": [["Formulate the optimal power flow problem for electric power networks", "Analyse the operation and economics of (deregulated) wholesale electricity markets", "Analyse the challenges brought by growing renewable generation to power systems", "Identify the challenges of providing reliable power supply in developing countries, as well as the current practice to mitigate electricity shortage in some developing countries."]]}, {"name": "01.104 Networked Life", "description": "Driven by a number of real-world questions about our networked lives, this course explores the technology behind the multi-trillion dollar Internet and wireless industries.", "pre_requisite": [["10.007 Modelling the Systems World"]], "learning_objectives": [["Describe some of the key networked life applications, the basic real problems they solve, and the value they bring to society. Recognize the key technology innovation in modern networking technologies like CDMA, WiFI, page rank, recommendation systems, social media, Internet flow control, cloud computing, content distribution networks, network pricing, IPTV, etc.", "Classify these applications in terms of the common mathematical models and tools used, and explain the basic theory used in each case.", "Apply the appropriate mathematical tools (game theory, social network and graph theory, optimization, concepts like feedback, equilibrium, coordination, fairness, reputation) in the different context of each application and observe the limitations of the various models.", "Analyze the performance of the solutions in the different application contexts and environment constraints.", "Determine the effects on the solutions when assumptions or parameters of the models are changed.", "Evaluate the way current networked life applications perform, explain why particular solutions have dominated the technology space."]], "measurable_outcomes": [["Students will define the reasons for developing the given applications and their value in targeted class discussions (LO1).", "In each of the application areas, the student will apply the appropriate mathematical tools (game theory, social network and graph theory, optimization, feedback, equilibrium, coordination, fairness, reputation) to analyze the system performance through weekly HWs (LO3, LO4).", "Students will solve problems that illustrate the importance of various system parameters in the context of each application and and develop solutions that are practical and mathematically sound (LO5).", "Students will answer questions regarding the evaluation of the various solution concepts, their appropriateness, and also their weaknesses (LO6)."]]}, {"name": "01.107 Urban Transportation", "description": "This course provides students with an understanding of current challenges and opportunities in land transportation. It introduces road vehicle propulsion technologies and transportation systems modelling, including the tools and methods to assess technologies and system performance. Topics include conventional and alternative vehicle powertrains, intelligent transportation systems (ITS), transportation network modelling, traffic simulation, and travel demand modelling. Students will complete a project on a subject of their choosing.", "pre_requisite": [], "learning_objectives": [["Explain the system-level transportation challenges and how these might be overcome in the future.", "Assess demand and supply and intra- and inter-system interactions, and how to design systems for passenger and freight transportation", "Evaluate the socio-technical tradeoffs and limitations of various transportation solutions."]], "measurable_outcomes": [["Assess and critique the effectiveness of urban transportation systems", "Model, explore and report (orally and written) the performance of transportation systems under different policies, services, infrastructures, and technologies", "Describe and compare the merits of different vehicle propulsion system designs"]]}]
+[
+    {
+        "name": "50.006 User Interface Design and Implementation",
+        "description": "The course will introduce the field of Human-Computer Interaction (HCI), Interaction Design and Usability in the context of today\u2019s diverse interactive products. The course will cover usability principles, design guidelines and heuristics, user-centred design, usability engineering, user experience and evaluation techniques, and will include a series of mini design exercises and design-implementation projects. Students who successfully complete the course will be well-equipped with the concepts and language to argue and discuss how well a system\u2019s front-end (e.g. a website, a mobile app, a museum kiosk, etc.) is designed and be able to design usable, easy-to-use, intuitive, attractive user-interfaces informed by the concepts and knowledge learned during the course.",
+        "pre_requisite": [
+            [
+                "10.014 Computational Thinking for Design"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Understand the concept of usability, design principles, guidelines, heuristics and other fundamentals of Human-Computer Interaction.",
+                "Analyze a set of requirements in terms of its user-interface implications.",
+                "Develop a usage scenario for a given set of user requirements and available technologies.",
+                "Construct a user-interaction strategy for a given problem.",
+                "Sketch a series of user-interfaces for a given use scenario.",
+                "Implement a designed user-interface to demonstrate its functionality and usability.",
+                "Employ a set of usability engineering methods to refine a designed user-interface.",
+                "Evaluate a user-interface using suitable evaluation methodology."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Apply design principles, guidelines and heuristics to create a user-interaction strategy that solves a real-world problem.",
+                "Design a usable and compelling user-interface given a set of requirements and available technologies.",
+                "Communicate effectively the designed user-interface to relevant stakeholders using design rationale and a sketching/presentation tool in an informed, reasonable and persuasive way.",
+                "Conduct an evaluation of a user-interface by employing a series of evaluation methods available in usability engineering."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "User classification and user centred design",
+                "Information visualisation and interactivity",
+                "Usability principles and guidelines, UI prototyping tools",
+                "Anthropomorphism and framing the interaction strategies; metaphor",
+                "Personal and social impact of technology and experience design; ethical issues of interaction design",
+                "Usability evaluation techniques"
+            ]
+        ]
+    },
+    {
+        "name": "50.007 Machine Learning",
+        "description": "Machine learning is the study of algorithms that improve their performance at some task with experience. In this course, students will learn how machine learning has led to many innovative real-world applications. The students will also gain an in-depth understanding of a broad range of machine learning algorithms from basic to state-of-the-art, such as: na\u00efve Bayes, logistic regression, neural networks, clustering, probabilistic graphical models, reinforcement learning and SVMs.",
+        "pre_requisite": [
+            [
+                "50.001 Information Systems & Programming and 50.004 Algorithms; or",
+                "A working knowledge of programming in Python or Java and a strong foundation in probability and statistics, and optimization (topics such as dynamic programming)"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Recognize the characteristics of machine learning that make it useful to real-world problems.",
+                "Explain the basic underlying concepts for supervised discriminative and generative learning.",
+                "Explain the concepts of cross-validation and regularization, be able to use them for estimation of algorithm parameters.",
+                "Characterize machine learning algorithms as supervised, semi-supervised, and unsupervised.",
+                "Have heard of a few machine learning toolboxes.",
+                "Use support vector machines.",
+                "Use regularized regression algorithms.",
+                "Explain the concept behind neural networks for learning non-linear functions.",
+                "Apply unsupervised algorithms for clustering.",
+                "Explain the foundation of generative models.",
+                "Implement the inference and learning algorithms for the hidden Markov model.",
+                "Explain the learning algorithm for hidden Markov model with latent variables.",
+                "Explain algorithms for learning Bayesian networks.",
+                "Explain reinforcement learning algorithms."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "List useful real-world applications of machine learning.",
+                "Implement and apply machine learning algorithms.",
+                "Choose appropriate algorithms for a variety of problems."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction",
+                "Perceptron",
+                "Linear Regression",
+                "Logistic Regression",
+                "Support Vector Machines",
+                "Kernel Methods",
+                "Neural Networks and Deep Learning",
+                "Clustering",
+                "Generative Models",
+                "Mixture Models and Expectation Maximization",
+                "Hidden Markov Model",
+                "Bayesian networks",
+                "Reinforcement Learning"
+            ]
+        ]
+    },
+    {
+        "name": "50.012 Networks",
+        "description": "This course will introduce the principles and practice of computer networking, with emphasis on the Internet. Students will learn concepts, principles, protocols, and applications of computer networks, including packet switching, layered architectures, TCP/IP, physical layer, error control, window flow control, local area networks (Ethernet, Token Ring; FDDI), network layer, congestion control, quality of service, multicast, network programming interfaces, networked applications.",
+        "pre_requisite": [
+            [
+                "50.005 Computer System Engineering or",
+                "A working knowledge of programming in Python and a strong foundation in computer systems"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Explain fundamental network protocols.",
+                "Describe the organisation of computer networks, and classify factors influencing computer network development and the reasons for having variety of different types of networks.",
+                "Solve standard problems in interconnections between autonomous networks.",
+                "Model the Internet structure and derive operational parameters.",
+                "Design optimized network topology for given problem settings.",
+                "Analyze and evaluate a provided network setup.",
+                "Design and implement a server-client architecture based on sockets."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Description of the essential features of different networking protocols, such as TCP, IP, DNS, and ARP.",
+                "Conceptual design of a computer network based on a set of provided operational requirements.",
+                "Application of routing algorithms to determine the shortest path in an network such as the internet, modeled as a weighted graph.",
+                "Model and analysis of a network of autonomous systems.",
+                "Analysis of a real network setup and critique of the design decisions.",
+                "Design and implementation of a client-server application program using sockets."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Computer Networks and the Internet",
+                "Application Layer",
+                "Transport Layer",
+                "The Network Layer",
+                "The Link Layer: Links, Access Networks, and LANs",
+                "Embedded networks and bus systems",
+                "Wireless Networks",
+                "Mobile Networks",
+                "Multimedia Networking and QoS",
+                "Network Management",
+                "Recent trends in networking (SDN, overlay networks)"
+            ]
+        ]
+    },
+    {
+        "name": "50.017 Graphics and Visualisation",
+        "description": "Introduction to computer graphics algorithms, software and hardware. Topics include ray tracing, the graphics pipeline, transformations, texture mapping, shadows, sampling, global illumination, splines, animation, color, fundamentals of virtual and augmented reality (VR and AR).",
+        "pre_requisite": [
+            [
+                "C/C++: All assignments are in C/C++",
+                "Calculus, Linear Algebra: Solving equations, derivatives, integral; vectors, matrices, basis, solving systems of equations."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Implement graphics algorithms for a variety of applications: video games, movies, CAD, etc.",
+                "Understand the different requirements of different applications.",
+                "Understand the basics of real-time rendering and graphics hardware.",
+                "Use C/C++ and OpenGL programming to build 3D graphics applications"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Coordinate transformations",
+                "Bezier curves and splines",
+                "Representation and interpolation of rotations",
+                "Computer animation",
+                "Particle systems",
+                "Collision detection",
+                "Ray Tracing",
+                "Rasterization and Shading",
+                "Texture mapping",
+                "Global illumination approaches"
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Bezier Curve",
+                "Curve and Surface",
+                "Coordinates & Transformations",
+                "Hierarchical Modeling",
+                "Animation Basics",
+                "Particle Systems",
+                "Cloth Simulation & Mass Spring",
+                "Ray Casting",
+                "Ray Tracing",
+                "Ray Tracing Acceleration",
+                "Shading",
+                "Texture Mapping",
+                "Antialiasing",
+                "Global Illumination",
+                "Displays and Fabrication",
+                "Rasterization",
+                "Graphics Hardware",
+                "Latest Research in Graphics"
+            ]
+        ]
+    },
+    {
+        "name": "50.020 Network Security",
+        "description": "This course covers theory and practice of network security. Starting with general introduction of network security, this course focuses on Internet security. The first part addresses common security issues and countermeasures at each of the five layers from the TCP/IP protocol stack. Subsequently, Firewall and Intrusion Detection/ Prevention System are covered as two of the most common tools/technologies to protect a network. Finally, the course ends with special topics such as wireless network security, IoT security, etc.",
+        "pre_requisite": [
+            [
+                "50.042 Foundations of Cybersecurity"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Explain common attacks and countermeasures in a networked system, particularly on the commonly used network protocols.",
+                "Model, analyse and apply effective countermeasures for secure networked systems.",
+                "Apply layered defense technologies to a secure network design.",
+                "Design and optimise network design for given problem settings.",
+                "Evaluate the security of an existing network design."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Description of the fundamental concepts of network security, through proper threat modeling and security goal definition in a design project.",
+                "Application of security countermeasures to design a secure networked system.",
+                "Applications of security countermeasures to mitigate common attacks by demonstrating security level improvement of a vulnerable networked system.",
+                "Application of layered defense technologies/tools and practical considerations for securing a complex network in a design project.",
+                "Security assessment and optimisation of a given networked system through an experimental project.",
+                "Demonstration of common attacks fro common network protocols, through successful packet sniffing and editing in a laboratory environment."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Network protocol and the OSI model",
+                "Packet sniffing and spoofing",
+                "TCP protocol and attacks",
+                "DNS protocol and attacks",
+                "Public key infrastructure and TLS protocol",
+                "Firewall and intrusion detection systems",
+                "VPN",
+                "Web security",
+                "Wireless security",
+                "Security economy"
+            ]
+        ]
+    },
+    {
+        "name": "50.021 Artificial Intelligence",
+        "description": "Artificial intelligence (AI) is a rich field spanning formal systems for representing and processing symbolic information, computational models of human cognition, and a range of techniques for learning, planning and reasoning under uncertainty. In this course, students will gain an appreciation of what \u201cartificial intelligence\u201d means, and how it can be usefully applied to real-world problems. Students will learn the intricacies of state-space search and constraint programming. Through an in-depth treatment of knowledge representation via propositional and first-order logic, students will understand how expert knowledge can be fed into and be processed by modern computers. In addition, students will acquire skills in using planning algorithms to find solutions to optimization problems, and understand how to use probabilistic reasoning to draw inferences in uncertain environments.",
+        "pre_requisite": [
+            [
+                "50.007 Machine Learning/ 40.319 Statistical & Machine Learning",
+                "50.034 Introduction to Probability and Statistics/ 30.003 Introduction to Probability and Statistics/ 40.001 Probability + 40.004 Statistics",
+                "10.014 Modeling Uncertainty"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Define the meaning of \u201cartificial intelligence\u201d.",
+                "Name examples of AI that are successful in real-world problems.",
+                "Describe the strengths and limitations of various state-space search algorithms, and choose the appropriate algorithm for a problem.",
+                "Formulate and solve problems in the framework of constraint satisfaction problems.",
+                "Formulate and solve planning problems.",
+                "Use probabilistic modelling techniques to solve problems with noise, incomplete information, and uncertainty.",
+                "Summarize the essential components of gradient-based optimization in supervised learning problems",
+                "Explain the impact of stepsizes in gradient-based optimization",
+                "Recognize the difference between batch and stochastic/mini-batch gradient descent and apply improved weight update methods such as momentum term, RMSProp and Adam.",
+                "Be able to apply the training and running of trained neural networks in Pytorch",
+                "Be able to investigate the impact of essential parameters such as stepsize, batchsize and training iterations when training a neural network",
+                "Discuss the usage of different neural network structures such as fully connected, convolutional and pooling layers",
+                "Be able to recall state of the art neural network components such as batch normalization layers and residual connections",
+                "Be able to recall the basic ideas behind neural networks used for machine translation and sequence to sequence learning.",
+                "Be able to construct input samples that are able to fool neural networks",
+                "Explain the difference between training from scratch and finetuning, be able to run finetuning of neural networks."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "List current useful real-world applications of AI.",
+                "Implement state-space search algorithms for a variety of problems.",
+                "Solve constraint programming problems.",
+                "Infer new information from provided knowledge.",
+                "Use planning algorithms to find optimal solutions.",
+                "Solve problems with noise and uncertainty using probabilistic techniques."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction to Artificial Intelligence",
+                "Search",
+                "Adversarial Search",
+                "Constraint Satisfaction",
+                "Logic",
+                "Planning"
+            ]
+        ]
+    },
+    {
+        "name": "50.033 Foundations of Game Design and Development",
+        "description": "This is an introductory course about the basic of game creation. This course provides an overview of different aspects of game development. Student will get in touch with C++ Programming (industry standard), starting with console application, then GUI games on various platform with graphics, dialog boxes, and user control. There are also basic overview of topics including game architecture, interface design, graphics for game, audio for game, prototyping and play testing. Students will be able to implement their creative gaming idea by using the latest gaming tools which are easy and readily usable.",
+        "pre_requisite": [
+            [
+                "50.001 Information Systems & Programming",
+                "50.004 Algorithms"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Have a board but general overview of different aspects of game development.",
+                "Understand the complete flow of game development in a high level perspective, be prepared to master the complete skill set of game development."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Produce simple games with student\u2019s novel idea by using existing tools.",
+                "Ability to use code libraries to quickly create runnable games."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction",
+                "Game theory, challenges, and strategies",
+                "Story Telling, story elements, traditional story structure, nonlinear and collaborative storytelling",
+                "Point-of-View and archetype",
+                "Game Characters, character development elements, visual and verbal character development",
+                "Rules of Game Play",
+                "Interactivity modes, balance, and economies",
+                "Level Design, Structure, Time and Space",
+                "Structures of environmental design",
+                "Player control",
+                "Perspective, style, temporal and spatial features",
+                "Documentation",
+                "Unity and Unreal engine basic (workflow, scene basic, game object, gameplay creation)",
+                "Editor and scripting",
+                "Graphics (Lighting, cameras, terrain, shaders, particles system, sprite, rendering features, mesh geometry, layers)",
+                "Physics (rigidbodies, colliders, joints, controllers)",
+                "User Interface objects (canvas, layout, interaction components)",
+                "Navigation and path finding",
+                "Music, sound design, audio sequencing and mixing using Audacity",
+                "Exploration of player motivation",
+                "Player-Centred Design",
+                "Interface and Game Features",
+                "Interface Types",
+                "Usability",
+                "The Player Experience",
+                "Resources constrain (CPU, memory, control space)",
+                "The difference between simulator and real gaming device",
+                "Memory leak and detection tools",
+                "Lazy loading vs preloading",
+                "Basic of cloud gaming",
+                "Mobility design (instant save load, localization, running time optimization)",
+                "Development Phases",
+                "Management",
+                "Roles and responsibilities",
+                "Community management and customer support",
+                "Advertising, public relations, sales and promotion",
+                "Previous and current successful business model, target customer"
+            ]
+        ]
+    },
+    {
+        "name": "50.035 Computer Vision",
+        "description": "This is an advanced undergraduate level course on the concepts, algorithms and system design in computer vision. The particular focus in this course is on the underlying computational/mathematical principles, and data-driven and neural networks (aka \u201cdeep learning\u201d) approaches. The course introduces different computer vision tasks such as image/video classification, localization, detection, among others, and discusses different computational algorithms for these tasks, including recently proposed deep learning methods: convolutional neural networks (CNN), recurrent neural networks (RNN), long short-term memory (LSTM), Generative Adversarial Networks (GAN), etc. Students will learn to design, implement, train and debug their own systems and neural networks, and gain understanding of, and the skills to use, cutting-edge technologies in computer vision. A semester-long, 1-D design project requires students to design, implement, and train multi-million parameter neural networks to address real-world computer vision problems.",
+        "pre_requisite": [
+            [
+                "List useful real-world applications of computer vision",
+                "Apply and design computer vision systems and algorithms",
+                "Evaluate appropriate computer vision algorithms for a variety of problems"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "List useful real-world applications of computer vision",
+                "Apply and design computer vision systems and algorithms",
+                "Evaluate appropriate computer vision algorithms for a variety of problems"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Design image convolution and filtering using OpenCV [LO 1,2]",
+                "Design image recognition system using data driven approach and linear classification [LO 2]",
+                "Design convolutional neural networks using TensorFlow [LO 2]",
+                "Develop the training of convolutional neural networks using back-propagation and stochastic gradient descent [LO 2]",
+                "Design image recognition system using convolutional neural networks [LO 1,2,3]",
+                "Develop the training of convolutional neural networks using GPU programming [LO 2]",
+                "Design convolutional neural networks using dropout and batch normalization [LO 2]",
+                "Design image segmentation systems using convolutional neural networks [LO 1,2,3]",
+                "Design object detection and localization systems using convolutional neural networks [LO 1,2,3]",
+                "Design video activity recognition systems using recurrent neural networks [LO 1,2,3]",
+                "Develop the training of LSTM using TensorFlow [LO 2]"
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Image, Filtering, Convolution",
+                "Image Histogram",
+                "Image classification, data-driven approach, knn",
+                "Linear Classifier",
+                "Gradient Descent",
+                "Deep Learning",
+                "Convolutional Neural Network",
+                "CNN Architectures",
+                "Back Propagation",
+                "Regularization",
+                "Object detection and segmentation",
+                "Advanced gradient descent",
+                "Generative Adversarial Networks (GAN)",
+                "Improved GAN and Applications"
+            ]
+        ]
+    },
+    {
+        "name": "50.036 Foundations of Distributed Autonomous Systems",
+        "description": "The course  introduces fundamental principles that underlie  the design and validation of complex autonomous systems. The usage of such systems is gaining popularity at a rapid pace, including but not limited to their usage in robotics, smart home, and autonomous vehicles. The course  delves into the theoretical and practical aspects of designing mixed hardware-software systems \u2013 criteria shared by most autonomous systems envisioned in a smart nation. Topics include the essence of hardware-software systems via appropriate abstractions, models and tools; use of  Simulink/Stateflow paradigm to design distributed hardware-software systems; understanding key principles for programming in resource constrained environments; performance optimization and performance tuning tailored to such environments; and programming hardware-software systems using custom hardware module such as mobile GPGPUs (general-purpose graphics processing units) for enhanced performance.",
+        "pre_requisite": [
+            [
+                "50.002 Computation Structure or permission of instructor"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Design a distributed and networked embedded system from scratch (required tools, devices and hardware will be provided). This includes formulation of the problem, capturing the design using formal models, such as via Simulink/Stateflow and implementations of the system running on custom embedded platform.",
+                "Apply key ideas on performance tuning and performance optimization for resource-constrained embedded systems.",
+                "Learning techniques to validate the systems beyond their functionality, such as for real-time performance.",
+                "Apply key ideas on hardware/software partitioning for designing distributed embedded systems.",
+                "Apply key ideas to maintain correctness in a distributed and resource-constrained environment."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Design models of hybrid (discrete + continuous) systems [LO 1]",
+                "Develop distributed embedded systems [LO 1,2,3,4]",
+                "Develop autonomous decision making systems in embedded platform [LO 1,2]",
+                "Develop optimization techniques for resource-constrained environment [LO 4,5]",
+                "Analyze the design of a distributed embedded system to reason about correctness [LO 5]",
+                "Analyze the design of a distributed embedded system to reason about performance [LO 3]",
+                "Analyze the requirement of a system to find the hardware/software partitioning [LO 4]",
+                "Develop high-performance and distributed embedded system via custom platform [LO 2]",
+                "Develop and analyze Simulink Stateflow models at earlier stage of the design [LO 1]"
+            ]
+        ],
+        "topics_covered": []
+    },
+    {
+        "name": "50.037 Blockchain Technology",
+        "description": "Decentralized blockchain-based systems, such as Bitcoin and Ethereum, are successful beyond all expectations. Although still in their infancy, they promise to revolutionize how we think of financial, information, and other infrastructures. This course covers the technical aspects of public distributed ledgers, blockchain systems, cryptocurrencies, and smart contracts. Students will learn how these systems are built, how to interact with them, how to design and build secure distributed applications.",
+        "pre_requisite": [
+            [
+                "50.004 Algorithms",
+                "50.005 Computer System Engineering",
+                "50.012 Networks, 50.020 Security, and 50.043 Database and Big Data are helpful but not required. Needed concepts will be introduced during the class"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Understand how blockchain systems (mainly Bitcoin and Ethereum) work,",
+                "To securely interact with them,",
+                "Design, build, and deploy smart contracts and distributed applications,",
+                "Integrate ideas from blockchain technology into their own projects."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Explain design principles of Bitcoin and Ethereum.",
+                "Explain Nakamoto consensus.",
+                "Explain the Simplified Payment Verification protocol.",
+                "List and describe differences between proof-of-work and proof-of-stake consensus.",
+                "Interact with a blockchain system by sending and reading transactions.",
+                "Design, build, and deploy a distributed application.",
+                "Evaluate security, privacy, and efficiency of a given blockchain system."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Intro to Cryptographic Tools",
+                "Distributed Systems and Consensus",
+                "Bitcoin Basics",
+                "Bitcoin Mechanisms",
+                "Ethereum",
+                "Smart Contracts",
+                "Anonymity and Privacy of Blockchain",
+                "Miscellaneous topics of Blockchain"
+            ]
+        ]
+    },
+    {
+        "name": "50.038 Computational Data Science",
+        "description": "This course provides students the necessary background and experience in data science technology and concepts. Students will gain experience with tackling a complete data science project, from data gathering and preprocessing to data analysis through machine learning tools. Students will learn to apply fundamental concepts in machine learning to data storage and distributed processing as a foundation for their project.",
+        "pre_requisite": [
+            [
+                "10.014 Computational Thinking for Design",
+                "50.034 Introduction to Probability and Statistics / 30.003 Introduction to Probability & Statistics / 40.001 Probability + 40.004 Statistics"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Be aware of the main goals of data science, its main application domains and current challenges.",
+                "Apply tools to build basic models for solving typical data analytics problems.",
+                "Visualise the structure of big data in order to uncover hidden patterns.",
+                "Design and implement distributed database systems for managing heterogeneous data.",
+                "Perform basic operations on a moderately complex distributed computation system, such as Spark.",
+                "Explain the fundamentals of statistical machine learning and deep learning.",
+                "Appreciate the technical skills necessary to be a capable data scientist."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Identify important concepts and current challenges in data science.",
+                "Design feature representations for image, text and time series data.",
+                "Analyse data and build simple models in tools such as Weka, Python and Tableau.",
+                "Implement distributed computation model using Spark.",
+                "Evaluate the performance of different models using empirical benchmarks.",
+                "Mathematically explain common machine learning models such as SVMs, logistic regression systems and neutral networks.",
+                "Implement machine learning algorithms using software such as R, C++ and PyTorch.",
+                "Manage big data using Hadoop and MapReduce."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Intro DS and Hadoop",
+                "Features + Text",
+                "Visualisation",
+                "Regression and Time Series",
+                "Classification",
+                "Into to Deep Learning",
+                "Word2vec",
+                "Digital Media (CNN)",
+                "RNN",
+                "Negative Sampling, Attention Mechanism, 1D Convolution and Pre-trained Feature Extraction"
+            ]
+        ]
+    },
+    {
+        "name": "50.039 Theory and Practice of Deep Learning",
+        "description": "The course goal is to familiarize students with deep learning for vision, text, reinforcement learning and multimodal combinations thereof. The meaning of deep learning for this course is the training and application of neural networks as prediction models for various setups of input and output modalities. The course will include coding a subset of approaches for vision (so to avoid overlap with computer vision), approaches for sequential data such as 1D\u2010CNNs, temporal causal networks and recurrent neural networks, multimodal approaches, attention models, explainable AI and generative adversarial neural nets. The coding will cover the whole chain from data loader to training to parameter tuning to performance evaluation. The course will also focus on important practical aspects which are required to make the training part of deep learning work on smaller datasets such as transfer learning, the various forms of data augmentation, different optimizers and learning rate tuning.",
+        "pre_requisite": [
+            [
+                "Explain the concept of \ufd3ediscriminative\ufd3f learning from data, generalization and overfitting.",
+                "Be able to explain how the decision boundary of a linear neuron depends on its parameters in a general vector space.",
+                "Be able to explain what backpropagation is used for.",
+                "List for different prediction problems. Suitable outputs of predictors and suitable loss functions.",
+                "Explain the basic ideas behind convolutional and recurrent neural networks.",
+                "Be able to retell methods of data augmentation.",
+                "Be able to use deep learning toolboxes for loading data, training and performance evaluation of deep neural networks.",
+                "Construct data loaders for custom datasets of various types with various types of ground truth annotations, such as images, sequential data e.g. text and multi\u2010modal data.",
+                "Being able to set up neural networks for vision, and apply training algorithms to them and evaluate the performance of transfer learning tasks with two state of the art deep learning toolboxes.",
+                "Being able to set up neural networks for sequence classification, and apply training algorithms to them and evaluate the performance of transfer learning tasks with one state of the art deep learning toolboxes.",
+                "Be able to explain the functioning principle of a generative adversarial neural network."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Explain the concept of \ufd3ediscriminative\ufd3f learning from data, generalization and overfitting.",
+                "Be able to explain how the decision boundary of a linear neuron depends on its parameters in a general vector space.",
+                "Be able to explain what backpropagation is used for.",
+                "List for different prediction problems. Suitable outputs of predictors and suitable loss functions.",
+                "Explain the basic ideas behind convolutional and recurrent neural networks.",
+                "Be able to retell methods of data augmentation.",
+                "Be able to use deep learning toolboxes for loading data, training and performance evaluation of deep neural networks.",
+                "Construct data loaders for custom datasets of various types with various types of ground truth annotations, such as images, sequential data e.g. text and multi\u2010modal data.",
+                "Being able to set up neural networks for vision, and apply training algorithms to them and evaluate the performance of transfer learning tasks with two state of the art deep learning toolboxes.",
+                "Being able to set up neural networks for sequence classification, and apply training algorithms to them and evaluate the performance of transfer learning tasks with one state of the art deep learning toolboxes.",
+                "Be able to explain the functioning principle of a generative adversarial neural network."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Evaluate deep learning models and loss functions by suitability based on the intended prediction outputs for several prediction task types (ad: LO suitable loss functions).",
+                "Compute the terms used in backpropagation for a given neural network topology (ad: LO backprop)",
+                "Sketch the set of points for which a linear unit has constant outputs, sketch the directions for which the function values change fastest for a linear unit (ad LO decision boundary of a linear unit).",
+                "For a given model and a layer give arguments when to use a fully connected and when to use convolutional layers.",
+                "for a given problem give arguments when to use feedforward and when to use recurrent neural networks ad LO convolutional NNs, recurrent NNs.",
+                "Create code for dataloaders for custom datasets with groundtruths for image and text data.",
+                "Create code for neural networks for vision, which loads data, applies training algorithms and evaluates the prediction performance with two state of the art deep learning toolboxes.",
+                "Create code for neural networks for sequence classification, which loads data, applies training algorithms and evaluates the prediction performance of transfer learning tasks with one state of the art deep learning toolbox.",
+                "Compute train and test loss curves from a training process and be able to examine the amount of overfitting when comparing different pairs of train/test loss curves (ad LO generalization and overfitting).",
+                "Employ data augmentation methods and transfer learning in code, evaluate their impact on performance (ad LO data augmentation).",
+                "Produce example code for a generative deep neural network, be able to give possible use cases for GANs (ad LO generative adversarial neural network)."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction, Review of ML",
+                "Syntactic Tagging, Word Senses and Embeddings",
+                "Language Modeling",
+                "Chunking (Shallow Syntactic Parsing)",
+                "Information Extraction",
+                "Syntactic Parsing",
+                "Semantic Role Labeling (Shallow Semantic Parsing)",
+                "Semantic Parsing",
+                "Sentiment Analysis",
+                "Text Generation",
+                "Machine Translation"
+            ]
+        ]
+    },
+    {
+        "name": "50.040 Natural Language Processing",
+        "description": "Natural Language Processing (NLP) is an important area within the general field of artificial Intelligence (AI). Modern NLP models focus on using machine learning algorithms for solving various text processing problems. This course covers fundamental topics within the domain of NLP, including part-of-speech tagging, word embeddings, chunking, syntactic parsing, semantic role labeling, semantic parsing, named entity recognition, sentiment analysis, generation, summarization and machine translation. Students will get a chance to learn fundamental algorithms as well as state-of-the-art, deep-learning based techniques for NLP and will get a chance to implement and play with advanced NLP algorithms and models.",
+        "pre_requisite": [
+            [
+                "50.007 Machine Learning/40.319 Statistical & Machine Learning and",
+                "A good foundation in: 1) programming, 2) design and analysis of algorithms, 3) mathematics including linear algebra, calculus, optimization, probability, and statistics."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Explain the fundamental tasks within NLP",
+                "Explain possible algorithms as solutions to NLP tasks",
+                "Implement the algorithms used for various NLP tasks",
+                "Design novel algorithms for solving new NLP tasks, and use existing NLP technologies for solving real problems"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Explain the major tasks within NLP that involve supervised structured prediction",
+                "Explain the major tasks within NLP that involve unsupervised learning",
+                "Apply the relevant models that need to be used for each task",
+                "Apply the major guiding principles when choosing a model for a specific task within NLP",
+                "Decide when to and when not to use neural network based or deep learning methods for a specific task within NLP",
+                "Design and implement fundamental algorithms used for various NLP tasks",
+                "Analyze the time complexity involved for a specific NLP algorithm",
+                "Evaluate the performance of an NLP model based on certain evaluation metrics on standard datasets"
+            ]
+        ],
+        "topics_covered": []
+    },
+    {
+        "name": "50.041 Distributed Systems and Computing",
+        "description": "This course introduces fundamental concepts for designing and implementing large\u2010scale distributed systems. The course will not only focus on the design aspects of distributed systems, but will also focus on the fundamental principles to ensure the correctness in a distributed environment. We will apply the concepts via hands on assignments using GO programming language. The course will also deep dive into specific concepts of distributed systems e.g. designing distributed file systems (such as in Google File Systems) to accommodate arbitrarily many application\u2010level users. Finally, we will discuss concepts on recovering from faults (both normal and byzantine) in a distributed system.",
+        "pre_requisite": [
+            [
+                "Design and implement a distributed system from scratch.",
+                "Apply key ideas to maintain the correctness in distributed systems.",
+                "Learning techniques to design and develop massively parallel systems using GO programming language.",
+                "Learning techniques to design and implement a distributed file system.",
+                "Learning and applying techniques to recover from faults in distributed systems."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Design and implement a distributed system from scratch.",
+                "Apply key ideas to maintain the correctness in distributed systems.",
+                "Learning techniques to design and develop massively parallel systems using GO programming language.",
+                "Learning techniques to design and implement a distributed file system.",
+                "Learning and applying techniques to recover from faults in distributed systems."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Build models of distributed systems [LO 1].",
+                "Prototype distributed software systems [LO 1,2,3,4,5].",
+                "Build distributed algorithms using industry-strength programming language [LO 3].",
+                "Build algorithms to analyse the correctness of distributed systems [LO 2].",
+                "Prototype software and systems to manage files and records in a distributed environment [LO 4].",
+                "Build algorithms to analyse and test possible faults in distributed systems [LO 1, 5].",
+                "Build techniques to recover from faults in distributed systems [LO 5].",
+                "Build techniques at the level of supervisory software to support distributed applications [LO 1,4,5]."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction, Clocks, Election",
+                "Clocks and Election",
+                "Distributed Mutual Exclusion",
+                "Consistency Model",
+                "Distributed File Systems",
+                "Fault Tolerance 1",
+                "Fault Tolerance 2",
+                "Byzantine Faults"
+            ]
+        ]
+    },
+    {
+        "name": "50.042 Foundations of Cybersecurity",
+        "description": "This course provides students with a basic appreciation and understanding of the core concepts of information security. Topics to be covered include concepts for confidentiality, integrity and availability; introduction to cybercrimes and security issues; threats to information systems and devices; cryptographic primitives such as symmetric and asymmetric cryptography; core problems such as random number generation, entropy, and key distribution; and common topics such as security protocols and public\u2010key infrastructures.",
+        "pre_requisite": [
+            [
+                "List basic security solutions and models; explain concepts for confidentiality, integrity and availability.",
+                "Apply protocols used for key establishment, encryption, and authentication to secure a system.",
+                "Apply known attacks to vulnerable cryptographic primitives.",
+                "Model, analyse, and apply cryptographic primitives used for encryption, secure hashing, and digital signatures.",
+                "Evaluate the security of existing system designs respect to different attacker models."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "List basic security solutions and models; explain concepts for confidentiality, integrity and availability.",
+                "Apply protocols used for key establishment, encryption, and authentication to secure a system.",
+                "Apply known attacks to vulnerable cryptographic primitives.",
+                "Model, analyse, and apply cryptographic primitives used for encryption, secure hashing, and digital signatures.",
+                "Evaluate the security of existing system designs respect to different attacker models."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Evaluate security models like CIA model (confidentiality, integrity, availability) by defining and assessing security level for an existing system in a design project",
+                "Perform attacks related to block ciphers in Electronic\u2010Codebook mode, through successful retrieval of partial or full information related to the plaintext or key used, and",
+                "show the outcome of the attacks.",
+                "Implement a scheme for pre\u2010image recovery of hashes through brute force and hybrid attacks for hash related password authentication systems.",
+                "Apply substitution ciphers, One\u2010time\u2010pads, and AES in real\u2010life applications to prevent sensitive data exposure and thus preserve the confidentiality of secret data.",
+                "Analyse network logs , based on that, implement potential attacks on schemes for encryption, authentication, key establishment and digital signatures, through a challenge design and solving project."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction",
+                "Hash Functions",
+                "Password and Rainbow Tables",
+                "Applications for Hashing",
+                "Block Ciphers",
+                "Modular Arithmetics",
+                "Key Establishment",
+                "Public Key Crypto",
+                "Digital Signatures",
+                "Security Protocols",
+                "Side Channel Attacks",
+                "Security Policy",
+                "Information Flow",
+                "Distributed Systems"
+            ]
+        ]
+    },
+    {
+        "name": "50.043 Database Systems",
+        "description": "Database systems manage data which is at the heart of modern computing applications. We are in the era of big data, in which data is generated from many sources, in high velocity and with great variety. This poses numerous challenges in using and improving database technologies. Big data systems designed to support analytics are maturing and are becoming increasingly important to many applications.",
+        "pre_requisite": [
+            [
+                "10.014 Computational Thinking for Design",
+                "50.004 Algorithms",
+                "50.005 Computer System Engineering"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Design and implement a database application on top of a relational database management systems (RDBMS).",
+                "Identify major components of database and big data systems.",
+                "Estimate the costs of different database operations.",
+                "Explain how state\u2010of\u2010the\u2010art big data systems differ to one another.",
+                "Implement a cloud\u2010based big data application.",
+                "Explain how database and big data systems fit together in real\u2010world applications.",
+                "Use cloud\u2010based systems."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Develop a database design for an application.",
+                "List and explain major components of database and big data systems.",
+                "Write complex SQL queries.",
+                "Estimate cost of different database operations.",
+                "Compare different classes of big data systems.",
+                "Write MapReduce and Spark jobs.",
+                "Explain how a database differs to a big data system.",
+                "Design, implement, and deploy database and big data systems on AWS."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Database systems internal",
+                "Relational model",
+                "ER to Relational Model",
+                "Relational Algebra",
+                "SQL",
+                "Functional Dependency",
+                "DB normalization",
+                "Data Storage",
+                "Indexing",
+                "Query evaluation",
+                "Query optimization",
+                "Transaction Management",
+                "Big data systems architecture",
+                "AWS",
+                "HDFS",
+                "Spark"
+            ]
+        ]
+    },
+    {
+        "name": "50.044 System Security",
+        "description": "This course covers the security of users, individual computer systems, including personal computers, smart cards and embedded platforms. The course starts with considerations of common security flaws in a computer system, security of widely used computer platforms and user authentication. Then, topics such as physical\u2010layer attacks and tamper resistant hardware are discussed. Finally, the course ends with a set of selected security topics like biometrics, computer forensics, and Bitcoin.",
+        "pre_requisite": [
+            [
+                "50.042 Foundations of Cybersecurity"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Define security objectives for a given computer system based on problem setting and requirements",
+                "Explain how computer systems are compromised",
+                "Learn how to defend against common attacks to various computer systems",
+                "Apply basic security design principles to a secure computer system design and implementation"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Identify the security objectives of a computer system by defining and assessing the security level of an existing computer system properly and comprehensively, through a design project",
+                "Demonstrate ability to apply and analyse common attacks on various computer systems, through successfully compromising a computer system in a laboratory environment",
+                "Analyze and apply defensive technology and software to defend various computer systems, by demonstrating security level improvement of existing vulnerable computer systems",
+                "Demonstrate mastery of applying system security design principles and best practices by interpreting the process of securing a computer system in a design project"
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction",
+                "Memory safety attacks",
+                "Defenses for memory safety",
+                "Authentication",
+                "Privilege Separation",
+                "Isolation",
+                "Hardware Security",
+                "Mobile Security",
+                "Web Security",
+                "Secure Channels",
+                "Secure Messaging"
+            ]
+        ]
+    },
+    {
+        "name": "50.045 Information Retrieval",
+        "description": "Automatic methods of Information Retrieval (IR) have gained greater significance in recent years due to the dramatic increase in the amount of data available on the Web. The data is often present in multiple forms (such as text, image, video) and hence it is necessary that the IR techniques being deployed on the web are able to perform various operations such as search and retrieval across all these different data formats. In this course, the study of IR will be focused on the methodologies of indexing, processing, and querying of primary textual data and will be extended to video and image data in the latter part of the course. The primary learning objective of the course will be \u2013 i) to gain knowledge about the basic concepts and techniques of IR.; ii) understand the basic functionality and underlying algorithm of an IR system.; iii) understand modern neural networks and deep learning-based techniques that are used in today\u2019s\u2019 IR systems.; and iv) to learn about several applications of e.g., question answering, image, and video retrieval; v) learn how to develop a basic IR system from scratch and evaluate the system; vi) learn classification, clustering, topic modeling which are the core modules in an IR system.",
+        "pre_requisite": [
+            [
+                "Prior knowledge of elementary linear algebra would be helpful but is not required for this course.",
+                "Programming knowledge preferably in Python.",
+                "Object-orientated programming.",
+                "Data structure."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Gain knowledge about the basic concepts and techniques of IR.",
+                "Understand the basic functionality and underlying algorithms of an IR system.",
+                "Understand modern neural networks and deep learning-based techniques that are used in today\u2019s IR systems.",
+                "Learn about several applications of e.g., question answering, image, and video retrieval.",
+                "Learn how to develop a basic IR system from scratch and evaluate the system.",
+                "Learn clarification, clustering, topic modeling which are the core modules in an IR system."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Identifying important concepts of Information Retrieval.",
+                "Learn vector space modeling, modern deep learning techniques for IR and evaluation methods. Finally, utilize this knowledge to complete the project.",
+                "Evaluate the performance of different IR models using empirical benchmarks.",
+                "Implement different IR applications such as Question Answering, Image and Video Retrieval systems.",
+                "Able to use libraries such as Sklearn, Keras for data processing and IR model creation.",
+                "Mathematically explain common neural network-based models, word2vec and Glove distributed word representations for IR system building."
+            ]
+        ],
+        "topics_covered": []
+    },
+    {
+        "name": "50.046 Cloud Computing and Internet of Things",
+        "description": "The Internet of Things and its integration with cloud computing are transforming our world in a fundamental way. This course teaches some of the essential IoT and cloud computing technologies from the ground up. Specific topics covered include IoT devices programming (ESP32), sensing technologies, IoT protocols (Zigbee, LPWAN, MQTT), and multiple cloud-based services including storage, distributed and parallel computing, and virtualization. Students will learn how to design, develop, and deploy end-to-end cloud-based IoT applications, by formulating a real-world problem and identifying its key design objectives, challenges, and constraints.",
+        "pre_requisite": [
+            [
+                "10.009 The Digital World (For Intake AY2019) or [NEW] 10.020 Data Driven World (For Intake AY2020 and subsequent batches)",
+                "50.005 Computer System Engineering (recommended) or a strong foundation in computer systems"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "To understand the related architecture designs and technologies of cloud computing",
+                "To explain the overall architecture and key design principles of IoT systems, including both functional and non-functional aspects",
+                "To design cloud-based IoT applications using proper cloud services",
+                "To gain hands-on experience in key technologies for developing an IoT system, including sensor selection / interfacing, embedded system programming, use of suitable network protocols, and various cloud services (compute, storage, data analytics, management)",
+                "To gain design experience in solving a real-world problem using IoT and cloud technologies",
+                "To gain both the experience and confidence in learning a new IoT technology independently"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "List the functions of different IoT and cloud computing components",
+                "Use various sensors, embedded device libraries, IoT protocols, and cloud services",
+                "Develop skills in systematic testing and debugging",
+                "Work in a team to formulate a real-world problem that can be solved using IoT and cloud technologies, including design objectives, challenges, and constraints",
+                "Apply suitable IoT and cloud technologies to develop a proof-of-concept system, and present the solution in the class with explanation of its key design considerations",
+                "Apply new cloud services or sensors if relevant to the project"
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Sensors",
+                "Embedded systems and RTOS",
+                "Wireless networking for IoT",
+                "Edge computing",
+                "Energy efficiency design",
+                "Accessing Cloud",
+                "Storage as a Service",
+                "Computing as a Service",
+                "Task parallelism",
+                "Cloud scaling and Container",
+                "Batch and streaming analytics",
+                "ML in the Cloud, tinyML",
+                "Cloud infrastructure and management mechanism",
+                "Advanced cloud infrastructure",
+                "Security in the Cloud and IoT systems"
+            ]
+        ]
+    },
+    {
+        "name": "50.047 Mobile Robotics",
+        "description": null,
+        "pre_requisite": [],
+        "learning_objectives": [],
+        "measurable_outcomes": [],
+        "topics_covered": []
+    },
+    {
+        "name": "50.048 Computational Fabrication",
+        "description": "This course introduces students to the concepts and tools of computational design and manufacturing. Topics include: computational design and data acquisition (advanced geometry representations, procedural modeling, 3D scanning), physics-based modeling and simulation (kinematic mechanisms, solid mechanics, material modeling, finite element method), and an introduction to fabrication methods with a focus on additive manufacturing (e.g., 3D printing).",
+        "pre_requisite": [
+            [
+                "10.020 Data-driven World or permission of instructor"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Implement fundamental methods for computational fabrication.",
+                "Apply software systems for computational design and fabrication.",
+                "Analyze the physical property on the geometric modeling process for fabrication; conduct simulation for the model and measure the physical property of the 3D printed model.",
+                "Analyze research papers in computational fabrication."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Know and understand the basic concepts of computational design, simulation and fabrication methods.",
+                "Implement fundamental algorithms for computational fabrication.",
+                "Use software systems for computational design and fabrication.",
+                "Design geometric models for fabrication, predict their physical behavior using computational simulation, fabricate the models, e.g. using 3D printing or laser cutting, and measure their physical properties.",
+                "Analyze and understand latest research papers in computational fabrication."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Solid modeling",
+                "Procedural modeling",
+                "3D scanning and fabrication",
+                "3D printing technologies",
+                "3D printing software pipeline",
+                "Finite element method",
+                "Structural analysis for 3D printing",
+                "Functional specifications for 3D printing",
+                "Mechanism kinematics",
+                "Mechanism design",
+                "Assembly planning",
+                "Structurally stable assemblies",
+                "Assembly-based 3D printing",
+                "Case study: reconfigurables",
+                "Case study: discrete architecture",
+                "Case study: articulated character",
+                "Latest Research in Computational Fabrication"
+            ]
+        ]
+    },
+    {
+        "name": "Service Design Studio",
+        "description": "In Service Design Studio, students will form a team to respond to a \u201cService Design Challenge\u201d by conceptualizing, designing and implementing a new AI-based application to deliver a service. Students will learn web technologies to deploy cross-platform service solutions to various industry needs. The course is offered as a project-based course and managed in a tripartite collaboration involving SUTD, a Technology Expert company, and industries. Google is our key partner for the Technology Expert company for the first two initial offerings.",
+        "pre_requisite": [
+            [
+                "10.009 The Digital World",
+                "50.004 Algorithms"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Conduct all phases of development from problem analysis to deployment",
+                "Present software design work and critique other students\u2019 designs",
+                "Build medium-scale web applications using standard technologies on the cloud",
+                "Design key components of a software system",
+                "Exercise good work ethics in dealing with different stake holders"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Analyze problems and write design documents for a software system.",
+                "Design and implement key components of a software system including data models, event structures, and interfaces.",
+                "Build and deploy a medium-scale web or cross-platform applications using HTML, CSS,  Javascript, and Ruby on Rails framework.",
+                "Present and pitch their design solutions as well as give constructive critique on other students\u2019 design.",
+                "Implement Cloud Services as key technology components in the overall service solutions.",
+                "Communicate well and exercise good work ethics both among group members as well as with industry mentors."
+            ]
+        ],
+        "topics_covered": [
+            [
+                "Introduction to Software as a Service (SaaS), Agile Development and Cloud Computing",
+                "SaaS Application Architecture, Requirements: BDD and User Stories",
+                "SaaS Framework Part I, Introduction to UI/UX Design",
+                "SaaS Framework Part II",
+                "Mobile and Desktop SaaS Clients, Introduction to Javascript",
+                "Test-Driven Development, Agile Teams",
+                "Design Patterns for SaaS Apps",
+                "Dev/Ops",
+                "Cloud AI and ML toolbox"
+            ]
+        ]
+    },
+    {
+        "name": "01.116 AI for Healthcare (Term 7)",
+        "description": "This course introduces the concept of artificial intelligence through machine learning and deep learning algorithms. In evidence\u2010based medicine, it is important to gather useful insights from both structured (e.g. data collected by machines) and unstructured data (e.g. notes from clinicians\u2019 observations). The course highlights the use of AI for medical diagnostics, doctor consultation, personalized disease treatments, electronic health records, drug discovery and others. This poses both opportunities and challenges to gather buy\u2010in from various stakeholders, namely patients, doctors, researchers, and telehealth. In their various group projects, students will get to work on real\u2010life healthcare problems faced in hospitals and use AI to solve them.",
+        "pre_requisite": [
+            [
+                "Explain the key concepts and terminology in healthcare.",
+                "Understand how AI is used in healthcare especially in the admin and operations of hospitals, diagnostics and therapeutics and health monitoring.",
+                "Compare and contrast the various applications of AI (case studies) and their effectiveness of their implementation.",
+                "Synthesize their understanding of the tools learnt (AI) for healthcare and apply them to the design of appropriate technology solutions.",
+                "Interpret and describe major characteristics and potential applications of various AI\u2010based platforms, tools and techniques.",
+                "Analyse key data challenges in healthcare and develop data science proposals with clear objectives towards overcoming these challenges",
+                "Design AI frameworks and leverage on state\u2010of\u2010the\u2010art toolboxes and techniques for solving data science problems in healthcare."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Explain the key concepts and terminology in healthcare.",
+                "Understand how AI is used in healthcare especially in the admin and operations of hospitals, diagnostics and therapeutics and health monitoring.",
+                "Compare and contrast the various applications of AI (case studies) and their effectiveness of their implementation.",
+                "Synthesize their understanding of the tools learnt (AI) for healthcare and apply them to the design of appropriate technology solutions.",
+                "Interpret and describe major characteristics and potential applications of various AI\u2010based platforms, tools and techniques.",
+                "Analyse key data challenges in healthcare and develop data science proposals with clear objectives towards overcoming these challenges",
+                "Design AI frameworks and leverage on state\u2010of\u2010the\u2010art toolboxes and techniques for solving data science problems in healthcare."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Describe and understand how AI is used for healthcare, especially in the admin and operations of hospitals, diagnostics and therapeutics and health monitoring (lab exercise, concept quiz",
+                "and field trip).",
+                "Learn and use the steps involved in choosing a strategic focus for a healthcare problem that can be solved with AI (design project).",
+                "Ability to use the AI techniques taught to solve real\u2010life healthcare problems (lab exercise, design project).",
+                "Evaluate the different applications of AI for healthcare (case studies and invited guest speakers)."
+            ]
+        ],
+        "topics_covered": []
+    },
+    {
+        "name": "01.117 Brain-Inspired Computing and its Applications (Term 8)",
+        "description": "This course is offered to both undergraduates and graduates, and focuses on understanding the fundamental principles of brain and cognitive functions used for edge computing, artificial intelligence (AI) tasks and bioinformatics. This includes advanced theoretical models and practical aspect of major processes, such as description of neurons, the response of neurons to sensory stimuli, neuronal networks, state-of-the-art brain-inspired computer architectures and chips. Other topics covered include: statistical inference, decision making and so on. Speakers will be invited for advanced topics.",
+        "pre_requisite": [
+            [
+                "Understand the basic biophysics of neurons and networks and other principles underlying brain and cognitive functions",
+                "Use mathematical techniques (e.g., equivalent circuit model, differential equations, etc) to analyze simple models of neurons and networks",
+                "Use mathematical techniques (i.e., equivalent circuit model, differential equations, etc) to do data analysis of behavioral and neuronal data",
+                "Become proficient at using numerical methods to implement these techniques (Matlab or similar software)"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Understand the basic biophysics of neurons and networks and other principles underlying brain and cognitive functions",
+                "Use mathematical techniques (e.g., equivalent circuit model, differential equations, etc) to analyze simple models of neurons and networks",
+                "Use mathematical techniques (i.e., equivalent circuit model, differential equations, etc) to do data analysis of behavioral and neuronal data",
+                "Become proficient at using numerical methods to implement these techniques (Matlab or similar software)"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Translate a simple model of neurons and neural circuits into a mathematical model",
+                "Simulate simple model of neurons and networks using Matlab or similar software",
+                "Analyze neuronal data or model output of neurons and networks using Matlab or similar software."
+            ]
+        ],
+        "topics_covered": []
+    },
+    {
+        "name": "40.230 Sustainable Engineering",
+        "description": "Sustainable engineering is the integration of social, environmental, and economic considerations in the design of products, processes, and engineered systems. This course introduces the concept of sustainability \u2013 both theory and applications \u2013 to engineers and designers. Students will apply tools to perform environmental impact assessment, life-cycle cost and benefits analyses, which provide decision guidance on the design, maintenance, and operations of products and systems.",
+        "pre_requisite": [],
+        "learning_objectives": [
+            [
+                "Learn about grand societal challenges in energy and environment",
+                "Explain the role of technology, economics and policy in addressing these challenges",
+                "Evaluate the environmental impact of products, processes, services and systems",
+                "Develop and apply life cycle and systems thinking methods to design"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Conduct, report and orally present a conceptual eco-design process",
+                "Recognize and evaluate environmentally preferable designs and solutions",
+                "Develop a life cycle assessment of a product, service or system"
+            ]
+        ]
+    },
+    {
+        "name": "40.232 Water Resources Management",
+        "description": "The goal of this course is to develop basic skills and knowledge for modelling, managing and planning water resources systems in a participated and sustainable way. Particular emphasis is given to 1) the application of statistical modelling and optimisation techniques to the design and management of natural and urban water systems, and 2) the implementation of these techniques in numerical computing environments (e.g., MatLab and R). A key aspect of the course is a term-long project.",
+        "pre_requisite": [
+            [
+                "40.001 Probability"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Define, discuss and apply the basic ideas of integrated water resources management to both natural and urban environments",
+                "Employ and test statistical and process-based models to describe the main components of a river basin",
+                "Develop and evaluate optimization-based models for the planning and management of river basins",
+                "Analyse the main components of urban water systems"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Identify and model the socio-economic functions of a river basin;",
+                "Run simple mathematical models to describe hydrological and hydraulic processes, and analyse the corresponding outputs;",
+                "Aggregate different models and use them for decision-making (optimization) problems;",
+                "Assess the outcomes of planning and management problems;",
+                "Apply mathematical models for drainage systems and pressure pipe networks."
+            ]
+        ]
+    },
+    {
+        "name": "40.240 Investment Science",
+        "description": "This course will focus on the financial theory of asset pricing. While this course will be broad in scope and will cover many different topics relating to finance, a particular emphasis will be placed on topics related to financial markets. The primary topics covered in the class include present value, asset valuation, expected utility, portfolio selection, and the trade-off between risk and return.",
+        "pre_requisite": [
+            [
+                "10.004 Advanced Math II"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Define, model and price various financial instruments, including stocks and bonds",
+                "Construct optimal portfolios, based on mean-variance efficiency and utility theory, using probability and optimization",
+                "Use the trading lab to research stocks and select a portfolio of stocks in one sector for semester-long \u201cstock pitching\u201d project."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Price stocks, bonds and work with the term structure of interest rates.",
+                "Use portfolio theory to select mean-variance optimal portfolios.",
+                "Provide sector analysis and insight on individual stocks within a sector.",
+                "Improve professional presentation skills with in class \u201cstock pitches.\u201d"
+            ]
+        ]
+    },
+    {
+        "name": "40.242 Derivative Pricing and Risk Management",
+        "description": "Introduction to the theory and practice of mathematical finance: basics of derivative securities; interest rate and bonds; forward and futures contracts, hedging using futures contracts; option contracts and arbitrage relationship; binomial model, no-arbitrage pricing, risk-neutral pricing, and American options pricing; Brownian motion, Black-Scholes-Merton model, delta hedging, Greek letters, implied volatility, and volatility smile; classical and advanced portfolio management and execution models and strategies.",
+        "pre_requisite": [
+            [
+                "40.001 Probability"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Master the basics of derivatives, such as the mechanics, properties and functions of futures and options",
+                "Use derivatives to conduct trading and hedging",
+                "Price options using appropriate models including Black-Scholes-Merton model, binomial model and no-arbitrage principle",
+                "Design basic portfolio management and execution strategies"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Master the basics of derivatives, including terms, characteristics, pricing and execution.",
+                "Use appropriate trading strategies based on the derivative properties, such as straddle strategy and butterfly strategy.",
+                "Construct hedging strategies based on different risk concerns, including delta-neutral strategy, delta-gamma-neutral strategy.",
+                "Price options using different methods, including BSM model, Binomial model.",
+                "Construct the optimal portfolio balancing return and risk.",
+                "Designing the optimal asset execution strategy targeting at minimum trading cost or risk exposure."
+            ]
+        ]
+    },
+    {
+        "name": "40.260 Supply Chain Management",
+        "description": "Introduces concepts of supply chain design and operation. Topics include demand estimation, location and capacity planning, process analysis, inventory management, revenue management, supply chain procurement and coordination, and emerging topics in supply chains. A major aspect of the class is a student project on supply chain design.",
+        "pre_requisite": [
+            [
+                "40.012 Manufacturing and Service Operations"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Develop an understanding of the challenges in the design and operation of supply chains.",
+                "Learn modeling skills and problem-solving tools, applicable to the design, planning, and operation of supply chains.",
+                "Conduct projects related to the design of a supply chain."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Formulate mathematical models for demand modeling and forecasting, network design and transportation, production flow control and inventory management, revenue management, procurement and contracting.",
+                "Solved above problems using xl based solvers.",
+                "Present and critiqued industry cases related to above topics as well as emerging topics in supply chains.",
+                "Participate in supply chain related simulation game that simulates real world decision making scenarios."
+            ]
+        ]
+    },
+    {
+        "name": "40.302 Advanced Topics in Optimisation#",
+        "description": "This course is a follow-up to the ESD core course in Optimisation that students take in Term 4. The course will cover advanced topics in optimisation with a strong focus on modelling, formulations and optimisation techniques. Students will be introduced to the basics and design of algebraic modelling languages and spreadsheet models for describing optimisation problems. The primary application on which the course will be based is scheduling. Through the application, students will be exposed to advanced topics in optimisation such as proving optimality of schedules, integer programming formulations, heuristics, deterministic and stochastic dynamic optimization frameworks.",
+        "pre_requisite": [
+            [
+                "40.002 Optimisation"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Use optimization techniques as a decision-making tool in scheduling applications.",
+                "Model optimization problems using algebraic modeling languages and spreadsheets.",
+                "Solve moderate-sized yet practical optimization problems that are not simple enough to be solved by hand using techniques such as integer programming, heuristics, deterministic and stochastic dynamic optimization."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Formulate practical optimization problems in the scheduling domain that effectively tradeoff realism with tractability",
+                "Use an algebraic modeling language to solve scheduling problems using the tool of integer programming",
+                "Identify and develop appropriate methodologies to solve optimization problems in scheduling"
+            ]
+        ]
+    },
+    {
+        "name": "40.305 Advanced Topics in Stochastic Modelling#",
+        "description": "This is a follow-up to the introduction course on Stochastic Modelling. Students learn advanced methods in stochastic modelling with a focus on business, engineering and financial math applications. Topics to be covered include renewal theory and martingales (discrete time). Time permitting other topics such as branching processes, spatial processes or stochastic networks could be introduced.",
+        "pre_requisite": [
+            [
+                "40.001 Probability"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Apply the technique of Martingale in finance",
+                "Apply renewal theory in operations management"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Show the examples of Martingale, Renewal Process, and Brownian Motion.",
+                "Construct or develop a stochastic model using these concepts.",
+                "Identify and solve engineering problems involving these concepts.",
+                "Analyse these concepts in a broader context of probability theory."
+            ]
+        ]
+    },
+    {
+        "name": "40.316 Game Theory",
+        "description": "The course will provide a consistent framework for game-theoretic concepts, some of which have already been informally presented to the students in other courses. The course will cover the basic concepts in game theory, allowing the students to use strategic models in their capstone research.",
+        "pre_requisite": [
+            [
+                "10.007 Modelling The Systems World"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Introduce elementary concepts of numerical methods for ODEs and PDEs.",
+                "Develop the practice of error analysis.",
+                "Analyse and solve, numerically, the PDEs that often arise in financial problems using finite difference and Monte-Carlo methods."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Formalize a real life problem as a game,",
+                "Find equilibria in simple strategic form games",
+                "Compute some refinements of equilibria in extensive form games,",
+                "Compute the price of anarchy in simple games,",
+                "Design and run a simple experiment to test strategic behavior."
+            ]
+        ]
+    },
+    {
+        "name": "40.317 Financial Systems Design",
+        "description": "This is a course in computational finance in which students learn the tools for delivering financial services and the algorithms used to price complex financial instruments (derivatives). It also abstracts the design of financial services, focusing on interface design, which reduces to language design. Only moderate coding proficiency is required (Python 3) but there are weekly coding exercises. The design exercise is to propose an interactive, distributed trading game and to specify the interfaces. Topics include:",
+        "pre_requisite": [
+            [
+                "40.242 Derivative Pricing and Risk Management",
+                "At least one course beyond 10.009 The Digital World requiring the use of Python. Alternatively, by instructor permission upon demonstration of a software portfolio."
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Recognize and apply the tools of financial systems design in distributed environments;",
+                "Create a systems level design by designing the system interfaces, viewing each interface as a \u201clittle language\u201d; and",
+                "Recognize and implement algorithms for pricing financial instruments (derivatives)"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Create a code repository for version control;",
+                "Create a console-based client;",
+                "Create a multi-threaded server;",
+                "Create a graphical user interface for the client;",
+                "Store a history of transactions in a blockchain;",
+                "Design the interfaces for a distributed system;",
+                "Compute the price of a derivative via forward, backward, and central differences;",
+                "Solve an ODE using numerical techniques;",
+                "Solve a PDE using numerical techniques;",
+                "Price an option using Monte Carlo simulation and apply variance reduction techniques;",
+                "Price an American option."
+            ]
+        ]
+    },
+    {
+        "name": "40.318 Supply Chain Digitalisation and Design",
+        "description": "Successful orchestration of planning and execution processes across virtual and global supply chain networks is a critical success factor for today\u2019s businesses. This necessitates tight information integration across business functions and a strong alignment between the business and information technology functions. In the first half of the course we will study supply chain operations of a global manufacturing and distribution company, the NOVA Corporation. Using an experiential simulation of the company\u2019s supply chain, we will identify common errors in the design of such systems. We will see in greater detail how logistics policies, organizational design, performance measurement systems, information flows, and even currency fluctuations can impact a company\u2019s performance. Customer requirements ultimately determine a company\u2019s manufacturing and distribution system requirements. The course material is unified around the theme of applying five basic principles of supply chain management to global manufacturing and logistics. The second half of the course develops a framework and process for discovering the value potential of digitalisation and ensuring value realization from investments in digital technologies.",
+        "pre_requisite": [
+            [
+                "40.260 Supply Chain Management"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Enumerate five key principles in designing supply chains as a framework for analysis and action.",
+                "Enumerate five key systems within a supply chain organization and describe their function.",
+                "Observe and articulate the impact of uncertainty in supply chain operations.",
+                "Contrast a capacity-based inventory strategy with a lead-time-based inventory strategy.",
+                "Formulate an optimization-based approach to multi-item production planning.",
+                "Apply customer requirements analysis to design a supply chain strategy.",
+                "Identify key disconnects between Business and IT functions, from a strategy, process and technology systems requirements point of view.",
+                "Demonstrate a clear understanding of the Approach, Methodology and Tools that can be used to align and discover value potential of digital technologies in supporting business and to ensure that the promised alignment and value of digital technologies is indeed being realized.",
+                "Apply the methodologies and tools of Value Discovery and Value Realization in developing business cases."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Calculate the impact on inventory levels of various degrees of uncertainty in upstream capacity and downstream demand.",
+                "Formulate an optimization-based approach to multi-item production planning.",
+                "Apply customer requirements analysis to design a supply chain strategy with reference to supply chain design principles and detailed at the level of supply chain functional systems.",
+                "Construct a business value-driven digital technologies roadmap for a business case."
+            ]
+        ]
+    },
+    {
+        "name": "40.319 Statistical and Machine Learning",
+        "description": "An agent is intelligent if it perceives its environment and takes actions that maximize its chances of successfully achieving its goals. In this course, we will study how to imbue machines with intelligence, focusing on foundational principles and mathematical theories of real-world modeling, problem solving and statistical learning. We will borrow strategies from biological intelligence such as neural networks and reinforcement learning. Students will learn powerful concepts from decision theory, information theory, generative models, deep learning, dimensionality reduction, expectation-maximization, time-series prediction, control theory and machine reasoning, and will exploit software tools for building intelligent systems.",
+        "pre_requisite": [
+            [
+                "10.007 Modelling The Systems World",
+                "40.004 Statistics  (or 30.003/50.034 Introduction to Probability and Statistics)"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Acquire a basic understanding in the fundamental concepts and principles of machine learning; decision theory, information theory, model selection, time series prediction, machine reasoning",
+                "Understand and apply methods in supervised learning and generative models;",
+                "generalized linear models, kernel methods, graphical models",
+                "Understand and apply concepts in unsupervised learning and dimensionality reduction; autoencoders, matrix factorization, expectation-maximization, latent variables, mixture models",
+                "Understand and apply techniques in reinforcement learning; Kalman filters, Q-learning",
+                "Acquire a working knowledge of neural networks and backpropagation, and extend the techniques learnt to analyze standard deep learning models such as convolutional neural networks and recurrent neural networks"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Design suitable mathematical models for real-world problems.",
+                "Build intelligent systems by composing appropriate algorithms.",
+                "Critique the strengths and weaknesses of different solutions."
+            ]
+        ]
+    },
+    {
+        "name": "40.320 Airport Systems Planning and Design",
+        "description": "An airport is one of the most complex engineering systems in existence. It must simultaneously achieve ultra-high levels of safety and security while providing high throughput of passengers and cargo on a daily basis. It is an integrated system of systems bringing together airlines, air traffic controllers, baggage and cargo handlers, airport operators, customs, immigration, and security officers, as well as various ancillary support services such as connection to ground transportation and the provision of food, beverage, and emergency services. If you can appreciate the multiple dimensions of planning and design of an airport system, you are well-prepared to tackle many other system of systems challenges.",
+        "pre_requisite": [
+            [
+                "40.012 Manufacturing and Service Operations",
+                "40.014 Engineering Systems Architecture"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Know the basic systems, both airside and landside, that constitute an airport system from a functional perspective (what roles do they play).",
+                "Know the basic terminology used to describe these systems.",
+                "Know the performance metrics by which these systems are judged.",
+                "Comprehend some of the interactions between these systems and the performance tradeoffs.",
+                "Apply basic forecasting techniques to predict demand on these systems.",
+                "Apply basic process analysis to compute the capacity of these systems.",
+                "Comprehend the difficulty of making long term predictions of the impact of technology and economics on these demands and capacities.",
+                "Recognize the rapid degradation in performance that accompanies highly utilized systems in the presence of uncertainty.",
+                "Explain the need for flexibility in design for airport systems."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Demonstrate mastery of the basic terminology used to describe airport systems.",
+                "Demonstrate familiarity with basic tools of demand forecasting and capacity analysis.",
+                "Demonstrate by means of an oral and written report, the ability to identify, describe, and analyze an issue in airport planning, design, or operation and to recommend policy changes or technology enhancements to address the issue."
+            ]
+        ]
+    },
+    {
+        "name": "40.321 Airport Systems Modelling and Simulation",
+        "description": "Airports are complex systems that require the use of specialized modelling tools to be operated and managed efficiently. This course aims to provide students with appropriate knowledge and modelling skillset to critically apply simulation and optimization tools for airport systems planning, management and design. The modelling mindset is also applicable to other complex systems such as manufacturing facilities and hospitals. Topics include: airside capacity estimation, optimization of airport capacity utilization, airport demand management, simulation of airside aircraft movements, simulation of landside processes and air traffic flow management. A major aspect of this class is a final project where students are required to conduct a comprehensive simulation study on airport management using fast-time airport simulation tools (TAAM, Airtop, or CAST).",
+        "pre_requisite": [
+            [
+                "40.002 Optimisation",
+                "40.015 Simulation Modelling and Analysis"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Understand and identify the major challenges faced by airport planners and air traffic controllers in the planning and management of airport systems;",
+                "Apply fast-time airport simulation tools to model airport systems (TAAM, Airtop, or CAST);",
+                "Formulate mathematically classic problems of airport capacity/demand management and air traffic flow management;",
+                "Analyse and assess the performance of airport systems using simulation and optimization tools;",
+                "Design solutions aimed to address a given research problem within the context of airport planning and management."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Demonstrate proficiency with the use of fast-time airport simulation tools (TAAM, Airtop, or CAST);",
+                "Apply simulation tools to estimate airport capacity and predict airport flight delays;",
+                "Apply optimization tools to make decisions with respect to airport capacity utilization, airport demand management, and air traffic flow management;",
+                "Evaluate and improve the performance and utilization of airport systems by modelling airside aircraft movements;",
+                "Evaluate and improve the performance of airspace systems by modelling en-route air traffic movements;",
+                "Evaluate and improve the performance of landside facilities by modelling passenger movements."
+            ]
+        ]
+    },
+    {
+        "name": "40.323 Equity Valuation",
+        "description": "This course introduces two key tools used by professional investors.",
+        "pre_requisite": [
+            [
+                "40.011 Data and Business Analytics",
+                "40.240 Investment Science"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Create a framework that links causal factors of firm performance with changes in the value of the company",
+                "Combine the framework with analytic models of the value of equity share prices",
+                "Hypothesize and prioritize the assumptions required for the analysis to be valid",
+                "Identify data used to validate (or invalidate) the model and model assumptions"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Estimate firm cash flows and cash flow growth, and integrate the analysis within the valuation framework",
+                "Apply Damodaran\u2019s methodology to estimating equity valuation risk and discount rate parameters",
+                "Determine factors which drive changes in firm value using causal modelling techniques",
+                "Devise methods to assess the merits of investment theses and assumptions required for the theses to hold"
+            ]
+        ]
+    },
+    {
+        "name": "40.324 Fundamentals of Investing",
+        "description": "This course introduces topics relevant for students who want to understand the modern framework for evaluating investment opportunities. It combines key elements of managerial accounting and finance, as well as modern portfolio and asset pricing theory. After completing this course, students will be able to apply the core tool of analytic finance to assess the value of company projects, including those undertaken by start\u2010ups. They will also be able to analyze financial market conditions to recommend investment strategies.",
+        "pre_requisite": [
+            [
+                "10.001 Advanced Mathematics I",
+                "10.004 Advanced Math II",
+                "30.3003 / 50.034 Introduction to Probability and Statistics"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Define key accounting metrics and apply these metrics to evaluate the performance of a company.",
+                "Identity and interpret techniques to value cash flows from investing in firm projects.",
+                "Develop equity valuation frameworks that link stock prices to firm cash flows and risk.",
+                "Derive optimal allocation rules for investing in portfolios with one or two risky assets.",
+                "Identify optimal portfolio allocation rules for many risky assets, such as stocks, commodities, real estate and bonds. Combine the optimal allocation rules with index models to identify the degree of diversification in an optimal portfolio.",
+                "Hypothesize and derive a linear relation between risk and expected returns.",
+                "Define factors that determine bond prices. Synthesize bond pricing relations with no\u2010arbitrage equilibrium models of spot and forward rates."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Create a financial planning spreadsheet for a start\u2010up company.",
+                "Estimate cash flows generated by a company project, and develop decision rules for whether to invest in the project.",
+                "Determine the value of the stock using valuation by comparables.",
+                "Use optimal allocation rules to recommend allocations to stocks vs cash.",
+                "Construct optimal portfolios for investors that account for the risk and expected returns of the assets in the portfolio.",
+                "Devise and implement methods to estimate and test the linear relation between risk and expected return.",
+                "Design no\u2010arbitrage trading strategies to identify possible violations of no\u2010arbitrage equilibrium."
+            ]
+        ]
+    },
+    {
+        "name": "01.102 Energy Systems and Management",
+        "description": "Broadly, this course aims to acquaint students with both the operation and economics of modern electric power systems. Topics include optimal power flow, unit commitment, economic dispatch, electricity markets, as well as emerging techniques for renewable energy integration and demand response. By the end of the course, students will have developed a firm grasp of optimal power system operations, the emerging challenges facing deep renewable energy integration, tools to effectively tackle said challenges, as well as the energy system and markets in Singapore.",
+        "pre_requisite": [
+            [
+                "10.004 Advanced Math II"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Solve basic power flow equations by incorporating engineering constraints in power networks",
+                "Apply mathematical models to analyse the operation and economics of wholesale electricity markets",
+                "Identify the opportunity and challenges brought by renewable energy integration"
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Formulate the optimal power flow problem for electric power networks",
+                "Analyse the operation and economics of (deregulated) wholesale electricity markets",
+                "Analyse the challenges brought by growing renewable generation to power systems",
+                "Identify the challenges of providing reliable power supply in developing countries, as well as the current practice to mitigate electricity shortage in some developing countries."
+            ]
+        ]
+    },
+    {
+        "name": "01.104 Networked Life",
+        "description": "Driven by a number of real-world questions about our networked lives, this course explores the technology behind the multi-trillion dollar Internet and wireless industries.",
+        "pre_requisite": [
+            [
+                "10.007 Modelling the Systems World"
+            ]
+        ],
+        "learning_objectives": [
+            [
+                "Describe some of the key networked life applications, the basic real problems they solve, and the value they bring to society. Recognize the key technology innovation in modern networking technologies like CDMA, WiFI, page rank, recommendation systems, social media, Internet flow control, cloud computing, content distribution networks, network pricing, IPTV, etc.",
+                "Classify these applications in terms of the common mathematical models and tools used, and explain the basic theory used in each case.",
+                "Apply the appropriate mathematical tools (game theory, social network and graph theory, optimization, concepts like feedback, equilibrium, coordination, fairness, reputation) in the different context of each application and observe the limitations of the various models.",
+                "Analyze the performance of the solutions in the different application contexts and environment constraints.",
+                "Determine the effects on the solutions when assumptions or parameters of the models are changed.",
+                "Evaluate the way current networked life applications perform, explain why particular solutions have dominated the technology space."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Students will define the reasons for developing the given applications and their value in targeted class discussions (LO1).",
+                "In each of the application areas, the student will apply the appropriate mathematical tools (game theory, social network and graph theory, optimization, feedback, equilibrium, coordination, fairness, reputation) to analyze the system performance through weekly HWs (LO3, LO4).",
+                "Students will solve problems that illustrate the importance of various system parameters in the context of each application and and develop solutions that are practical and mathematically sound (LO5).",
+                "Students will answer questions regarding the evaluation of the various solution concepts, their appropriateness, and also their weaknesses (LO6)."
+            ]
+        ]
+    },
+    {
+        "name": "01.107 Urban Transportation",
+        "description": "This course provides students with an understanding of current challenges and opportunities in land transportation. It introduces road vehicle propulsion technologies and transportation systems modelling, including the tools and methods to assess technologies and system performance. Topics include conventional and alternative vehicle powertrains, intelligent transportation systems (ITS), transportation network modelling, traffic simulation, and travel demand modelling. Students will complete a project on a subject of their choosing.",
+        "pre_requisite": [],
+        "learning_objectives": [
+            [
+                "Explain the system-level transportation challenges and how these might be overcome in the future.",
+                "Assess demand and supply and intra- and inter-system interactions, and how to design systems for passenger and freight transportation",
+                "Evaluate the socio-technical tradeoffs and limitations of various transportation solutions."
+            ]
+        ],
+        "measurable_outcomes": [
+            [
+                "Assess and critique the effectiveness of urban transportation systems",
+                "Model, explore and report (orally and written) the performance of transportation systems under different policies, services, infrastructures, and technologies",
+                "Describe and compare the merits of different vehicle propulsion system designs"
+            ]
+        ]
+    }
+]

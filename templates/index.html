@@ -1,0 +1,135 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SUTD Elective Recommendation System </title>
+    <style>
+        body {
+            background-image: url(./templates/sutd.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center; min-width: 500px; max-width: 500px; margin:0 auto" class="login">
+        <br />
+        <h1><a href="/" style="text-decoration: none; color: #303030">SUTD Elective Recommendation System</a></h1>
+    </div>
+    <div style="text-align:justify; min-width: 500px; max-width: 500px; margin:0 auto ">
+
+        <br />
+        <p>Share with us your pillar, more about your interests and the skills you wish to learn and we will recommend
+            you electives that you might be interested in! </p>
+    </div>
+    <br />
+
+    <div class="container" style="text-align:center;">
+        <form action="{{ url_for('get_relevant_courses')}}" method="post">
+            <div style="display: inline-block">
+                <input size="50" type="text" name="query" class="form-control me-2" placeholder="share here :-)"
+                    required="required" aria-label="Search">
+            </div>
+            <div style="display: inline-block">
+                <button class="btn btn-outline-success" type="submit">
+                    Recommend Me
+                </button>
+            </div>
+        </form>
+        <br />
+        {% if retrieved_courses != null and retrieved_courses.length > 0 %}
+        <p>
+            {% for title in retrieved_courses %}
+            <br>{{ title }}</br>
+            {% endfor %}
+        </p>
+        {% else %}
+        <p>
+            Please refine your query, unable to find any relevant courses! :(
+        </p>
+
+        <!-- <table class="table" style="margin-left: auto; margin-right: auto;min-width: 500px; max-width: 500px;">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Relevance Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table> -->
+
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
+
+{% endblock %}
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUTD Course Recommendation System</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body style="background-color: #98B4D4"></body>
+<div style="text-align:center", class="login">
+    <h1 >SUTD Elective Recommendation System</h1>
+    
+    <h3>Tell us more about your interests and the skills you which to learn and we will recommend you electives that you might be interested in!</h2>
+
+    <form action="{{ url_for('get_relevant_courses')}}" method="post">
+
+        <div>
+            <input size="50" type="text" name="query" placeholder="Your query" required="required" />
+        </div>
+
+        <br></br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Recommend</button>
+    </form>
+
+    <p>
+        {% for title in retrieved_courses %} 
+            <br>{{ title }}</br>
+        {% endfor %}
+    </p>
+
+</div>
+</body>
+
+</html> -->
