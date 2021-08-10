@@ -3,3 +3,4 @@ nltk
 gensim
 numpy
 pandas
+flask_bootstrap
