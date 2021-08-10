@@ -4,13 +4,13 @@ This project entails utilizing information retrieval techniques to build a cours
 
 ### Installation
 ```bash
-pip install -r requirements.txt or pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Usage
 To try out our recommendation system with a GUI:
 ```
-python gui.py or python3 gui.py
+python gui.py
 ```
 ### Data Collection
 Our recommedation system is built in accordance to two types of data. 
