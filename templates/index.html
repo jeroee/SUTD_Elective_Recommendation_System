@@ -7,109 +7,98 @@
 <head>
     <title> SUTD Elective Recommendation System </title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            /* background-image: url("../static/sutd.jpg");
+            margin: 0;
+            background-image: url("../static/sutd.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: cover; */
+            background-size: cover;
+        }
+
+        .image {}
+
+        .white_box {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+            opacity: 0.9;
+            width: 600px;
+            background: white;
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div style="text-align:center; min-width: 500px; max-width: 500px; margin:0 auto" class="login">
-        <br />
-        <h1><a href="/" style="text-decoration: none; color: #303030">SUTD Elective Recommendation System</a></h1>
-    </div>
-    <div style="text-align:justify; min-width: 500px; max-width: 500px; margin:0 auto ">
-
-        <br />
-        <p>Share with us your pillar, more about your interests and the skills you wish to learn and we will recommend
-            you electives that you might be interested in! </p>
-    </div>
-    <br />
-
-    <div class="container" style="text-align:center;">
-        <form action="{{ url_for('get_relevant_courses')}}" method="post">
-            <div style="display: inline-block">
-                <input size="50" type="text" name="query" class="form-control me-2" placeholder="share here :-)"
-                    required="required" aria-label="Search">
+    <div class="image">
+        <div class='white_box'>
+            <div style="text-align:center; min-width: 500px; max-width: 500px; margin:0 auto" class="login">
+                <h1><a href="/" style="text-decoration: none; color: #303030">SUTD Elective Recommendation System</a>
+                </h1>
             </div>
-            <div style="display: inline-block">
-                <button class="btn btn-outline-success" type="submit">
-                    Recommend Me
-                </button>
+            <div style="text-align:justify; min-width: 500px; max-width: 500px; margin:0 auto ">
+
+                <br />
+                <p>Share with us your pillar, more about your interests and the skills you wish to learn and we will
+                    recommend
+                    you electives that you might be interested in! </p>
             </div>
-        </form>
+            <br />
+            <br />
+
+            <div style="text-align: center;">
+                <form action="{{ url_for('get_relevant_courses')}}" method="post">
+                    <div style="display: inline-block">
+                        <input size="50" type="text" name="query" class="form-control me-2" placeholder="share here :-)"
+                            required="required" aria-label="Search">
+                    </div>
+                    <div style="display: inline-block">
+                        <button class="btn btn-outline-success" type="submit">
+                            Recommend Me
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div style="text-align:center;">
+                <br />
+                {% if retrieved_courses == null %}
+                <p> </p>
+                </p>
+                {% elif retrieved_courses != null and retrieved_courses|length > 0 %}
+                <table class="table table-hover"
+                    style="margin-left: auto; margin-right: auto;min-width: 500px; max-width: 500px;">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;" scope="col">#</th>
+                            <th style="text-align:center;" scope="col">Course</th>
+                            <th style="text-align:center;" scope="col">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for course in retrieved_courses %}
+                        <tr>
+                            <td>{{ course['rank'] }}</td>
+                            <td>{{ course['result'] }}</td>
+                            <td>{{ course['score'] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% elif retrieved_courses != null and retrieved_courses|length == 0 %}
+                <p>
+                    Please refine your query, unable to find any relevant courses! :(
+                </p>
+                {% endif %}
+            </div>
+        </div>
     </div>
-    <div class="container" style="text-align:center;">
-        <br />
-        {% if retrieved_courses == null %}
-        <p> </p>
-        </p>
-        {% elif retrieved_courses != null and retrieved_courses|length > 0 %}
-        <table class="table" style="margin-left: auto; margin-right: auto;min-width: 500px; max-width: 500px;">
-            <thead>
-                <tr>
-                    <th style="text-align:center;" scope="col">#</th>
-                    <th style="text-align:center;" scope="col">Course</th>
-                    <th style="text-align:center;" scope="col">Relevance Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for course in retrieved_courses %}
-                <tr>
-                    <td>{{ course['rank'] }}</td>
-                    <td>{{ course['result'] }}</td>
-                    <td>{{ course['score'] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-        <!-- <p>
-            {% for title in retrieved_courses %}
-            <br>{{ title }}</br>
-            {% endfor %}
-        </p> -->
-        {% elif retrieved_courses != null and retrieved_courses|length == 0 %}
-        <p>
-            Please refine your query, unable to find any relevant courses! :(
-        </p>
-
-        <!-- <table class="table" style="margin-left: auto; margin-right: auto;min-width: 500px; max-width: 500px;">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Course</th>
-                    <th scope="col">Relevance Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table> -->
-
-        {% endif %}
-    </div>
-
 </body>
 
 </html>
