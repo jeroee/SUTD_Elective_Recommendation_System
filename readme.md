@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 
 ### Usage
-To try out our recommendation system with a GUI:
+To try out our recommendation system user interface:
 ```
 python gui.py
 ```
