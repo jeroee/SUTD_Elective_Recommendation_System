@@ -15,6 +15,7 @@ from bm25_with_pseudo_relevance import bm25_pseudo_relevance_back
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
+nltk.download('omw-1.4')
 lemmatizer = WordNetLemmatizer()
 
 

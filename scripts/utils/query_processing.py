@@ -8,6 +8,7 @@ from nltk.corpus import wordnet
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
+nltk.download('omw-1.4')
 lemmatizer = WordNetLemmatizer()
 
 def get_wordnet_pos(word):
